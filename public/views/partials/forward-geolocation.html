@@ -1,0 +1,16 @@
+<form autocomplete="off" name="mapboxFGD" class="mapbbox-fgd">
+  <div class="location-search">
+    <div class="search-location-input">
+      <input name="searchText" type="text" ng-focus="flagminerror=false" placeholder="Buscar cerca de..." id="mbac-searchInput" ng-minlength="minLength" ng-model="searchText.searchLocationText" ng-keyup="!autoSuggest || search()" ng-blur="blurSearchLocation()" class="mapbox-input" /><span class="icon_pin_1_gray"></span>
+    </div>
+    <div ng-click="confirmSelection()" class="search-location-ok-btn">OK</div>
+  </div>
+  <ul id="mbfgd-suggestions" ng-show="suggestions.length &gt; 0" class="dropdown-menu">
+    <li ng-repeat="suggestion in suggestions" ng-if="autoSuggest" ng-click="!selectedLocationAvailable || useSelectedLocation($index)">
+      <a href="#" ng-init="limitValue=suggestion[displayProperty].length-charQty">
+        <span class="glyphicon glyphicon-map-marker location-icon"></span>
+        {{suggestion[displayProperty] ? suggestion[displayProperty] : emptyPropertyText | limitTo: limitValue}}
+      </a>
+    </li>
+  </ul>
+</form>

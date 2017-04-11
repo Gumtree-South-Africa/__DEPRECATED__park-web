@@ -1,0 +1,20 @@
+extends layout
+
+block bodyContent
+  h1(itemprop="name")=data.name
+  p(itemprop="description")=data.description
+  div(itemscope='', itemtype='http://schema.org/Organization')
+
+    p(itemprop="location")=data.locationName
+    img(src=data.pictureUrl, alt=data.description, itemprop='image')
+
+    div(itemscope='', itemtype='http://schema.org/ItemList')
+      h2 Items del grupo
+      each item in data.items
+        div(itemprop='itemListElement', itemscope='', itemtype='http://schema.org/Product')
+          a(href=item.vipUrl, itemprop='url')
+            img(src=item.pictureUrl, alt=item.description, itemprop='image')
+          p='$'+item.price
+          p(itemprop='name')=item.name
+
+

@@ -1,0 +1,29 @@
+
+<!-- Trending**************-->
+<div class="row">
+  <div class="col-md-12">
+    <div class="titles text-center">
+      <h2>{{ 'TRENDING_NOW.TITLE' | translate }}</h2>
+      <p>{{ 'TRENDING_NOW.DESCRIPTION' | translate }}</p>
+    </div>
+  </div>
+</div>
+<!-- Layout 1 - 1 ....-->
+<div ng-repeat="item in $parent.trendingNowList | limitTo :2" class="row">
+  <div class="col-md-8 col-md-offset-2">
+    <div class="close-trending-container center-block">
+      <div class="ad-container">
+        <!-- Layout Image 1-->
+        <div class="row">
+          <div class="item-image-layout1"><a ui-sref="item({itemId: item.id})">
+              <custom-item-image itemId="{{ item.id }}" imgNumber="0">  </custom-item-image></a></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div ng-if="theresTrendingNowItems()" class="row">
+  <div class="col-md-12 text-center">
+    <button class="btn btn-load-more">{{ 'TRENDING_NOW.MORE_BUTTON' | translate }}</button>
+  </div>
+</div>

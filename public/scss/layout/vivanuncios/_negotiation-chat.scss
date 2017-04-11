@@ -1,0 +1,112 @@
+.viva-chat-main-container {
+  background: #ddd;
+  display: inline-block;
+  width: 100%;
+  border-radius: 0 5px 5px 0;
+  position: relative;
+
+
+  @media (max-width:768px) {
+    max-height: 100%;
+    border-radius: 0;
+  }
+
+  .viva-chats-container {
+    height: 67vh;
+    overflow-y: auto;
+
+    @media (max-width:768px) {
+      height: 57vh;
+    }
+  }
+
+  .viva-chat-message-container{
+    margin-left: 0.6vw;
+    margin-right: 0.6vw;
+    margin-bottom: 0.6vw;
+
+    @media (max-width: 768px) {
+      margin-bottom: 0px;
+      margin-left: 1.6vw;
+      margin-right: 3.6vw;
+    }
+
+    .viva-chat-type-container {
+      display: flex;
+      background: white;
+      border: 1px solid #ddd;
+      border-radius: 10px;
+      padding: 0.7vw;
+      padding-bottom: 1vw;
+      padding-top: 1vw;
+      padding-right: 1.4vw;
+      margin-top: 0.8vw;
+
+      @media (max-width:768px) {
+        margin-right: -3.7vw;
+        margin-left: -1.7vw;
+        margin-bottom: 0px;
+        border-radius: 0px;
+        padding-bottom: 1.2vh;
+        padding-top: 2vh;
+        border-bottom: 0px;
+        position: fixed;
+        width: 100%;
+        bottom: 0px;
+      }
+
+      .viva-chat-input {
+        border: none;
+        border-bottom: 1px solid #ddd;
+        flex-grow: 10;
+        max-height: 4.5vh;
+        margin-left: 10px;
+        margin-right: 10px;
+        font-size: 1.2vw;
+        font-family: 'foundrysterling-bookregular';
+        padding-left: 10px;
+        color: #555;
+        resize: none;
+
+        @media (max-width:768px) {
+          font-size: 4vw;
+          max-height: 8vw;
+        }
+      }
+
+      .viva-chat-send-message {
+        background: transparent;
+        border: none;
+        width: 40px;
+        height: 40px;
+
+        &.inactive .viva-chat-input-arrow {
+          background: $btn_send_inactive;
+          display: inline-block;
+          width: 35px;
+          height: 35px;
+          cursor: not-allowed;
+          @media (max-width:768px) {
+            width: 25px;
+            height: 25px;
+          }
+        }
+
+        &.active .viva-chat-input-arrow {
+          background: $btn_send_active;
+          display: inline-block;
+          width: 35px;
+          height: 35px;
+          cursor: pointer;
+
+          @media (max-width:768px) {
+            width: 25px;
+            height: 25px;
+          }
+        }
+      }
+
+    }
+  }
+
+}

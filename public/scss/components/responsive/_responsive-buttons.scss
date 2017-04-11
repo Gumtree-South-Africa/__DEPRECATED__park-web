@@ -1,0 +1,9 @@
+@media (max-width: 767px) {
+  .btn-follow, .btn-unfollow {
+    height  : $btn-follow-height-responsive;
+    width   : $btn-follow-width-responsive;
+    letter-spacing: 0.1vw;
+    font-size: 4.6vw;
+    border-radius: 2vw;
+  }
+}

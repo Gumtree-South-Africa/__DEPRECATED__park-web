@@ -1,0 +1,37 @@
+.item-sold{
+  .modal-content{
+    width: 500px;
+    margin: auto;
+
+    @media (max-width:768px) {
+      width: 80vw;
+      margin-top: 38vw;
+      margin-right: 12vw;
+      margin-left: 12vw;
+    }
+
+    h4 {
+      font-weight: bold;
+      font-size: 25px;
+      text-align: center;
+
+      @media (max-width:768px) {
+        font-size: 6vw;
+      }
+    }
+
+    p {
+      text-align: center;
+      font-size: 16px;
+
+      @media (max-width:768px) {
+        font-size: 4vw;
+      }
+    }
+
+    .modal-footer {
+      margin-top: 10px;
+      border-top: 1px solid #e6e6e6;
+    }
+  }
+}

@@ -1,0 +1,90 @@
+footer{
+  .footer-popular-cities{
+    background: $footer-cities-color-bg;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    .cities-title-container{
+      border-bottom: solid rgba(#B1B6C0, 0.3) 1px;
+      padding-bottom:10px;
+      span{
+        color: white;
+        font-size: 16px;
+        line-height: 1.6;
+        font-family: $stack-verlag-bold;
+      }
+      .view-all{
+        color: $white;
+        font-size: 12px;
+        padding-top: 8px;
+        a{
+          color: $white;
+        }
+      }
+    }
+    .cities-names-container{
+      padding-top: 30px;
+      a{
+        color: $footer-cities-color;
+        font-size: 14px;
+        line-height: 1.9;
+      }
+    }
+  }
+  .footer-info-1{
+    padding-top: 50px;
+    padding-bottom: 50px;
+    p,span, p a{
+      color: $footer-cities-color;
+      font-size: 14px;
+      line-height: 1.9;
+    }
+    background: $footer-color-1-bg;
+    a{
+      color: $white;
+      img{
+        margin: 0 10px;
+      }
+    }
+    a.btn-download-app{
+      color:$btn-download-app-font;
+    }
+    .footer-links, .social-links{
+      padding: 0;
+      /* .column-links{
+        padding-right: 0px;
+      } */
+      .image-link{
+        padding: 0px;
+      }
+    }
+    .button-download {
+      padding: 0px;
+      margin-bottom: 10px;
+    }
+  }
+  .footer-info-2{
+    background: $footer-color-2-bg;
+    color: $cool-grey;
+    padding: 20px 0;
+    img{
+      margin-top: 23px;
+    }
+  }
+}
+
+@media (min-width : 992px) and (max-width : 1128px) {
+  .cities-names-container a{
+    font-size: 11px!important;
+  }
+  .social-links a span{
+    font-size: 12px!important;
+  }
+}
+
+@media (min-width : 992px) and (max-width : 1230px) {
+  .button-download {
+    .btn-download-app{
+      width: 100%;
+    }
+  }
+}

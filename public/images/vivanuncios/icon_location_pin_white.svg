@@ -1,0 +1,17 @@
+<svg id="icon_location_pin_white.svg" xmlns="http://www.w3.org/2000/svg" width="20" height="25" viewBox="0 0 20 25">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: red;
+        fill-opacity: 0;
+      }
+
+      .cls-2 {
+        fill: #fff;
+        fill-rule: evenodd;
+      }
+    </style>
+  </defs>
+  <rect id="Rectangle_3_copy" data-name="Rectangle 3 copy" class="cls-1" width="20" height="25"/>
+  <path id="icon_location_pin_white" class="cls-2" d="M1299.97,1264.9c-0.96,0-8.6-9.45-8.6-14.2a8.6,8.6,0,1,1,17.2,0C1308.57,1255.45,1300.93,1264.9,1299.97,1264.9Zm0-20.24a6,6,0,1,0,6,6A5.992,5.992,0,0,0,1299.97,1244.66Z" transform="translate(-1290 -1241)"/>
+</svg>

@@ -1,0 +1,235 @@
+.container-static {
+  padding-top: 130px;
+  max-width: 1200px;
+  width: auto;
+	.hero-unit.justified {
+		min-height: 570px;
+		margin: 30px 0;
+		background-color: $white;
+		border-radius: 5px;
+		padding: 48px;
+	 	.static-page-title, .static-page-subtitle {
+			color: $darkGray;
+			margin-top: 15px;
+			margin-bottom: 40px;
+		  font-family: 'foundrysterling-mediumregular';
+			font-size: 31px;
+			font-weight: bold;
+			letter-spacing: 1px;
+		  float: left;
+	    width: 100%;
+      &.legal {
+        margin-top: 90px;
+      }
+		}
+    .sad-face, .neutral-face {
+      width: 82px;
+      height: 82px;
+      display: inline-block;
+      margin-right: 10px;
+    }
+    .sad-face {
+      background: $error-sad-face;
+    }
+    .static-page-title {
+      display: flex;
+      align-items:center;
+    }
+    .neutral-face {
+      background: $error-neutral-face;
+    }
+    .static-page-subtitle {
+      font-size: 26px;
+      margin-top:50px;
+    }
+    .subhead {
+      font-family: 'foundrysterling-lightregular';
+			@include text(25px, null, null, $gray);
+      letter-spacing: 1px;
+      margin-top: 30px;
+      margin-bottom: 10px;
+    }
+		.static-page-content {
+			font-family: 'foundrysterling-lightregular';
+			@include text(22px, null, null, $gray);
+			p {
+				margin-bottom: 25px;
+			}
+			b {
+        font-family: 'foundrysterling-bookregular';
+				letter-spacing: 1px;
+			}
+      li {
+        margin-bottom: 10px;
+      }
+      ol ul {
+        list-style-type: disc;
+      }
+      ul ul {
+        list-style: none;
+        text-indent: -0.7em;
+        li:before {
+          content: '- ';
+        }
+      }
+      a {
+        color: $blue;
+      }
+		}
+    .long-page {
+      font-size: 18px;
+      p {
+        margin-bottom: 10px;
+      }
+      .shortFormEulaTable {
+        background-color: $background-site-container;
+        margin-top: 50px;
+        padding-bottom: 20px;
+        border-bottom-left-radius: 8px;
+        border-bottom-right-radius: 8px;
+        .row {
+          margin: 0px;
+        }
+        .tableTitle {
+          background-color: $blue;
+          color: $white;
+          border-top-left-radius: 8px;
+          border-top-right-radius: 8px;
+          padding-top: 18px;
+          p {
+            text-align: center;
+            margin-left: 12px;
+            &.title {
+              font-size: 21px;
+              margin-top: 7px;
+              text-align: left;
+            }
+          }
+        }
+        .tableSubtitle {
+          margin: 20px 20px 0px;
+          p {
+            margin: 10px;
+          }
+        }
+        .tableRow {
+          margin: 0px 20px 10px;
+          background-color: $white;
+          border-radius: 8px;
+          padding: 5px 0px;
+          min-height: 70px;
+          .legal-icon {
+            width: 11%;
+            float: left;
+            display: -webkit-box;
+            display: -webkit-flex;
+            display: flex;
+            -webkit-box-pack: center;
+            -webkit-justify-content: center;
+            justify-content: center;
+            padding-top: 11px;
+            .icon-legal-pin {
+              background: $icon-legal-pin;
+              float: left;
+              width: 26px;
+              height: 35px;
+            }
+            .icon-legal-camera {
+              background: $icon-legal-camera;
+              float: left;
+              width: 40px;
+              height: 31px;
+            }
+            .icon-legal-ebay-logo {
+              background: $icon-legal-ebay-logo;
+              float: left;
+              width: 74px;
+              height: 18px;
+            }
+            .icon-legal-tools {
+              background: $icon-legal-tools;
+              float: left;
+              width: 37px;
+              height: 37px;
+            }
+            .icon-legal-shield {
+              background: $icon-legal-shield;
+              float: left;
+              width: 31px;
+              height: 37px;
+            }
+            .icon-legal-padlock {
+              background: $icon-legal-padlock;
+              float: left;
+              width: 22px;
+              height: 34px;
+            }
+          }
+          .desc {
+            width: 67%;
+            float: left;
+            text-align: left;
+            padding-top: 6px;
+            p {
+              margin-bottom: 8px;
+              vertical-align: middle;
+            }
+          }
+          .use {
+            width: 22%;
+            float: right;
+            display: -webkit-box;
+            display: -webkit-flex;
+            display: flex;
+            -webkit-box-pack: center;
+            -webkit-justify-content: center;
+            justify-content: center;
+            padding-top: 7px;
+            .icon-legal-si {
+              background: $icon-legal-si;
+              float: left;
+              width: 44px;
+              height: 44px;
+            }
+          }
+        }
+      }
+    }
+    .link-list {
+      ul {
+        padding: 10px 0 0 15px;
+      }
+      li {
+        color: $blue;
+      }
+    }
+    .anchor {
+      display: block;
+      height: 130px; /*same height as header*/
+      margin-top: -130px; /*same height as header*/
+      visibility: hidden;
+
+      @media (max-width: 768px) {
+        margin-top: 0;
+        height: 50px;
+      }
+    }
+	}
+}
+
+.container-static.static-error-page {
+  .hero-unit.justified {
+    padding: 48px 212px;
+  }
+  .back-home {
+    padding-top: 70px;
+    .btn-follow {
+      display: block;
+      margin: 0 auto;
+    }
+  }
+}
+
+.container-static.static-error-page.location-error {
+  padding-top: 0;
+}

@@ -1,0 +1,160 @@
+.rate-info {
+  .modal-dialog {
+    width: 670px;
+    .modal-content {
+      .modal-body {
+        .panel {
+          padding: 32px 18px;
+          float: left;
+          .title-header {
+            border-bottom: 1px solid $alabaster;
+            float: left;
+            width: 100%;
+            margin-left: 5px;
+            .title {
+              color: $doveGray;
+              float: left;
+              padding: 0px;
+              margin: 1px 0px 0px 0px;
+              border-bottom: none;
+              h3 {
+                margin: 0px;
+                padding: 0px;
+                font-size: 26px;
+              }
+            }
+            .ratings {
+              padding: 0px;
+              width: 21%;
+              p {
+                @include text(15px,1.0,normal,$mineShaft);
+                float: left;
+                width: 100%;
+                text-align: left;
+                margin: 0px 0px 6px 15px;
+                &.numbers {
+                  margin-left: 22px;
+                  .badge {
+                    color: $white;
+                    float: left;
+                    border-radius: 12px;
+                    padding: 5px 7px 3px 6px;
+                    letter-spacing: 1px;
+                    margin-right: 5px;
+                    font-size: 17px;
+                    &.positive {
+                      background-color: $green;
+                    }
+                    &.neutral {
+                      background-color: $yellow;
+                    }
+                    &.negative {
+                      background-color: $coral;
+                      margin-right: 0px;
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+        .panel-body {
+          padding: 22px 0px;
+          float: left;
+          ul.nav.nav-tabs {
+            li {
+              &.active {
+                a {
+                  background-color: $gallery;
+                  font-weight: bold;
+                  border-top-left-radius: 10px;
+                  border-top-right-radius: 10px;
+                  min-width: 100px;
+                }
+              }
+              a {
+                background-color: $white;
+                @include text(21px,1.0,normal,$doveGray);
+                border:none;
+                padding: 24px 0px;
+              }
+            }
+          }
+          .tab-content {
+            background-color: $gallery;
+            .tab-pane {
+              height: 400px;
+              overflow-y: scroll;
+              .rating {
+                padding: 17px 0px;
+                .user-image {
+                  padding: 0px;
+                  width: 12%;
+                  margin: -6px 0px 0px 2px;
+                  float: left;
+                }
+                .user-data {
+                  padding: 0px;
+                  width: 20%;
+                  margin-right: 10px;
+                  float: left;
+                  .date {
+                    margin-top: 3px;
+                    font-size: 15px;
+                  }
+                }
+                .item-data {
+                  padding: 0px;
+                  width: 54%;
+                  float: left;
+                  .item-comment {
+                    margin-top: 10px;
+                  }
+                }
+                .rating-icon {
+                  width: 25px;
+                  height: 25px;
+                  margin: -8px 0px 0px 16px;
+                  padding: 0px;
+                  float: left;
+                  &.NEGATIVE {
+                    background: $face_red;
+                  }
+                  &.POSITIVE {
+                    background: $face_green;
+                  }
+                  &.NEUTRAL {
+                    background: $face_yellow;
+                  }
+                }
+                p {
+                  text-align: left;
+                  @include text(18px,1.0,normal,$doveGray);
+                  margin-bottom: 0px;
+                  &.username {
+                    color: $blue;
+                  }
+                }
+                background-color: white;
+                border-radius: 10px;
+                margin: 10px;
+                img {
+                  height: 46px;
+                  width: 46px;
+                  box-shadow: 2px 2px 10px $empeoror;
+                  border: 2px solid $white;
+                }
+                span.rating {
+                  color: red;
+                }
+                &:first-child {
+                  margin-top:16px;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

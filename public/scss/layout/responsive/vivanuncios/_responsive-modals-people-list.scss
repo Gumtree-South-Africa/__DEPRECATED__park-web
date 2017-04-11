@@ -1,0 +1,70 @@
+@mixin modal-people-rating() {
+
+
+	.rating {
+	  display: flex;
+	  align-items: center;
+	  justify-content: flex-start;
+	  background-color: white;
+	  border-radius: 0px;
+	  width: 100%;
+	  height: 100%;
+	  padding: 0 3.2vw;
+
+	  .user-image {
+	    width: 16vw;
+	    height: 16vw;
+	    border-radius: 50%;
+	    background-repeat: no-repeat;
+	    background-position: 50% 50%;
+	    background-size: cover;
+	    // display: inline-block;
+	    // padding: 0px;
+	    // width: 14vw;
+	    // height: 14vw;
+	    // margin: auto 3px;
+	    // box-shadow: 2px 2px 10px rgba(0,0,0,0.3);
+	    // border: 2px solid white;
+	    // border-radius: 100%;
+
+	    img {
+	      // width: 100%;
+	      // height: 100%;
+	      width: 16vw;
+	      height: 16vw;
+	    }
+
+	  }
+	  .user-data {
+	    display: inline-block;
+	    width: 46vw;
+	    text-align: left;
+
+
+	    .username{
+	      font-size: 4.7vw;
+	      color: $blue;
+	      overflow: hidden;
+	      text-overflow: ellipsis;
+	      display: block;
+	    }
+	    .date {
+	      margin-top: 3px;
+	      font-size: 4vw;
+	      color: $gray;
+	    }
+	  }
+	  .item-data {
+	    padding: 10px;
+	    display: inline-block;
+	    vertical-align: middle;
+	    margin-right: -5px;
+	    .item-comment {
+	      margin-top: 10px;
+	    }
+	  }
+
+	}
+
+
+}

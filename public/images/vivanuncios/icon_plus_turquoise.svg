@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 21 21">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #00d9dc;
+        fill-rule: evenodd;
+      }
+    </style>
+  </defs>
+  <path id="icon_plus_turquoise.svg" class="cls-1" d="M862.5,175H855v7.5a1.5,1.5,0,0,1-3,0V175h-7.5a1.5,1.5,0,0,1,0-3H852v-7.5a1.5,1.5,0,0,1,3,0V172h7.5A1.5,1.5,0,0,1,862.5,175Z" transform="translate(-843 -163)"/>
+</svg>

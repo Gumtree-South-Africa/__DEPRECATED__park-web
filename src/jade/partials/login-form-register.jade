@@ -1,0 +1,38 @@
+form( ng-submit="signupSubmit()" role="form" name="registrationForm" novalidate="novalidate" class="" autocomplete="off")
+  div( class="form-group")
+    input( type="text"  placeholder="Elige tu nombre de usuario" ng-model="user.username" ng-minlength="minUsernameLength" ng-pattern="/^[A-Za-z0-9]+$/" maxlength="15" name="userRegistration" required="required" class="modal-form-input"  autocomplete="off")
+    div( class="error-wrapper")
+      span( ng-show="registrationForm.userRegistration.$pristine || registrationForm.userRegistration.$viewValue.length === 0 || registrationForm.userRegistration.$valid" class="input-register-message") No será posible modificarlo más adelante
+      span( ng-show="registrationForm.userRegistration.$error.minlength" class="inline-error") El nombre de usuario debe tener entre 5 y 15 caracteres
+      span( ng-show="registrationForm.userRegistration.$error.pattern" class="inline-error") El nombre de usuario solo puede contener números y letras
+
+  div( class="form-group")
+    input( type="password"  placeholder="Elige una contraseña" ng-model="user.password" ng-minlength="minPasswordLength" maxLength="15" required="required" class="modal-form-input" name="passwordRegistration" autocomplete="off")
+    div( class="error-wrapper")
+      span( ng-show="registrationForm.passwordRegistration.$error.minlength" class="inline-error") La contraseña debe tener entre 6 y 15 caracteres
+
+  div( class="form-group")
+    input( type="email" placeholder="Ingresa tu e-mail" ng-model="user.email" name="userEmailRegistration" required="required" class="modal-form-input" ng-pattern="/^[a-z0-9._%+-]+@[a-z0-9.-]+\\.[a-z]{2,4}$/"  autocomplete="off")
+    div( class="error-wrapper")
+      span( ng-show="registrationForm.userEmailRegistration.$pristine || registrationForm.userEmailRegistration.$viewValue.length === 0 || registrationForm.userEmailRegistration.$valid" class="input-register-message") No será posible modificarlo más adelante
+      span( ng-show="registrationForm.userEmailRegistration.$error.email || registrationForm.userEmailRegistration.$error.pattern" class="inline-error") Debes ingresar un e-mail válido
+
+
+  div( class="form-group")
+    div( class="location-input")
+      input( type="text" placeholder="Ingresa tu zip code" ng-model="user.zipCode" name="zipCode" ng-pattern="/^[0-9]+$/" ng-minlength="5" maxlength="5" required="required" class="modal-form-input zip-code")
+      div( class="location-wrapper")
+        span( ng-if="registrationForm.zipCode.$valid && !isLocationEmpty" class="register_location_icon")
+        span( ng-if="registrationForm.zipCode.$valid && !isLocationEmpty" class="location-suggestion") {{user.locationName}}
+
+
+    div( class="error-wrapper location-error")
+      span( ng-show="registrationForm.zipCode.$pristine || registrationForm.zipCode.$viewValue.length === 0 || (validZipcode && !isLocationEmpty)" class="input-register-message") Limitado a USA y PR
+      span( ng-show="registrationForm.zipCode.$error.pattern" class="inline-error") Debe tener sólo dígitos.
+      span( ng-show="registrationForm.zipCode.$error.minlength" class="inline-error") Debe contener 5 dígitos
+      span( ng-if="!validZipcode && disableInvalidZipCodeMessage" class="inline-error") Ingrese un zip code válido (USA & PR)
+
+  span( class="api-error")
+  span( class="inline-error") {{apiError.message}}
+
+  button( type="submit" ng-disabled="registrationForm.$invalid || isLocationEmpty" ng-class="{registerValidBt:!registrationForm.$invalid && !isLocationEmpty}" class="btn btn-user-register") Registrarme

@@ -1,0 +1,23 @@
+div.viva-negotiation-list.container
+
+  h1 Ofertas
+
+  div.container-offers
+    ul#tabs-negotiation-offers.nav.nav-tabs.nav-justified(role="tablist")
+      li#seller-tab.active(role="presentation")
+        button(ng-click="showTab('seller')") #[span.new-offers(ng-if="offersSeller.countOffersSeller > 0")] #[span Ofertas de venta] ({{offersSeller.countOffersSeller}})
+      li#buyer-tab(role="presentation")
+        button(ng-click="showTab('buyer')") #[span.new-offers(ng-if="offersBuyer.countOffersBuyer > 0")] #[span Ofertas de Compra] ({{offersBuyer.countOffersBuyer}})
+    div.tab-content
+      div#seller.tab-pane.active(role="tabpanel" ng-class="{'no-items':offersSeller.offersSellerArray.length === 0}" infinite-scroll="getMoreConversationsSeller()" infinite-scroll-distance="0" infinite-scroll-disabled="scrollOptions.seller")
+        div(ng-if="offersSeller.offersSellerArray.length > 0" ng-repeat="offer in offersSeller.offersSellerArray")
+          viva-negotiation-item(offer="offer")
+        div.message-no-items(ng-if="offersSeller.offersSellerArray.length === 0")
+          p Aún no has recibido ofertas de venta
+          p Publica nuevos anuncios para comenzar a vender y ganar dinero
+      div#buyer.tab-pane(role="tabpanel" ng-class="{'no-items': offersBuyer.offersBuyerArray.length === 0}" infinite-scroll="getMoreConversationsBuyer()" infinite-scroll-distance="0" infinite-scroll-disabled="scrollOptions.buyer")
+        div(ng-if="offersBuyer.offersBuyerArray.length > 0" ng-repeat="offer in offersBuyer.offersBuyerArray")
+          viva-negotiation-item(offer="offer")
+        div.message-no-items(ng-if="offersBuyer.offersBuyerArray.length === 0")
+          p Aún no has realizado ofertas de compra
+          p Encuentra entre los miles de anuncios disponibles en Viva lo que estás buscando

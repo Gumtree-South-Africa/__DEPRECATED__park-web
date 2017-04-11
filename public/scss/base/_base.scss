@@ -1,0 +1,103 @@
+//==============================
+// Global styles
+//==============================
+//Mostly implemented on index.html
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+*:active, *:focus, *:active:focus {
+  outline: none !important;
+}
+
+html,body{
+  background: $body-background;
+  height: auto;
+  transition: none!important;
+}
+
+.wrapbar{
+  padding-top: 65px;
+}
+.wrapbar-home{
+  padding-top: 125px;
+}
+
+// .row{
+//   margin:0;
+// }
+.padding-margin-sides0{
+  margin-left: 0;
+  margin-right: 0;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+//RED LINKS
+
+#menu-home li:hover{
+  a{
+    color: $close5-red;
+  }
+}
+.item-title-top p{
+  a:hover{
+    color: $close5-red;
+    text-decoration: underline;
+  }
+}
+
+p.title-see-listings:hover{
+  text-decoration: underline;
+}
+
+
+
+
+#menu-home ul li:hover a, #menu-home ul li a:hover {
+  text-decoration: none!important;
+}
+
+
+.legal-nav a:hover{
+  text-decoration: underline;
+}
+//===== overwriting map control from Mapbox. ITEM DETAIL
+
+.leaflet-top{
+  z-index: 100!important;
+}
+
+
+h1.h1_metatag_title {
+	font-size: 3px;
+	color: $sea-shell-gray;
+	float: right;
+	margin: 0px;
+}
+
+
+
+//==============================
+// Global styles Vivaanuncios
+//==============================
+body {
+    background-color: $background-site-container;
+    font-family: 'foundrysterling-mediumregular';
+    padding-right: 0;
+    a{
+      outline: 0;
+    }
+}.modal-open{
+  padding-right: 15px;
+}
+
+.black-text {
+  font-family: 'foundrysterling-bookregular'!important;
+  font-weight: bold!important;
+}
+
+.light-text {
+  font-family: 'foundrysterling-lightregular'!important;
+}

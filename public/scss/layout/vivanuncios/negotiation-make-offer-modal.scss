@@ -1,0 +1,236 @@
+.modal-make-offer-negotiation,
+.modal-accept-offer-negotiation,
+.modal-reject-offer-negotiation,
+.item-sold {
+
+  @media (max-width:768px) {
+    .modal-dialog  {
+      margin: 0!important;
+    }
+  }
+  .modal-content {
+    background-color: white;
+    text-align: left;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.65);
+
+    @media (max-width:768px) {
+      width: 80vw;
+      margin-top: 18vw;
+      margin-right: 12vw;
+      margin-left: 12vw;
+      padding: 3vw;
+
+      @media only screen and (orientation: landscape) {
+        margin-top: 18vh;
+      }
+    }
+
+    &.mini {
+      width: 400px;
+      margin: auto;
+    }
+  }
+
+  .error-message {
+    display: none;
+    color: #ff5531;
+    color: #ff5531!important;
+    font-size: 14px!important;
+    margin-top: 8px;
+
+    &.active {
+      display: inline-block;
+    }
+  }
+
+  .modal-body {
+    @media (max-width:768px) {
+      padding: 3vw;
+      padding-bottom: 0;
+    }
+  }
+
+  .modal-footer{
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+
+    @media (max-width:768px) {
+      margin-top: 3vh;
+      padding: 3vw;
+    }
+
+    &.top-border {
+      margin-left: -15px;
+      margin-right: -15px;
+      margin-top: 20px;
+      border-top: 1px solid #e5e5e5;
+
+      @media (max-width:768px){
+        margin-left: -3vw;
+        margin-right: -3vw;
+        margin-top: 4vh;
+        padding-top: 3vh;
+        padding-bottom: 0;
+      }
+    }
+
+    button {
+      width: 170px;;
+      height: 50px;
+      font-size: 20px;
+      font-family: inherit;
+      margin-right: 10px;
+      margin-left: 10px;
+
+      &.btn-make-offer {
+        background: #ff5531;
+        &:hover {
+          background: #ff2a18;
+        }
+      }
+
+      &.btn-cancel:hover {
+        background: #737373;
+      }
+
+      &.btn-confirm{
+        &.yes{
+          background: #00d9dc;
+
+          &:hover {
+            background: #00c3c6;
+          }
+        }
+        &.no {
+          background: #999999;
+
+          &:hover {
+            background: #737373;
+          }
+        }
+      }
+
+      @media (max-width: 768px) {
+        font-size: 4vw;
+        height: 12vw;
+        border-radius: 5px;
+        margin-left: 1px;
+        margin-right: 1px;
+      }
+    }
+  }
+}
+
+.modal-make-offer-negotiation,
+.modal-reject-offer-negotiation {
+  .modal-dialog {
+    margin-top: 150px;
+    width: 450px;
+  }
+  .modal-header{
+    border-bottom: 1px solid #e5e5e5;
+    margin-bottom: 20px;
+
+    @media (max-width:768px) {
+      padding: 0px;
+      padding-top: 5px;
+      padding-bottom: 5px;
+      margin-bottom: 4px;
+    }
+    h1 {
+      color: #666;
+      margin: 0;
+      font-size: 22px;
+
+      @media (max-width: 768px) {
+        font-size: 4.6vw;
+      }
+    }
+  }
+  .modal-body {
+    text-align: center;
+    p {
+      font-size: 20px;
+      color: #555;
+
+      &.black-text {
+        font-family: "foundrysterling-demiregular"!important;
+      }
+
+      @media (max-width: 768px) {
+        font-size: 4vw;
+      }
+    }
+
+    form {
+      @media (max-width: 768px) {
+        margin-top: 6vh;
+      }
+    }
+
+    input {
+      font-size: 40px;
+      border: 0;
+      border-bottom: 1px solid #e5e5e5;
+      color: #555;
+      text-align: center;
+      margin-top: 20px;
+      height: 40px;
+      width: 270px;
+
+      @media (max-width: 768px) {
+        font-size: 9.8vw;
+        // height: 11.8vw;
+        height: 50px;
+        width: 50vw;
+        margin-top: 0;
+      }
+    }
+    input::-webkit-input-placeholder {
+     font-size: 18px;
+     @media (max-width: 768px) {
+        font-size: 3.6vw;
+      }
+    }
+    input::-moz-placeholder {
+     font-size: 18px;
+     @media (max-width: 768px) {
+        font-size: 3.6vw;
+      }
+    }
+    input:-ms-input-placeholder {
+     font-size: 18px;
+     @media (max-width: 768px) {
+        font-size: 3.6vw;
+      }
+    }
+    input:-moz-placeholder {
+     font-size: 18px;
+     @media (max-width: 768px) {
+        font-size: 3.6vw;
+      }
+    }
+
+  }
+
+  .modal-footer {
+    @media (max-width: 768px) {
+      margin-top: 11vh;
+      padding: 0;
+      button {
+        margin-left: 1px;
+        margin-right: 1px;
+      }
+    }
+  }
+
+  .container-confirm-offer {
+    .modal-footer.top-border {
+      padding-left: 3vw;
+      padding-right: 3vw;
+    }
+  }
+}

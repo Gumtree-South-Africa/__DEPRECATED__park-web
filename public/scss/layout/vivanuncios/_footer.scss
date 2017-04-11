@@ -1,0 +1,105 @@
+.footer-container {
+  padding: 0;
+}
+
+.city-link {
+  font-size: 22px;
+  font-family: 'foundrysterling-bookregular';
+  text-align: center;
+  margin-bottom: 29px;
+}
+
+.subfooter{
+    font-family: 'foundrysterling-bookregular';
+    background: #ccf7f8;
+    min-height: 50px;
+    padding-top: 30px;
+    a{
+        color: #009999;
+        transition-duration: 300ms;
+        &:hover{
+            color: #00d9dc;
+            text-decoration: none;
+        }
+    }
+    .row{
+        padding-bottom: 30px;
+        div{
+            text-align: center;
+            font-size: 20px;
+        }
+    }
+}
+.footer {
+    font-family: 'foundrysterling-bookregular';
+    background: #00d9dc;
+    min-height: 50px;
+    color: #FFF;
+    padding-bottom: 30px;
+    a{
+        color: #FFF;
+        &:hover{
+            text-decoration: none;
+        }
+    }
+    .footer-legal{
+        text-align: center;
+        font-size: 20px;
+        padding-top: 29px;
+        padding-bottom: 25px;
+        border-bottom: 1px solid #80ecee;
+    }
+    .footer-links{
+        text-align: center;
+        padding-top: 46px;
+        padding-bottom: 47px;
+        a{
+            width: 100px;
+            height: 38px;
+            display: inline-block;
+            text-indent: -9999px;
+            &.footer-facebook{
+                background: url("../../../images/vivanuncios/logo_footer_facebook.svg") top / contain no-repeat;
+            }
+            &.footer-youtube{
+                background: url("../../../images/vivanuncios/logo_footer_youtube.svg") top / contain no-repeat;
+            }
+            &.footer-blog{
+                background: url("../../../images/vivanuncios/logo_footer_blog.svg") top / contain no-repeat;
+            }
+        }
+    }
+    .links-apps-footer {
+      float: right;
+      padding-right: 5px;
+    }
+    .app-store,.play-store{
+        display: block;
+        float: right;
+        width: 134px;
+        height: 45px;
+        margin-right: 5px;
+        background: url("../../../images/vivanuncios/logo_apple_store_transparent.svg") top / contain no-repeat;
+    }
+    .play-store{
+        background: url("../../../images/vivanuncios/logo_google_play_transparent.svg") top / contain no-repeat;
+    }
+    .copy-right-legals {
+      margin: 20px 0 0;
+      padding: 0;
+      font-size: 18px;
+      span {
+        margin-left: 16px;
+      }
+      .links {
+        display: inline-block;
+        a{
+          display: inline-block;
+          height: 20px;
+          border-left: 1px solid #80ecee;
+          margin: 0 0 0 13px;
+          padding: 0 0 0 16px;
+        }
+      }
+    }
+}

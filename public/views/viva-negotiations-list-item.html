@@ -1,0 +1,17 @@
+
+<div class="viva-negotiation-list container">
+  <h1>Ofertas</h1>
+  <div class="container-offers">
+    <div class="tab-content">
+      <div id="seller" ng-class="{'no-items':offersBuyer.length === 0}" class="tab-pane active">
+        <div ng-if="offersBuyer.length &gt; 0" ng-repeat="offer in offersBuyer track by offer.conversationId">
+          <viva-negotiation-item offer="offer"></viva-negotiation-item>
+        </div>
+        <div ng-if="offersBuyer.length === 0" class="message-no-items">
+          <p>Aún no has recibido ofertas de venta</p>
+          <p>Publica nuevos anuncios para comenzar a vender y ganar dinero</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

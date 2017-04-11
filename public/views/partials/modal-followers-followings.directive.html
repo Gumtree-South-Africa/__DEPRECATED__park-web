@@ -1,0 +1,76 @@
+
+<div id="modal-followers-followings" class="modal rate-info-group full-screen-modal">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+      	<div type="button" data-dismiss="modal" aria-hidden="true" ng-hide="loginFormDisplayed || registrationFormDisplayed" class="back-button-overlay">
+        	<div class="back visible-xs-inline-block"></div>
+        </div>
+      </div>
+      <div class="modal-body">
+        <div class="panel panel-default">
+          <div class="title-header visible-xs-inline-block">
+            <div class="title">
+              {{titleTxt}}</b>
+            </div>
+          </div>
+          <div class="panel-body">
+
+            <ul id="tabs-follwer-following" role="tablist" class="nav nav-tabs nav-justified hidden-xs">
+              <li role="presentation" class="active"><a href="#followings" aria-controls="as-buyer" role="tab" data-toggle="tab">Siguiendo ({{followings.length}})</a></li>
+              <li role="presentation"><a href="#followers" aria-controls="as-seller" role="tab" data-toggle="tab">Seguidores ({{followers.length}})</a></li>
+            </ul>
+
+            <div class="tab-content">
+
+              <div id="followings" role="tabpanel" class="tab-pane active">
+                <div class="no-followers" ng-if="followings.length === 0">
+                  Este usuario aún no está siguiendo a nadie
+                </div>
+                <div ng-repeat="following in followingsCopy" class="col-subscriber" ng-if="followings.length > 0">
+                  <div class="rating">
+                    <div class="user-image" ng-style="setBackground(following.profilePicture)" ng-click="visitProfile(following.username)">
+                      <img src="../../../images/vivanuncios/avatar_mask_4.png"/>
+                    </div>
+                    <div class="user-data" ng-click="visitProfile(following.username)">
+                      <span class="username">{{following.username}}</span>
+                      <span class="date">{{following.locationName}}</span>
+                    </div>
+                    <div class="item-data" ng-if="following.username !== usernameLogged">
+                      <button class="btn" ng-class="{ 'btn-follow-group':!following.followedByUser, 'btn-unfollow-group':following.followedByUser }" ng-click="toggleFollowUser(following)" >{{following.followedByUser ? 'SIGUIENDO' : 'SEGUIR' }}</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div id="followers" role="tabpanel" class="tab-pane">
+                <div class="no-followers" ng-if="followers.length === 0">
+                  Este usuario no tiene aún seguidores
+                </div>
+                <div ng-if="followers.length > 0" ng-repeat="follower in followersCopy" class="col-subscriber">
+                  <div class="rating" >
+                    <!-- <div class="user-image">
+                      <image ng-if="follower.profilePicture" src="{{follower.profilePicture}}" class="img-circle" />
+                      <img ng-if="!follower.profilePicture" src="../../../images/vivanuncios/avatar_ph_image_4.svg" class="img-circle" />
+                    </div> -->
+                    <div class="user-image" ng-style="setBackground(follower.profilePicture)" ng-click="visitProfile(follower.username)">
+                      <img src="../../../images/vivanuncios/avatar_mask_4.png"/>
+                    </div>
+                    <div class="user-data" ng-click="visitProfile(follower.username)">
+                      <span class="username">{{follower.username}}</span>
+                      <span class="date">{{follower.locationName}}</span>
+                    </div>
+                    <div class="item-data" ng-if="follower.username !== usernameLogged">
+                      <button class="btn" ng-class="{ 'btn-follow-group':!follower.followedByUser, 'btn-unfollow-group':follower.followedByUser }" ng-click="toggleFollowUser(follower)" >{{follower.followedByUser ? 'SIGUIENDO' : 'SEGUIR' }}</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" viewBox="0 0 35 35">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fff;
+        fill-rule: evenodd;
+      }
+    </style>
+  </defs>
+  <path id="avatar_notification_mask.svg" class="cls-1" d="M243.5,2477a17.5,17.5,0,0,0,0-35H261v35H243.5ZM226,2459.5a17.5,17.5,0,0,0,17.5,17.5H226v-17.5Zm0,0V2442h17.5A17.5,17.5,0,0,0,226,2459.5Z" transform="translate(-226 -2442)"/>
+</svg>

@@ -1,0 +1,8 @@
+
+div.modal-body
+  p ¿Estás seguro que deseas
+  p aceptar la oferta por #[b {{offer | vivaCurrency}}]?
+
+div.modal-footer.top-border
+      button.btn.btn-confirm.no(ng-click="confirm(false)") No
+      button.btn.btn-confirm.yes(ng-click="confirm(true)") Si

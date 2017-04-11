@@ -1,0 +1,17 @@
+<svg id="icon_share_white.svg" xmlns="http://www.w3.org/2000/svg" width="31" height="31" viewBox="0 0 31 31">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: red;
+        fill-opacity: 0;
+      }
+
+      .cls-2 {
+        fill: #fff;
+        fill-rule: evenodd;
+      }
+    </style>
+  </defs>
+  <rect class="cls-1" width="31" height="31"/>
+  <path id="icon_share_white" class="cls-2" d="M1375,1269h-19a5,5,0,0,1-5-5v-9a1,1,0,0,1,1-1h2v9a3,3,0,0,0,3,3h17a3,3,0,0,0,3-3v-9h2a1,1,0,0,1,1,1v9A5,5,0,0,1,1375,1269Zm-3.3-18.93-4.7-4.7v15.6a1,1,0,0,1-1,1h-1a1,1,0,0,1-1-1v-15.49l-4.6,4.6a1.45,1.45,0,0,1-2.05-2.05l7.13-7.13c0.02-.02.02-0.04,0.04-0.06a1.443,1.443,0,0,1,2.05,0l7.18,7.18A1.45,1.45,0,0,1,1371.7,1250.07Z" transform="translate(-1350 -1239)"/>
+</svg>

@@ -1,0 +1,31 @@
+//- layout.jade
+doctype html
+html(lang="en")
+  head
+    title=seo.title
+    meta(http-equiv="X-UA-Compatible" content="IE=edge")
+    meta(property="viewport" name="viewport" content="width=device-width, initial-scale=1")
+
+    link(rel="canonical", href=seo.canonical)
+    meta(property="description", name="description", content=seo.description)
+    meta(property="robots", name="robots", content=seo.robots)
+
+    // Place for add facebooks tags
+    meta(property='fb:app_id', content=facebook.id)
+    meta(property='og:url', content=facebook.url)
+    meta(property='og:type', content=facebook.type)
+    meta(property='og:title', content=facebook.title)
+    meta(property='og:description', content=facebook.description)
+    meta(property='og:image:url' content=facebook.image)
+
+    // Place for add twitter tags
+    meta(property='twitter:card' content=twitter.card)
+    meta(property='twitter:site' content=twitter.account)
+    meta(property='twitter:title' content=twitter.title)
+    meta(property='twitter:description' content=twitter.description)
+    meta(property='twitter:image' content=twitter.image)
+
+body
+    include header.jade
+    block bodyContent
+    include footer.jade

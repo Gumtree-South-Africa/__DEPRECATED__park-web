@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="75.313" height="75.313" viewBox="0 0 75.313 75.313">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #00d9dc;
+        fill-rule: evenodd;
+        opacity: 0.9;
+      }
+    </style>
+  </defs>
+  <path id="flag_triangle_turquoise_2_round.svg" class="cls-1" d="M200,165a10,10,0,0,1,10-10h65.327L200,230.327V165Z" transform="translate(-200 -155)"/>
+</svg>

@@ -1,0 +1,327 @@
+[
+  {
+    "id_mapbox": "place.2123",
+    "latitude": 30.2711,
+    "longitude": -97.7437,
+    "name": "Austin",
+    "state": "Texas",
+    "canonical_name": "Austin, TX",
+    "place_name": "Austin, Texas, United States",
+    "context": [
+      {
+        "id": "postcode.8573334549391130",
+        "text": "78701"
+      },
+      {
+        "id": "region.5362387430486520",
+        "text": "Texas"
+      },
+      {
+        "id": "country.5877825732302570",
+        "text": "United States",
+        "short_code": "us"
+      }
+    ],
+    "id": "austin-tx"
+  },
+  {
+    "id_mapbox": "place.5213",
+    "latitude": 42.3605,
+    "longitude": -71.0596,
+    "name": "Boston",
+    "state": "Massachusetts",
+    "canonical_name": "Boston, MA",
+    "place_name": "Boston, Massachusetts, United States",
+    "context": [
+      {
+        "id": "postcode.6743721359110320",
+        "text": "02203"
+      },
+      {
+        "id": "region.6332952577799830",
+        "text": "Massachusetts"
+      },
+      {
+        "id": "country.5877825732302570",
+        "text": "United States",
+        "short_code": "us"
+      }
+    ],
+    "id": "boston-ma"
+  },
+  {
+    "id_mapbox": "place.11855",
+    "latitude": 32.7763,
+    "longitude": -96.7969,
+    "name": "Dallas",
+    "state": "Texas",
+    "canonical_name": "Dallas, TX",
+    "place_name": "Dallas, Texas, United States",
+    "context": [
+      {
+        "id": "postcode.9855079973691700",
+        "text": "75201"
+      },
+      {
+        "id": "region.5362387430486520",
+        "text": "Texas"
+      },
+      {
+        "id": "country.5877825732302570",
+        "text": "United States",
+        "short_code": "us"
+      }
+    ],
+    "id": "dallas-tx"
+  },
+  {
+    "id_mapbox": "place.12564",
+    "latitude": 39.7348,
+    "longitude": -104.9653,
+    "name": "Denver",
+    "state": "Colorado",
+    "canonical_name": "Denver, CO",
+    "place_name": "Denver, Colorado, United States",
+    "context": [
+      {
+        "id": "postcode.13845689036316480",
+        "text": "80218"
+      },
+      {
+        "id": "region.10094095868494400",
+        "text": "Colorado"
+      },
+      {
+        "id": "country.5877825732302570",
+        "text": "United States",
+        "short_code": "us"
+      }
+    ],
+    "id": "denver-co"
+  },
+  {
+    "id_mapbox": "place.22974",
+    "latitude": 29.7589,
+    "longitude": -95.3677,
+    "name": "Houston",
+    "state": "Texas",
+    "canonical_name": "Houston, TX",
+    "place_name": "Houston, Texas, United States",
+    "context": [
+      {
+        "id": "postcode.13474302067000040",
+        "text": "77002"
+      },
+      {
+        "id": "region.5362387430486520",
+        "text": "Texas"
+      },
+      {
+        "id": "country.5877825732302570",
+        "text": "United States",
+        "short_code": "us"
+      }
+    ],
+    "id": "houston-tx"
+  },
+  {
+    "id_mapbox": "place.26905",
+    "latitude": 36.1663,
+    "longitude": -115.1492,
+    "name": "Las Vegas",
+    "state": "Nevada",
+    "canonical_name": "Las Vegas, NV",
+    "place_name": "Las Vegas, Nevada, United States",
+    "context": [
+      {
+        "id": "postcode.14844747297322900",
+        "text": "89101"
+      },
+      {
+        "id": "region.4612104064542650",
+        "text": "Nevada"
+      },
+      {
+        "id": "country.5877825732302570",
+        "text": "United States",
+        "short_code": "us"
+      }
+    ],
+    "id": "las_vegas-nv"
+  },
+  {
+    "id_mapbox": "place.28560",
+    "latitude": 34.0537,
+    "longitude": -118.2427,
+    "name": "Los Angeles",
+    "state": "California",
+    "canonical_name": "Los Angeles, CA",
+    "place_name": "Los Angeles, California, United States",
+    "context": [
+      {
+        "id": "postcode.8055854450707500",
+        "text": "90012"
+      },
+      {
+        "id": "region.11871630867311220",
+        "text": "California"
+      },
+      {
+        "id": "country.5877825732302570",
+        "text": "United States",
+        "short_code": "us"
+      }
+    ],
+    "id": "los_angeles-ca"
+  },
+  {
+    "id_mapbox": "place.34530",
+    "latitude": 40.7143,
+    "longitude": -74.006,
+    "name": "New York",
+    "state": "New York",
+    "canonical_name": "New York, NY",
+    "place_name": "New York, New York, United States",
+    "context": [
+      {
+        "id": "postcode.1405226920398280",
+        "text": "10007"
+      },
+      {
+        "id": "region.14113019950053660",
+        "text": "New York"
+      },
+      {
+        "id": "country.5877825732302570",
+        "text": "United States",
+        "short_code": "us"
+      }
+    ],
+    "id": "new_york-ny"
+  },
+  {
+    "id_mapbox": "place.38150",
+    "latitude": 40.0115,
+    "longitude": -75.1327,
+    "name": "Philadelphia",
+    "state": "Pennsylvania",
+    "canonical_name": "Philadelphia, PA",
+    "place_name": "Philadelphia, Pennsylvania, United States",
+    "context": [
+      {
+        "id": "postcode.8313127361643680",
+        "text": "19140"
+      },
+      {
+        "id": "region.10935335870218730",
+        "text": "Pennsylvania"
+      },
+      {
+        "id": "country.5877825732302570",
+        "text": "United States",
+        "short_code": "us"
+      }
+    ],
+    "id": "philadelphia-pa"
+  },
+  {
+    "id_mapbox": "place.38200",
+    "latitude": 33.4486,
+    "longitude": -112.0773,
+    "name": "Phoenix",
+    "state": "Arizona",
+    "canonical_name": "Phoenix, AZ",
+    "place_name": "Phoenix, Arizona, United States",
+    "context": [
+      {
+        "id": "postcode.15629053940122330",
+        "text": "85003"
+      },
+      {
+        "id": "region.6181432665758870",
+        "text": "Arizona"
+      },
+      {
+        "id": "country.5877825732302570",
+        "text": "United States",
+        "short_code": "us"
+      }
+    ],
+    "id": "phoenix-az"
+  },
+  {
+    "id_mapbox": "place.43311",
+    "latitude": 32.7174,
+    "longitude": -117.1628,
+    "name": "San Diego",
+    "state": "California",
+    "canonical_name": "San Diego, CA",
+    "place_name": "San Diego, California, United States",
+    "context": [
+      {
+        "id": "postcode.5918139479985540",
+        "text": "92101"
+      },
+      {
+        "id": "region.11871630867311220",
+        "text": "California"
+      },
+      {
+        "id": "country.5877825732302570",
+        "text": "United States",
+        "short_code": "us"
+      }
+    ],
+    "id": "san_diego-ca"
+  },
+  {
+    "id_mapbox": "place.43414",
+    "latitude": 37.7648,
+    "longitude": -122.463,
+    "name": "San Francisco",
+    "state": "California",
+    "canonical_name": "San Francisco, CA",
+    "place_name": "San Francisco, California, United States",
+    "context": [
+      {
+        "id": "postcode.10852427590593730",
+        "text": "94122"
+      },
+      {
+        "id": "region.11871630867311220",
+        "text": "California"
+      },
+      {
+        "id": "country.5877825732302570",
+        "text": "United States",
+        "short_code": "us"
+      }
+    ],
+    "id": "san_francisco-ca"
+  },
+  {
+    "id_mapbox": "place.52938",
+    "latitude": 38.895,
+    "longitude": -77.0366,
+    "name": "Washington",
+    "state": "District of Columbia",
+    "canonical_name": "Washington, DC",
+    "place_name": "Washington, District of Columbia, United States",
+    "context": [
+      {
+        "id": "postcode.5938390858952870",
+        "text": "20004"
+      },
+      {
+        "id": "region.2915387193035790",
+        "text": "District of Columbia"
+      },
+      {
+        "id": "country.5877825732302570",
+        "text": "United States",
+        "short_code": "us"
+      }
+    ],
+    "id": "washington-dc"
+  }
+]

@@ -1,0 +1,198 @@
+
+<spinner loading='loadingItem'></spinner>
+<div ng-if="!loadingItem && !pageTypeError" class="container content item item-detail-view">
+  <div class="container item-info-container item-top">
+    <div class="col-md-6 col-sm-6 item-column-picture">
+      <div class="card no-pad image-groupproduct pictureUrl">
+        <div class="primary-group">
+          <a ui-sref="item({itemId: entity.id})">
+            <div class="img-square-wrapper">
+              <div class="flag-container">
+                <div ng-class="entity.status" class="flag"></div>
+              </div>
+              <div style="background-image: url('{{ entity.pictures[activeImageIndex]}}')" class="img-square"></div>
+            </div>
+          </a>
+          <div class="navigation-container">
+            <ul ng-if="mustShowImageList()" class="navigation-images">
+              <li ng-repeat="index in imageIndexList" class="col-md-4 col-xs-4">
+                <a ng-click="setActiveImageIndex(index)">
+                  <div class="img-square-wrapper">
+                    <div style="background-image: url('{{ entity.pictures[index]}}')" class="img-square"></div>
+                  </div>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div ng-hide="!runningOnMobile" class="flag-container">
+            <div ng-class="entity.status" class="flag"></div>
+          </div>
+          <uib-carousel active="active" templateUrl="partials/carousel.html" no-transition="true" ng-touch>
+            <uib-slide ng-repeat="slide in slides track by slide.id" index="slide.id" templateUrl="partials/slide.html">
+              <img ng-style="{'background-image':'url({{slide.image}})'}" style="margin:auto;" />
+            </uib-slide>
+          </uib-carousel>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-6 col-sm-6 item-column-details">
+      <div class="item-details">
+        <div class="item-price-section">
+          <div class="price">{{ entity.price | vivaCurrency }}</div>
+          <div class="like-share-neg-icons">
+            <a ng-class="{liked: isLiked()}" ng-click="likeToggle(entity)" class="product-like"></a>
+            <a ng-click="openShareModal('modal-share-item.html','item', entity)" class="product-share"></a>
+            <a ng-click="goChat()"  class="product-negotiate"></a>
+            <!-- <a ng-click="isCollapsed = !isCollapsed" ng-hide="isLoggedUser(userInfo.username)" class="product-negotiate"></a> -->
+          </div>
+          <div uib-collapse="isCollapsed" ng-mouseleave="isCollapsed = !isCollapsed"  class="start-offer-container">
+          	<div class="negociate-dialog">
+            <p>
+              <span class="product-negotiate"></span> Descarga la app para negociar
+            </p>
+            <a href="https://play.google.com/store/apps/details?id=com.ebay.park&amp;hl=es_419" target="_blank" class="play-store"></a>
+            <a href="https://itunes.apple.com/us/app/vivanuncios-clasificados-estados/id962230049?mt=8" target="_blank" class="app-store"></a>
+          </div>
+          </div>
+        </div>
+        <div class="details">
+          <div class="followers pull-right">
+            <p>
+              <span class="like-icon"></span> {{ entity.totalOfFollowers }}
+            </p>
+          </div>
+          <p class="title">{{ entity.name }}</p>
+          <p>{{ entity.description }}</p>
+          <time class="published-date">{{ formatPublishedDate() }}</time>
+          <div class="category-section">
+            <span class="item-category">{{ entity.category.name }}</span>
+          </div>
+          <div ng-if="entity.groups.length &gt; 0" class="groups-section">
+            <span class="groups-image"></span>
+            <div class="groups-labels">
+              <a ui-sref="group({groupId: group.id, groupName: group.name})" ng-repeat="group in entity.groups" class="item-group">{{ group.name }}</a>
+            </div>
+          </div>
+        </div>
+        <div class="card no-pad map-group">
+          <div style="position: relative;" class="item-location">
+            <p>
+              <span class="map-marker-item"></span> {{ entity.locationName }}&nbsp{{ entity.zipCode }}
+            </p>
+            <leaflet ng-if="map.showMap" lf-center="map.center" width="100%" height="340px" paths="map.paths" defaults="map.defaults" tiles="map.tiles"></leaflet>
+            <div ng-if="isRunningOnMobile" class="map-overlay"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="listed-items center-block">
+    <div class="ad-container container-user" ng-class="{'user-logged': isUserLogged}" >
+      <div class="container item-info-container">
+        <div class="user-personal-info col-md-12 col-sm-12 col-xs-12">
+          <div class="col-md-2 col-sm-2 col-xs-4 user-image">
+            <div ng-if="userInfo.profilePicture" style="background-image: url('{{ userInfo.profilePicture }}')" ui-sref="userProfile({id:userInfo.username})" class="center-cropped">
+<!--              <div class="avatar-mask"></div>-->
+            </div>
+            <div ng-if="!userInfo.profilePicture" ui-sref="userProfile({id:userInfo.username})" class="avatar"></div>
+          </div>
+          <div class="col-md-6 col-sm-7 col-xs-7 user-name">
+            <a ui-sref="userProfile({id:userInfo.username})" class="title">{{ userInfo.username }}</a>
+            <span ng-click="openShareModal('modal-share-profile.html', 'user', userInfo)" ng-hide="!runningOnMobile" class="user-share"></span>
+            <p class="user-location">
+              <span class="map-marker"></span> {{ userInfo.locationName }}
+            </p>
+            <p class="user-published">{{ userInfo.itemsPublishedCount }} anuncios publicados</p>
+            <p class="date">Usuario desde {{ $formatDate(userInfo.creationDate) }}</p>
+          </div>
+        </div>
+        <div class="user-follow-button col-md-12 col-sm-12 col-xs-12">
+          <button ng-if="!isFollowed(userInfo)" ng-hide="isLoggedUser(userInfo.username)" ng-click="toggleFollowUser(userInfo.username, userInfo.followedByUser, cbFollowUser)" class="btn btn-follow pull-right">SEGUIR</button>
+          <button ng-if="isFollowed(userInfo)" ng-hide="isLoggedUser(userInfo.username)" ng-click="toggleFollowUser(userInfo.username, userInfo.followedByUser, cbFollowUser)" class="btn btn-unfollow pull-right">SIGUIENDO</button>
+          <span ng-click="openShareModal('modal-share-profile.html', 'user', userInfo)" ng-hide="runningOnMobile" class="user-share pull-right"></span>
+        </div>
+      </div>
+      <div class="container item-info-container">
+        <div class="user-social-info col-md-12 col-xs-12">
+          <div class="no-padding social-follow-rates col-md-6 col-sm-6 col-xs-12">
+            <div class="social-icons col-md-4 col-sm-4 col-xs-4">
+              <span ng-class="{checked: hasSocial('facebook') }" class="facebook-icon"></span>
+              <span ng-class="{checked: hasSocial('twitter') }" class="twitter-icon"></span>
+              <span ng-class="{checked: userInfo.verified }" class="email-icon"></span></div>
+            <div class="following-numbers col-md-4 col-sm-4 col-xs-4">
+              <div class="following col-md-6 col-xs-6" ng-click="tabModalFollowersFollowings.active = 'followings'" data-toggle="modal" data-target="#modal-followers-followings">
+                <p class="number">{{ userInfo.following }}</p>
+                <p>siguiendo</p>
+              </div>
+              <div class="followers col-md-6 col-xs-6" ng-click="tabModalFollowersFollowings.active = 'followers'" data-toggle="modal" data-target="#modal-followers-followings">
+                <p class="number">{{ userInfo.followers }}</p>
+                <p>seguidores</p>
+              </div>
+            </div>
+            <div class="ratings col-lg-3 col-md-4 col-sm-4 col-xs-4">
+              <p class="numbers">
+                <span class="positive">{{ userInfo.positiveRatings }}</span>
+                <span class="neutral">{{ userInfo.neutralRatings }}</span>
+                <span class="negative">{{ userInfo.negativeRatings }}</span>
+              </p>
+              <p>calificaciones</p>
+            </div>
+          </div>
+          <div ng-hide="runningOnMobile" class="no-padding promo-btns col-md-4 col-sm-12 col-xs-12">
+            <div class="promo">
+              <p>Contáctate descargando la app de Viva</p>
+              <a href="https://itunes.apple.com/us/app/vivanuncios-clasificados-estados/id962230049?mt=8" class="app-store"></a>
+              <a href="https://play.google.com/store/apps/details?id=com.ebay.park&amp;hl=es_419" class="play-store"></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<spinner loading="loadingProfileItems"></spinner>
+<div ng-if="!loadingItem && !loadingProfileItems && !pageTypeError" class="container">
+  <div ng-if="otherItemList.length > 0">
+    <div class="other-items-user">
+      <h2>Otros anuncios de este usuario</h2>
+    </div>
+    <!--Title and image container-->
+    <div class="items-list">
+      <div ng-repeat="item in otherItemList" class="item-list-container">
+        <div class="list-product-image-container">
+          <div class="list-flag-container">
+            <div ng-class="item.status" class="list-flag"></div>
+          </div>
+          <div ng-click="likeToggle(item)" class="list-fav-me-container">
+            <div ng-class="{liked: item.followedByUser}" class="list-fav-me"></div>
+          </div>
+          <a style="background-image: url('{{ item.pictureUrl}}')" target="_blank" ng-href="{{item.vivaUrl}}" class="list-product-image"></a>
+        </div>
+        <div class="list-product-info-container">
+          <div class="list-price-section">
+            <div class="list-product-price">{{ item.price | vivaCurrency }}</div>
+            <div class="list-favs-share">
+              <div ng-if="item.totalOfFollowers > 0" class="list-product-favs">
+                <div class="list-fav-icon"></div> {{item.totalOfFollowers}}
+              </div>
+              <a ng-click="openShareModal('modal-share-item.html','item', item)" class="list-product-share"></a>
+            </div>
+          </div>
+          <div class="list-name-section">
+            <div class="list-item-name">{{item.name}} </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="load-more">
+      <div ng-show="hasMore" class="text-center">
+        <button ui-sref="userProfile({id:userInfo.username})" class="btn btn-load-more all">
+          <span class="icon-plus"></span> Ver todos
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+<div ng-include="" src="'views/partials/404-page.html'" ng-if="!loadingItem && !loadingProfileItems && pageTypeError"></div>
+<rate-info user-promise="userPromise"></rate-info>
+<modal-followers-followings user-info="userInfo" followers="followers" followings="followings" get-followers="followersPromise" get-followings="followersPromise" tab-active="tabModalFollowersFollowings"  ></modal-followers-followings>

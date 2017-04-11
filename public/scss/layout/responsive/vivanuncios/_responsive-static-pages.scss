@@ -1,0 +1,133 @@
+@media (min-width: 992px) {
+  .container-static{
+    max-width: 1200px;
+    width: auto;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1260px) {
+  .container-static.static-error-page {
+    .hero-unit.justified {
+      padding: 48px 12vw;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+	.container-static {
+    padding: 0;
+		.hero-unit.justified {
+      min-height: 65.8vw;
+      padding: 6.8vw;
+      margin-top: 15.8vw;
+      margin-bottom: 0;
+      .static-page-title, .static-page-subtitle, .subhead, .static-page-content b {
+        letter-spacing: 0.07vw;
+      }
+		  .static-page-title {
+        font-size: 5.3vw;
+        margin-bottom: 4.2vw;
+        &.legal {
+          margin-top: 6.8vw;
+        }
+      }
+      .sad-face, .neutral-face {
+        width: 16.4vw;
+        height: 16.4vw;
+        margin-right: 2vw;
+      }
+      .title-error{
+        font-size: 4.3vw;
+      }
+      .static-page-subtitle {
+        font-size: 4.8vw;
+        margin-top: 4.8vw;
+        margin-bottom: 4.2vw;
+      }
+      .subhead {
+  			font-size: 4.8vw;
+        margin-top: 5.2vw;
+        margin-bottom: 2.4vw;
+      }
+      .static-page-content {
+        font-size: 4vw;
+        p {
+          margin-bottom: 4.3vw;
+        }
+        li {
+          margin-bottom: 2.3vw;
+        }
+        ol, ul {
+          padding-left: 6.3vw;
+        }
+
+      }
+      .long-page {
+        font-size: 4vw;
+        p {
+          margin-bottom: 2.4vw;
+        }
+        .shortFormEulaTable {
+          font-size: 3.6vw;
+          margin: 10vw -3vw 0px;
+          .tableTitle {
+            p.title {
+              font-size: 4.2vw;
+            }
+          }
+          .tableRow {
+            .legal-icon {
+              width: 20%;
+              .icon-legal-pin {
+                width: 5.2vw;
+                height: 7vw;
+              }
+              .icon-legal-camera {
+                width: 8vw;
+                height: 6.2vw;
+              }
+              .icon-legal-ebay-logo {
+                width: 14.8vw;
+                height: 3.6vw;
+              }
+              .icon-legal-tools {
+                width: 7.4vw;
+                height: 7.4vw;
+              }
+              .icon-legal-shield {
+                width: 6.2vw;
+                height: 7.4vw;
+              }
+              .icon-legal-padlock {
+                width: 4.4vw;
+                height: 6.8vw;
+              }
+            }
+            .desc {
+              width: 58%;
+            }
+            .use {
+              .icon-legal-si {
+                width: 8.8vw;
+                height: 8.8vw;
+              }
+            }
+          }
+        }
+      }
+		}
+	}
+  .container-static.static-error-page {
+    .hero-unit.justified {
+      padding: 8vw 8vw;
+    }
+    .back-home {
+      padding-top: 14vw;
+    }
+  }
+
+  .container-static.static-error-page.location-error {
+    padding-top: 0;
+    margin-top: -15.8vw;
+  }
+}

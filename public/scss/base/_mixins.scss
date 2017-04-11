@@ -1,0 +1,76 @@
+// Web fonts
+//Close5 fonts
+@mixin font-face($family, $file) {
+  @font-face {
+    font-family: $family;
+    src: url('#{$path-font}/#{$file}-webfont.eot');
+    src: url('#{$path-font}/#{$file}-webfont.otf') format("opentype"),
+         url('#{$path-font}/#{$file}-webfont.eot?#iefix') format('embedded-opentype'),
+         url('#{$path-font}/#{$file}-webfont.woff') format('woff'),
+         url('#{$path-font}/#{$file}-webfont.ttf') format('truetype');
+  }
+}
+
+//Vivanuncions fonts
+@mixin font-face-vivanuncios($family, $file) {
+  @font-face {
+    font-family: $family;
+    src: url('#{$path-font-vivanuncios}/#{$file}-webfont.eot');
+    src: url('#{$path-font-vivanuncios}/#{$file}-webfont.eot?#iefix') format('embedded-opentype'),
+         url('#{$path-font-vivanuncios}/#{$file}-webfont.woff2') format('woff2'),
+         url('#{$path-font-vivanuncios}/#{$file}-webfont.woff') format('woff'),
+         url('#{$path-font-vivanuncios}/#{$file}-webfont.ttf') format('truetype'),
+         url('#{$path-font-vivanuncios}/#{$file}-webfont.svg#$family') format('svg');
+  }
+}
+// Text
+
+@mixin text($size, $l-height: null, $weight: null, $color: null) {
+  font-size: $size;
+  line-height: $l-height;
+  font-weight: $weight;
+  color: $color;
+}
+
+// Placeholders
+@mixin placeholder-categories($text-align, $color: null, $padding-right:null){
+  text-align: $text-align;
+  color: $close5-red;
+  padding-right: $padding-right;
+}
+@mixin placeholder-mapbox($text-align, $color: null, $padding-left:null){
+  text-align: $text-align;
+  color: $close5-red;
+  padding-left: $padding-left;
+}
+
+@mixin border-bottom-opacity($color, $opacity: null, $pixels: null) {
+    border-bottom: $color solid $pixels; /* The Fallback */
+    border-bottom: rgba($color, $opacity) solid $pixels;
+}
+
+@mixin profile-picture-circle($size) {
+  width: $size;
+  height: $size;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 50%;
+  position: relative;
+  box-sizing: content-box;
+  border: max(2px, round($size*0.03)) solid $white;
+  box-shadow: 0px 1px max(7px, round($size*0.07)) -1px rgba(0, 0, 0, 0.4);
+}
+
+@mixin profile-picture-circle-responsive($size) {
+  width: $size;
+  height: $size;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 50%;
+  position: relative;
+  box-sizing: content-box;
+  border: max(0.4vw, round($size*0.03)) solid $white;
+  box-shadow: 0px 0.2vw max(1.4vw, round($size*0.07)) -0.2vw rgba(0, 0, 0, 0.4);
+}

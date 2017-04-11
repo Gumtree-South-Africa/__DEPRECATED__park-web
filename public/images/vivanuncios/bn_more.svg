@@ -1,0 +1,22 @@
+<svg id="bn_more.svg" xmlns="http://www.w3.org/2000/svg" width="74" height="74" viewBox="0 0 74 74">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: red;
+        fill-opacity: 0;
+      }
+
+      .cls-2 {
+        fill: #00d9dc;
+      }
+
+      .cls-3 {
+        fill: #fff;
+        fill-rule: evenodd;
+      }
+    </style>
+  </defs>
+  <rect id="area_copy_2" data-name="area copy 2" class="cls-1" width="74" height="74"/>
+  <circle class="cls-2" cx="37" cy="37" r="30"/>
+  <path id="plus" class="cls-3" d="M1032,425h-14v14h-4V425h-14v-4h14V407h4v14h14v4Z" transform="translate(-979 -386)"/>
+</svg>

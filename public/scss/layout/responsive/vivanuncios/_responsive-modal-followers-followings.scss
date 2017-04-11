@@ -1,0 +1,60 @@
+@media (max-width: 768px) {
+	#modal-followers-followings {
+
+		.modal-dialog {
+			width: 100%;
+
+			.modal-body {
+				height: 100%;
+			}
+
+	      .panel{
+	        padding: 0px;
+
+	        .title-header {
+	          margin-top: 0px;
+	          width: 100%;
+
+
+	          .title {
+	          	width: 100%;
+	            border: none;
+	            padding: 6.5vw 11vw 5.8vw!important;
+	          }
+	        }
+
+	        .panel-body{
+	          margin-top: 0px;
+	          padding: 0px!important;
+	          height: 100%;
+
+
+	          .tab-content {
+	            background-color: $gallery;
+	            height: 100%;
+	          }
+
+	          .tab-pane {
+	            overflow-y: scroll;
+	            padding: 0px;
+	            height: 100%;
+
+	            .col-subscriber {
+	              margin: 0 0 2px 0;
+	              display: inline-block;
+	              width: 100%;
+	              height: 21vw;
+	            }
+
+	            @include modal-people-rating();
+
+	          }
+
+	        }
+
+	      }
+
+	    }
+
+	}
+}

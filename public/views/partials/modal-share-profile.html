@@ -1,0 +1,21 @@
+
+<div class="modal-content share-modal col-md-10 col-sm-10 col-xs-10">
+  <div class="modal-header">
+    <button type="button" data-dismiss="modal" aria-hidden="true" class="close"></button>
+  </div>
+  <div class="modal-body">
+    <div class="panel panel-default">
+      <div class="modal-share">
+       <img src="{{ entity.profilePicture }}" alt="" itemprop="image" class="img-circle" ng-if="entity.profilePicture"/>
+       <div ng-if="!entity.profilePicture" class="avatar"></div>
+        <div class="title">
+          <h3>Comparte el perfil de <b>{{entity.username}}                 </b></h3>
+        </div>
+      </div>
+      <div class="panel-body">
+        <div class="share-links"><a uib-tooltip="Compartir en Facebook" tooltip-placement="bottom" tooltip-class="tooltip-modal-share" ng-click="shareFacebook()" class="facebook-logo"></a><a uib-tooltip="Compartir en Twitter" tooltip-placement="bottom" tooltip-class="tooltip-modal-share" ng-href="{{twitterUrl}}" target="_blank" class="twitter-logo"></a><a uib-tooltip="Copiar Link" tooltip-placement="bottom" ngclipboard-success="onSuccess(e);" tooltip-class="tooltip-modal-share" ngclipboard="ngclipboard" data-clipboard-text="{{url}}" class="link-logo"></a></div>
+        <div ng-show="hasCopy" class="copy-to-clipboard-message">Link copiado al portapapeles</div>
+      </div>
+    </div>
+  </div>
+</div>

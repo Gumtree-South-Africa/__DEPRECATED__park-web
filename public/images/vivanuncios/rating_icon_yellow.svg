@@ -1,0 +1,16 @@
+<svg id="rating_icon_yellow.svg" xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 25 25">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #ffbc0a;
+      }
+
+      .cls-2 {
+        fill: #fff;
+        fill-rule: evenodd;
+      }
+    </style>
+  </defs>
+  <circle id="yellow" class="cls-1" cx="12.5" cy="12.5" r="12.5"/>
+  <path id="face" class="cls-2" d="M560,30a1,1,0,0,1-1-1V16a1,1,0,0,1,2,0V29A1,1,0,0,1,560,30Zm-6.014-1.744a1.762,1.762,0,1,1,1.762-1.762A1.77,1.77,0,0,1,553.986,28.256Zm0-7.988a1.762,1.762,0,1,1,1.762-1.762A1.77,1.77,0,0,1,553.986,20.268Z" transform="translate(-545 -10)"/>
+</svg>

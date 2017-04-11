@@ -1,0 +1,19 @@
+<svg id="flag_liked_sharp.svg" xmlns="http://www.w3.org/2000/svg" width="56.313" height="56.313" viewBox="0 0 56.313 56.313">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #00d9dc;
+      }
+
+      .cls-1, .cls-2 {
+        fill-rule: evenodd;
+      }
+
+      .cls-2 {
+        fill: #fff;
+      }
+    </style>
+  </defs>
+  <path id="flag_triangle_turquoise" class="cls-1" d="M0,196.326V140H56.327Z" transform="translate(0 -140)"/>
+  <path id="icon_like_fill.svg" class="cls-2" d="M17.85,151.1c-4.687-6.5-12.25-.852-9.908,5.22,1.546,4.008,4.368,6.5,9.908,10.007,5.54-3.508,8.362-6,9.908-10.007C30.1,150.245,22.538,144.6,17.85,151.1Z" transform="translate(0 -140)"/>
+</svg>

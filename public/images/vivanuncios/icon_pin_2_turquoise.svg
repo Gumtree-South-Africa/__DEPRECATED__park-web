@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="21.5" height="28.5" viewBox="0 0 21.5 28.5">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fff;
+        fill-rule: evenodd;
+        filter: url(#filter);
+      }
+    </style>
+    <filter id="filter" x="842.5" y="116" width="21.5" height="28.5" filterUnits="userSpaceOnUse">
+      <feFlood result="flood" flood-color="#00d9dc"/>
+      <feComposite result="composite" operator="in" in2="SourceGraphic"/>
+      <feBlend result="blend" in2="SourceGraphic"/>
+    </filter>
+  </defs>
+  <path id="icon_pin_2_turquoise.svg" class="cls-1" d="M853.25,144.5c-1.2,0-10.75-11.813-10.75-17.75a10.75,10.75,0,0,1,21.5,0C864,132.686,854.45,144.5,853.25,144.5Zm-0.156-25.312a7.5,7.5,0,1,0,7.5,7.5A7.5,7.5,0,0,0,853.094,119.187Z" transform="translate(-842.5 -116)"/>
+</svg>

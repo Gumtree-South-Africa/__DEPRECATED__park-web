@@ -1,0 +1,27 @@
+<svg id="btn_close_popup.svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="47" height="47" viewBox="0 0 47 47">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fff;
+        filter: url(#filter);
+      }
+
+      .cls-1, .cls-2 {
+        fill-rule: evenodd;
+      }
+
+      .cls-2 {
+        fill: #999;
+      }
+    </style>
+    <filter id="filter" x="893" y="210" width="47" height="47" filterUnits="userSpaceOnUse">
+      <feOffset result="offset" in="SourceAlpha"/>
+      <feGaussianBlur result="blur" stdDeviation="2.449"/>
+      <feFlood result="flood"/>
+      <feComposite result="composite" operator="in" in2="blur"/>
+      <feBlend result="blend" in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <path id="circle" class="cls-1" d="M916,215a18,18,0,1,1-18,18A18,18,0,0,1,916,215Zm0,16.031a2.407,2.407,0,1,1-2.406,2.407A2.407,2.407,0,0,1,916,231.031Z" transform="translate(-893 -210)"/>
+  <path id="X" class="cls-2" d="M924.485,238.657l-2.828,2.828L916,235.828l-5.657,5.657-2.828-2.828L913.171,233l-5.656-5.657,2.828-2.829L916,230.171l5.657-5.657,2.828,2.829L918.828,233Z" transform="translate(-893 -210)"/>
+</svg>

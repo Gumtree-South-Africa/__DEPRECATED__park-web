@@ -1,0 +1,93 @@
+<nav ng-class="{headerChangeBackground:isScrolled, header_notHome_bg:homeRoot.current.name != &quot;homeLocation&quot;}" class="navbar top-header search-bar-container" ng-if="shouldVisible">
+  <div class="container top-header-container">
+    <div class="links-share">
+    	<!-- <a ng-if="offersCount > 0 && isAuthenticated()" ui-sref="negotiationsList()" class="notification-data-header">
+    		<div class="notifications-alert"></div>
+    	</a> -->
+      <a ng-hide="!isAuthenticated() || isMobileNavActive" ng-show="showUserData()" class="user-data-header">
+        <div ng-if="imagePicture" style="background-image: url('{{ imagePicture }}')" class="center-cropped">
+        </div>
+        <div ng-if="!imagePicture" class="avatar">
+        </div>
+        <div class="dropdown dropdown-profile"><a data-toggle="dropdown" ng-show="isAuthenticated() && !isMobileNavActive" class="user-name dropdown-toggle">{{userName}}
+            <div class="arrow-user-menu"></div></a>
+          <ul class="dropdown-menu profile-menu">
+          	<div ui-sref="negotiationsList()" class="profile-menu-opt">Ofertas ({{offersCount}})</div>
+            <div ui-sref="userProfile({id:userName})" class="profile-menu-opt">Mi Perfil</div>
+            <div data-toggle="modal" data-target="#edit-zipcode-form" ng-show="isAuthenticated()" class="profile-menu-opt">Editar zip code</div>
+            <div data-toggle="modal" data-target="#verify-email-form" ng-show="isAuthenticated()" class="profile-menu-opt">Verificar e-mail</div>
+            <div data-toggle="modal" data-target="#change-password-form" ng-show="isAuthenticated()" class="profile-menu-opt">Cambiar contraseña</div>
+            <div class="logout-session-option">
+              <div ng-mouseover="isLogoutSelectedBt=true" ng-mouseleave="isLogoutSelectedBt=false" ng-click="logout()" class="profile-menu-opt">
+                <span ng-class="{logoutIconSelected:isLogoutSelectedBt}" class="logout-icon"></span>Cerrar sesión
+              </div>
+            </div>
+          </ul>
+        </div>
+      </a>
+      <a ng-if="!isMobileNavActive" ng-click="showLoginForm(true)" ng-show="!isAuthenticated()">Ingresar</a>
+      <a ng-if="!isMobileNavActive" ng-click="openShareModal('modal-share.html', 'app')" ng-show="!$parent.runningOnMobile()" class="css-share_app">Comparte la app</a>
+      <span ng-click="setMobileNavigation()" ng-class="{&quot;arrow-hide-search&quot;: isMobileNavActive}" class="mobile-search"></span>
+    </div>
+    <div class="col-sm-2 col-md-3 col-xs-3 main_title">
+      <div ng-click="updateLocation()">
+        <div class="home-logo"></div>
+      </div>
+    </div>
+    <div ng-class="{mobileSearchNavigation: isMobileNavActive}" class="col-xs-12 col-sm-12 col-md-8 search-container">
+      <div class="search-box col-md-8">
+        <div ng-click="displayCategoriesOnSpan(true)" click-off="displayCategoriesOnSpan(false)" ng-class="{'arrow-right': isCategoriesActive, 'arrow-down': !isCategoriesActive}" class="categories-menu">
+          <div ng-model="$parent.searchText" class="categories-menu-btn">{{categoriesButtonText}}</div>
+          <div ng-hide="!isMobileNavActive" ng-class="{'arrow-right-mobile': isCategoriesActive, 'arrow-down-mobile': !isCategoriesActive}"></div>
+          <ul ng-show="isCategoriesActive" class="dropdown-menu">
+            <li role="button" ng-mouseover="categ.baseURL = categ.urlLinkhover" ng-mouseleave="categ.baseURL = categ.urlLink" ng-repeat="categ in categoryList">
+              <a ng-click="setCategory(categ)">
+                <span>{{categ.name}}</span></a>
+            </li>
+          </ul>
+        </div>
+        <input ng-model="$parent.searchText" ng-keyup="onSearchTextChanged($event)" type="text" aria-label="Search bar" placeholder="Buscar..." class="search-input" /><span ng-click="onSearchTextOnclick()" class="loupe-button"></span>
+      </div>
+      <div ng-class="{backgroundLocationStyles: !$parent.isKeyPressedOnlocation}" ng-click="openMapModal()" class="mapbox-menu col-md-3">
+        <div class="mapbox-menu-btn">
+          <span ng-hide="!isMobileNavActive" class="icon-pin-mobile"></span>
+          <p ng-if="!location.canonical_name">Buscar cerca de...</p>
+          <p ng-if="location.canonical_name" class="location-name">{{location.canonical_name}}</p>
+          <a>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</nav>
+<div class="container">
+  <div id="locationModal" role="dialog" class="modal full-screen-modal">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <div ng-hide="$parent.runningOnMobile()" class="top-header">Buscar cerca de...
+            <div ng-click="hideLocationModal()" class="close-modal">×</div>
+          </div>
+          <div ng-click="hideLocationModal()" ng-hide="!$parent.runningOnMobile()" class="back-button-overlay"></div>
+          <div ng-hide="!$parent.runningOnMobile()" class="back"></div>
+        </div>
+        <div class="modal-body">
+          <div class="panel">
+            <div ng-hide="!$parent.runningOnMobile()" class="title">Buscar cerca de...</div>
+            <div class="mapbox-menu">
+              <mapbox-forward-geocoding ng-class="{backgroundLocationStyles: !$parent.isKeyPressedOnlocation}" search-text="util" selected-location="$parent.addressSelection" options="{minLength: 1, excludeEntriesWithNoPlaceName: true, autoSuggest: true, placeHolderText: ''}" api-token="apiToken"
+              class="mapbox-menu mapSearch">
+                <a ng-if="$parent.isKeyPressedOnlocation" href="" ng-click="clearKeyword()" class="clear-button-search">&nbsp&nbsp&nbsp&nbsp&nbsp</a>
+              </mapbox-forward-geocoding>
+              <leaflet lf-center="center" width="100%" height="{{modalHeight}}" markers="markers"></leaflet>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <login-form signup="signup(user)" login="login(provider, credentials)" recover-password="recoverPassword(email)" error="{{loginError}}" api-error="signUpError" recoverpwd-cb="recoverpwdCb" functions="signUpFunctions" update="updateShowLoginModal()"></login-form>
+  <change-password-form change-password="changePassword(passwords)" password-cb="passwordCb"></change-password-form>
+  <edit-zipcode-form edit-zipcode="editZipCode(location)" zipcode-cb="zipcodeCb"></edit-zipcode-form>
+  <verify-email-form verify-email="verifyEmail()" verifyemail-cb="verifyemailCb"></verify-email-form>
+</div>

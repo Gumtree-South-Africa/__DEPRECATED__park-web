@@ -1,0 +1,20 @@
+div
+  //- Social links
+  ul
+    each social in socials
+      li #[a(href=social.link)=social.name]
+
+  div(itemscope itemtype="http://schema.org/Organization")
+    div(itemprop="contactPoint" itemscope itemtype="http://schema.org/ContactPoint")
+      span(itemprop="email") #[a(href="mailto:support@vivanuncios.us") support@vivanuncios.us ]
+      span(itemprop="contactType")
+
+    div(itemprop="brand" itemscope itemtype="http://schema.org/Brand")
+      span(itemprop="logo")
+        img(src="/images/logo-viva.png" width="200" height="200" alt="Logo Vivanuncios US")
+      span(itemprop="name") Viva
+
+    div(itemprop="sponsor" itemscope itemtype="http://schema.org/Organization")
+      span(itemprop="name") Ebay
+      span(itemprop="logo")
+        img(src="/images/ebay_logo.png" width="200" height="200" alt="Logo Ebay sponsor")

@@ -1,0 +1,11 @@
+<nav ng-class="{headerChangeBackground:isScrolled, header_notHome_bg:homeRoot.current.name != &quot;homeLocation&quot;}" class="navbar top-header search-bar-container" id="nav-bar-modal" ng-if="shouldVisible">
+	<div class="container-top-header">
+		<div class="back-container-button">
+			<button class="back" ui-sref="negotiationsList()"></button>
+		</div>
+		<h1>Negociación</h1>
+		<div class="container-actions">
+			<button ng-click="cancelNegotiation()" ng-if="shouldShowCancelAction">Cancelar negociación</button>
+		</div>
+	</div>
+</nav>

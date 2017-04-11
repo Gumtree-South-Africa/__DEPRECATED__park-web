@@ -1,0 +1,19 @@
+<svg id="icon_notification.svg" xmlns="http://www.w3.org/2000/svg" width="26" height="26.81" viewBox="0 0 26 26.81">
+  <defs>
+    <style>
+      .cls-1, .cls-2 {
+        fill-rule: evenodd;
+      }
+
+      .cls-1 {
+        opacity: 0.1;
+      }
+
+      .cls-2 {
+        fill: #fff;
+      }
+    </style>
+  </defs>
+  <path id="shadow" class="cls-1" d="M830.843,2707.01h-9.162l-5.665,5.81v-5.9H816.2a6.151,6.151,0,0,1-5.2-6.06v-6.71a6.159,6.159,0,0,1,6.155-6.16h13.693a6.158,6.158,0,0,1,6.154,6.16v6.71A6.15,6.15,0,0,1,830.843,2707.01Z" transform="translate(-811 -2686)"/>
+  <path id="chat_icon" data-name="chat icon" class="cls-2" d="M830.843,2705.01h-9.162l-5.665,5.81v-5.9H816.2a6.151,6.151,0,0,1-5.2-6.06v-6.71a6.159,6.159,0,0,1,6.155-6.16h13.693a6.158,6.158,0,0,1,6.154,6.16v6.71A6.15,6.15,0,0,1,830.843,2705.01Z" transform="translate(-811 -2686)"/>
+</svg>

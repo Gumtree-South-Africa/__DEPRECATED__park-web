@@ -1,0 +1,29 @@
+@media (min-width: 993px){
+	.search-results-item-list {
+		margin-top: 160px;
+	}
+	.loading-container {
+		margin-top: 160px;
+	}
+	.pseudo-spinner {
+		.loading-container {
+			margin-top: -50px;
+		}
+}
+
+}
+
+@media (min-width: 769px) and (max-width: 992px) {
+	.search-results-item-list {
+		margin-top: 190px;
+	}
+	.loading-container {
+		margin-top: 190px;
+	}
+}
+
+// @media (max-width: 768px) {
+//   .search-results-item-list {
+//     margin-top: 160px;
+//   }
+// }

@@ -1,0 +1,208 @@
+@media (min-width: 993px) and (max-width: 1260px) {
+  .items-list.search-results-item-list {
+    margin-top: 160px;
+  }
+  .items-list {
+    margin: 2.4vw -1.19vw 4vw 0;
+    .item-list-container {
+      width: calc(20% - 1.19vw);
+      margin: 0 1.19vw 2.38vw 0;
+      .list-product-image-container {
+        .list-fav-me-container{
+          width: 3.17vw;
+          height: 6.66vw;
+          top: -2.3vw;
+          left: -0.4vw;
+        }
+        .list-fav-me{
+          bottom: 0.79vw;
+          right: -2.539vw;
+          width: 4.762vw;
+          height: 4.762vw;
+        }
+        .list-flag-container {
+          width: 1.59vw;
+          height: 9.52vw;
+          top: -2.14vw;
+          left: 2.06vw;
+          .list-flag {
+            bottom: 1.27vw;
+            right: -3.17vw;
+            width: 6.5vw;
+            height: 6.5vw;
+          }
+        }
+      }
+      .list-product-info-container {
+        padding: 0.474vw 0.873vw 0.635vw 0.952vw;
+        .list-price-section {
+          .list-product-price {
+            font-size: 1.43vw;
+          }
+          .list-favs-share {
+            .list-product-favs {
+              margin-right: 0.63vw;
+              font-size: 1.19vw;
+              .list-fav-icon {
+                width: 1.11vw;
+                height: 1.11vw;
+                margin-right: 0.24vw;
+                margin-bottom: 0.079vw;
+              }
+            }
+            .list-product-share {
+    			    width: 1.19vw;
+    			  	height: 1.19vw;
+              margin-bottom: 0.16vw;
+            }
+          }
+        }
+        .list-name-section {
+          .list-item-name {
+    				font-size: 1.27vw;
+            margin-left: -0.079vw;
+          }
+        }
+      }
+    }
+  }
+}
+@media (min-width: 769px) and (max-width: 992px) {
+  .items-list.search-results-item-list {
+    margin-top: 190px;
+  }
+  .items-list {
+    margin: 3.2vw -1.51vw 4vw 0;
+    .item-list-container {
+      width: calc(25% - 1.51vw);
+      margin: 0 1.51vw 3vw 0;
+      .list-product-image-container {
+        .list-fav-me-container{
+          width: 4.03vw;
+          height: 8.46vw;
+          top: -2.92vw;
+          left: -0.5vw;
+        }
+        .list-fav-me{
+          width: 6.048vw;
+          height: 6.048vw;
+          bottom: 1.1vw;
+          right: -3.22vw;
+        }
+        .list-flag-container {
+          width: 2.01vw;
+          height: 12.1vw;
+          top: -2.72vw;
+          left: 2.62vw;
+          .list-flag {
+            width: 8.26vw;
+            height: 8.26vw;
+            bottom: 1.61vw;
+            right: -4.03vw;
+          }
+        }
+      }
+      .list-product-info-container {
+        padding: 0.605vw 1.11vw 0.806vw 1.21vw;
+        .list-price-section {
+          .list-product-price {
+            font-size: 1.81vw;
+          }
+          .list-favs-share {
+            .list-product-favs {
+              margin-right: 0.8vw;
+              font-size: 1.51vw;
+              .list-fav-icon {
+                width: 1.41vw;
+                height: 1.41vw;
+                margin-right: 0.3vw;
+                margin-bottom: 0.1vw;
+              }
+            }
+            .list-product-share {
+    			    width: 1.51vw;
+    			  	height: 1.51vw;
+              margin-bottom: 0.2vw;
+            }
+          }
+        }
+        .list-name-section {
+          .list-item-name {
+    				font-size: 1.613vw;
+            margin-left: -0.1vw;
+          }
+        }
+      }
+    }
+  }
+}
+@media (max-width: 768px) {
+  .items-list {
+    margin: 4vw 0 4vw 2.4vw;
+    .item-list-container {
+      width: calc(50% - 2.4vw);
+      margin: 0 2.4vw 2.8vw 0;
+      border-radius: 2vw;
+      .list-product-image-container {
+        .list-fav-me-container{
+          width: 9.2vw;
+          height: 19.4vw;
+          top: -6.2vw;
+          left: -1.2vw;
+        }
+        .list-fav-me{
+          width: 13.6vw;
+          height: 13.8vw;
+          right: -6.7vw;
+          bottom: 2.8vw;
+        }
+        .list-flag-container {
+          width: 4.8vw;
+          height: 28.4vw;
+          top: -6.2vw;
+          left: 5.6vw;
+          .list-flag {
+            width: 19.6vw;
+            height: 19.6vw;
+            bottom: 4.5vw;
+            right: -9.4vw;
+          }
+        }
+      }
+      .list-product-info-container {
+        padding: 1.8vw 2.2vw 1.8vw 3vw;
+        .list-price-section {
+          .list-product-price {
+            font-size: 3.5vw;
+          }
+          .list-favs-share {
+            .list-product-favs {
+              margin-right: 2.8vw;
+              font-size: 3vw;
+              .list-fav-icon {
+                width: 3.4vw;
+                height: 3.4vw;
+                margin-right: 0.4vw;
+                margin-bottom: 0;
+              }
+            }
+            .list-product-share {
+              // width: 3.1vw;
+              // height: 3.1vw;
+              width: 20px;
+              height: 20px;
+              margin-bottom: 0.4vw;
+            }
+          }
+        }
+        .list-name-section {
+          .list-item-name {
+            font-size: 3.3vw;
+            margin-top: 0.8vw;
+            margin-left: -0.6vw;
+          }
+        }
+      }
+    }
+  }
+}

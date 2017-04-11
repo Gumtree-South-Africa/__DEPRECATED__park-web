@@ -1,0 +1,19 @@
+extends layout
+
+block bodyContent
+
+  h1=data.metaH1
+
+  ul(itemscope='', itemtype='http://schema.org/ItemList')
+    each category in data.categories
+      if category.selectable
+        li(itemprop='itemListElement')
+          a(href=category.url, itemprop='url')=category.name
+
+  ul(itemscope='', itemtype='http://schema.org/ItemList')
+    each item in data.items
+      li(itemprop='itemListElement', itemscope='', itemtype='http://schema.org/Product')
+        a(href=item.url, itemprop='url')
+          img(src=item.pictureUrl, alt=item.description, itemprop='image')
+        p='$'+item.price
+        p(itemprop='name')=item.name

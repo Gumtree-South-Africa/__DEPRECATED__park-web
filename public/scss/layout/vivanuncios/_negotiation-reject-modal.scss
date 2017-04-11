@@ -1,0 +1,35 @@
+.modal-reject-offer-negotiation {
+
+  .modal-body {
+    input {
+      font-size: 20px;
+      height: 40px;
+    }
+  }
+
+
+  .top-border.modal-footer.top-border {
+    border-top: 1px solid #eeeeee;
+    margin-left: 15px;
+    margin-right: 15px;
+    margin-top: 20px;
+    padding-left: 0;
+    padding-right: 0;
+
+    @media (max-width:768px){
+      margin-right: 3vw;
+      margin-left: 3vw;
+      margin-top: 4vh;
+      padding-top: 3vh;
+    }
+  }
+
+  button:first-child {
+    margin-left: 0;
+  }
+
+  button:last-child {
+    margin-right: 0;
+  }
+
+}

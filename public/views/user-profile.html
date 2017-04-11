@@ -1,0 +1,117 @@
+<spinner loading="loadingProfile"></spinner>
+ <div ng-if="!loadingProfile && !pageTypeError" class="container content item item-detail-view user-profile-view">
+  <div class="reverse">
+    <div class="listed-items center-block">
+      <div class="ad-container container-user" ng-class="{'user-logged': isUserLogged}">
+        <div class="container item-info-container">
+          <div class="user-personal-info col-md-12 col-sm-12 col-xs-12">
+            <div class="col-md-2 col-sm-2 col-xs-4 user-image">
+              <div ng-if="user.profilePicture" style="background-image: url('{{ user.profilePicture }}')" class="center-cropped">
+<!--                <div class="avatar-mask"></div>-->
+              </div>
+              <div ng-if="!user.profilePicture" class="avatar"></div>
+            </div>
+            <div class="col-md-6 col-sm-7 col-xs-7 user-name"><a class="title">{{ user.username }}</a><span ng-click="openShareModal('modal-share-profile.html', 'user', user)" ng-hide="!runningOnMobile" class="user-share"></span>
+              <p class="user-location">
+                <span class="map-marker"></span>
+                {{ user.locationName }}
+              </p>
+              <p class="user-published">{{ user.itemsPublishedCount }} anuncios publicados</p>
+              <p class="date">Usuario desde {{ $formatDate(user.creationDate) }}</p>
+            </div>
+          </div>
+          <div class="user-follow-button col-md-12 col-sm-12 col-xs-12">
+            <button ng-if="!isFollowed(user)" ng-hide="isLoggedUser(user.username)" ng-click="toggleFollowUser(user.username, user.followedByUser, cb)" class="btn btn-follow pull-right">SEGUIR</button>
+            <button ng-if="isFollowed(user)" ng-hide="isLoggedUser(user.username)" ng-click="toggleFollowUser(user.username, user.followedByUser, cb)" class="btn btn-unfollow pull-right">SIGUIENDO</button>
+            <span ng-click="openShareModal('modal-share-profile.html', 'user', user)" ng-hide="runningOnMobile" class="user-share pull-right"></span>
+          </div>
+        </div>
+        <div class="container item-info-container">
+          <div class="user-social-info col-md-12 col-xs-12">
+            <div class="no-padding social-follow-rates col-md-6 col-sm-6 col-xs-12">
+              <div class="social-icons col-md-4 col-sm-4 col-xs-4">
+                <span ng-class="{checked: hasSocial('facebook') }" class="facebook-icon"></span>
+                <span ng-class="{checked: hasSocial('twitter') }" class="twitter-icon"></span>
+                <span ng-class="{checked: user.verified }" class="email-icon"></span>
+              </div>
+              <div class="following-numbers col-md-4 col-sm-4 col-xs-4">
+                <div class="following col-md-6 col-xs-6" ng-click="tabModalFollowersFollowings.active = 'followings'" data-toggle="modal" data-target="#modal-followers-followings">
+                  <p class="number">{{ followings.length > 0 ? followings.length : user.following }}</p>
+                  <p>siguiendo</p>
+                </div>
+                <div class="followers col-md-6 col-xs-6" ng-click="tabModalFollowersFollowings.active = 'followers'" data-toggle="modal" data-target="#modal-followers-followings">
+                  <p class="number">{{ followers.length > 0 ? followers.length : user.followers }}</p>
+                  <p>seguidores</p>
+                </div>
+              </div>
+              <div class="ratings col-lg-3 col-md-4 col-sm-4 col-xs-4">
+                <p class="numbers">
+                  <span class="positive">{{ user.positiveRatings }}</span>
+                  <span class="neutral">{{ user.neutralRatings }}</span>
+                  <span class="negative">{{ user.negativeRatings }}</span>
+                </p>
+                <p>calificaciones</p>
+              </div>
+            </div>
+            <div ng-hide="runningOnMobile" class="no-padding promo-btns col-md-4 col-sm-12 col-xs-12">
+              <div class="promo">
+                <p>Contáctate descargando la app de Viva</p>
+                <a target="_blank" href="https://itunes.apple.com/us/app/vivanuncios-clasificados-estados/id962230049?mt=8" class="app-store"></a>
+                <a target="_blank" href="https://play.google.com/store/apps/details?id=com.ebay.park&amp;hl=es_419" class="play-store"></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<spinner loading="loadingItems"></spinner>
+<div ng-if="!loadingProfile && !loadingItems && !pageTypeError" class="container">
+  <div ng-if="items.length > 0">
+    <div class="items-list">
+      <div ng-repeat="item in items" class="item-list-container">
+        <div class="list-product-image-container">
+          <div class="list-flag-container">
+            <div ng-class="item.status" class="list-flag"></div>
+          </div>
+          <div ng-click="likeToggle(item)" class="list-fav-me-container">
+            <div ng-class="{liked: item.followedByUser}" class="list-fav-me"></div>
+          </div>
+          <a style="background-image: url('{{ item.pictureUrl}}')" target="_blank" ng-href="{{item.vivaUrl}}" class="list-product-image"></a>
+        </div>
+        <div class="list-product-info-container">
+          <div class="list-price-section">
+            <div class="list-product-price">{{ item.price | vivaCurrency }}</div>
+            <div class="list-favs-share">
+              <div ng-if="item.totalOfFollowers &gt; 0" class="list-product-favs">
+                <div class="list-fav-icon"></div> {{item.totalOfFollowers}}
+              </div>
+              <a ng-click="openShareModal('modal-share-item.html','item', item)" class="list-product-share"></a>
+            </div>
+          </div>
+          <div class="list-name-section">
+            <div class="list-item-name">{{item.name}} </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="load-more">
+      <div ng-show="hasMore" class="text-center">
+        <button ng-click="loadItems()" class="btn btn-load-more all">
+          <span class="icon-plus"></span>
+          Ver más
+        </button>
+      </div>
+    </div>
+  </div>
+  <div ng-if="items.length == 0" class="error-messages">
+    <div class="titles text-center">
+      <h3>¡Que pena!</h3>
+      <p>No hay ítems publicados para mostrar en este momento.</p>
+    </div>
+  </div>
+</div>
+<div ng-include="" src="'views/partials/404-page.html'" ng-if="!loadingProfile && !loadingItems && pageTypeError"></div>
+<rate-info user-promise="userPromise"></rate-info>
+<modal-followers-followings user-info="user" followers="followers" followings="followings" retrive-followers="followersPromise()" retrive-followings="followingsPromise()" tab-active="tabModalFollowersFollowings"></modal-followers-followings>

@@ -1,0 +1,24 @@
+<svg id="icon_notification_dot.svg" xmlns="http://www.w3.org/2000/svg" width="29" height="29.81" viewBox="0 0 29 29.81">
+  <defs>
+    <style>
+      .cls-1, .cls-2 {
+        fill-rule: evenodd;
+      }
+
+      .cls-1 {
+        opacity: 0.1;
+      }
+
+      .cls-2 {
+        fill: #fff;
+      }
+
+      .cls-3 {
+        fill: #ff5531;
+      }
+    </style>
+  </defs>
+  <path id="chat_icon_copy" data-name="chat icon copy" class="cls-1" d="M830,2689.5a5.5,5.5,0,0,0,5.5,5.5,5.681,5.681,0,0,0,1.5-.23v6.09a6.15,6.15,0,0,1-6.154,6.15h-9.162l-5.665,5.81v-5.9H816.2a6.151,6.151,0,0,1-5.2-6.06v-6.71a6.159,6.159,0,0,1,6.155-6.16h13.085A5.489,5.489,0,0,0,830,2689.5Z" transform="translate(-811 -2683)"/>
+  <path id="chat_icon" data-name="chat icon" class="cls-2" d="M830,2687.5a5.5,5.5,0,0,0,5.5,5.5,5.681,5.681,0,0,0,1.5-.23v6.09a6.15,6.15,0,0,1-6.154,6.15h-9.162l-5.665,5.81v-5.9H816.2a6.151,6.151,0,0,1-5.2-6.06v-6.71a6.159,6.159,0,0,1,6.155-6.16h13.085A5.489,5.489,0,0,0,830,2687.5Z" transform="translate(-811 -2683)"/>
+  <circle id="red_dot.svg" class="cls-3" cx="24.5" cy="4.5" r="4.5"/>
+</svg>

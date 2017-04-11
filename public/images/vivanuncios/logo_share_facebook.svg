@@ -1,0 +1,22 @@
+<svg id="logo_share_facebook.svg" xmlns="http://www.w3.org/2000/svg" width="90" height="90" viewBox="0 0 90 90">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: red;
+        fill-opacity: 0;
+      }
+
+      .cls-2 {
+        fill: #3b5998;
+      }
+
+      .cls-3 {
+        fill: #fff;
+        fill-rule: evenodd;
+      }
+    </style>
+  </defs>
+  <rect id="AREA_copy_5" data-name="AREA copy 5" class="cls-1" width="90" height="90"/>
+  <rect id="bn_bg" data-name="bn bg" class="cls-2" x="5" y="5" width="80" height="80" rx="10" ry="10"/>
+  <path id="Facebook_F" data-name="Facebook F" class="cls-3" d="M673.02,613.992V592.975h-6.026v-8h6.026v-6.615c0-6.683,3.683-11.387,11.577-11.387l5.386,0.007v8.05h-3.512a4.292,4.292,0,0,0-4.492,4.447v5.506h7.941l-1.758,7.989h-6.183v21.017H673.02Z" transform="translate(-635 -546)"/>
+</svg>

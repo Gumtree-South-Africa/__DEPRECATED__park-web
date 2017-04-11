@@ -1,0 +1,33 @@
+<svg id="logo_share_facebook_over.svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="91" height="91" viewBox="0 0 91 91">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: red;
+        fill-opacity: 0;
+      }
+
+      .cls-2 {
+        fill: #3b5998;
+        filter: url(#filter);
+      }
+
+      .cls-2, .cls-3 {
+        fill-rule: evenodd;
+      }
+
+      .cls-3 {
+        fill: #fff;
+      }
+    </style>
+    <filter id="filter" x="635" y="546" width="91" height="91" filterUnits="userSpaceOnUse">
+      <feOffset result="offset" in="SourceAlpha"/>
+      <feGaussianBlur result="blur" stdDeviation="2.449"/>
+      <feFlood result="flood" flood-opacity="0.3"/>
+      <feComposite result="composite" operator="in" in2="blur"/>
+      <feBlend result="blend" in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <rect id="AREA_copy_3" data-name="AREA copy 3" class="cls-1" width="90" height="90"/>
+  <path id="bn_bg" data-name="bn bg" class="cls-2" d="M650,551h60a10,10,0,0,1,10,10v60a10,10,0,0,1-10,10H650a10,10,0,0,1-10-10V561A10,10,0,0,1,650,551Zm27.25,37.5a1,1,0,1,1-1,1A1,1,0,0,1,677.25,588.5Z" transform="translate(-635 -546)"/>
+  <path id="Facebook_F" data-name="Facebook F" class="cls-3" d="M673.02,613.992V592.976h-6.026v-8h6.026v-6.615c0-6.683,3.683-11.387,11.577-11.387l5.386,0.007v8.05h-3.512a4.292,4.292,0,0,0-4.492,4.447v5.506h7.941l-1.758,7.99h-6.183v21.016H673.02Z" transform="translate(-635 -546)"/>
+</svg>

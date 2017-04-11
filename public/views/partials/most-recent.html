@@ -1,0 +1,33 @@
+
+<div ng-if="!theresHomeItems() &amp;&amp; !loading" class="row">
+  <div ng-controller="NoResultsController">
+    <div ng-include="" src="'views/partials/no-results-location.html'"></div>
+  </div>
+</div>
+<div ng-if="theresHomeItems()" class="row">
+  <div class="distance-indicator text-center">
+    <button class="floating-indicator"><i class="glyphicon glyphicon-map-marker"></i> a {{ distance }} ml de ti</button>
+  </div>
+  <div ng-repeat="item in proximityList">
+    <!--Title and image container-->
+    <div class="ad-container col-md-15 col-xs-15">
+      <div class="product-image-container">
+        <div class="fav-me-container">
+          <div class="fav-me"></div>
+        </div><a ui-sref="item({itemId: item.id})">
+          <div afkl-lazy-image="{{item.pictureUrl}}" class="afkl-lazy-wrapper afkl-img-ratio-1-1"></div></a>
+      </div>
+      <div class="product-info-container">
+        <div class="price-section"><span class="col-md-7 col-xs-7 product-price">{{ item.price | vivaCurrency }}</span><span class="col-md-3 col-xs-3 product-faves"><i class="glyphicon glyphicon-heart"></i> {{item.totalOfFollowers}}</span><span class="col-md-2 col-xs-2 product-share"></span></div>
+        <div class="name-section">
+          <h4 class="item-name">{{item.name}}          </h4>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div ng-if="hasMore" ng-click="getHomeItemsPaged()" class="row">
+    <div class="col-md-12 text-center">
+      <button class="btn btn-load-more"> <i class="glyphicon glyphicon-plus"></i> Cargar más items</button>
+    </div>
+  </div>
+</div>

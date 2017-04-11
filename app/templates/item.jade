@@ -1,0 +1,15 @@
+doctype html
+html(lang="en")
+  head
+    title #{name} $ #{price}
+    meta(name='description', content=description)
+    // Place for add facebooks tags
+    meta(property='og:type', content='website')
+    meta(property='og:title', content='#{name} $ #{price}')
+    meta(property='og:description', content=description)
+    meta(property='og:image', content=pictures[0])
+    //meta(property='og:caption', content='#{facebook - share.caption}')
+  body
+    h1=name
+    p=description
+    img(src=pictures[0])

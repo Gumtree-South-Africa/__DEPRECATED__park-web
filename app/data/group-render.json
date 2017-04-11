@@ -1,0 +1,67 @@
+{
+  "data": {
+    "id": 1147,
+    "name": "Tutifruti",
+    "pictureUrl": "http://i.ebayimg.com/00/s/MTA0MFg3ODA=/z/xesAAOSwGIRXYrnp/$_1.JPG?set_id=8800005007",
+    "totalSubscribers": 5,
+    "totalItems": 3,
+    "locationName": "Houston, TX",
+    "location": "29.77,-95.37",
+    "zipCode": "77001",
+    "owner": {
+      "id": 2044,
+      "username": "aria",
+      "profilePicture": null,
+      "locationName": "Houston, TX"
+    },
+    "description": "En Tutifruti venden 5 personas en Houston, TX | Vivanuncios",
+    "subscribers": [
+      {
+        "userId": 729,
+        "username": "barney",
+        "picture": null
+      },
+      {
+        "userId": 2076,
+        "username": "CaC",
+        "picture": "http://i.ebayimg.com/00/s/NjAwWDQ2Mw==/z/kDAAAOSwNuxXZ~AD/$_1.JPG?set_id=8800005007"
+      },
+      {
+        "userId": 2161,
+        "username": "alfoviva21",
+        "picture": "http://i.ebayimg.com/00/s/MjQwWDMyMA==/z/sMoAAOSw-4BXbAdf/$_1.JPG?set_id=8800005007"
+      },
+      {
+        "userId": 2203,
+        "username": "jojo124",
+        "picture": "http://i.ebayimg.sandbox.ebay.com/00/s/NjAwWDMzOA==/z/R64AAOSwAsNXf71B/$_1.JPG?set_id=8800005007"
+      },
+      {
+        "userId": 2044,
+        "username": "aria",
+        "picture": null
+      }
+    ],
+    "url": "http://qa-web.newapptest.com/gr/tutifruti/1147"
+  },
+  "seo": {
+    "title": "Tutifruti | Grupo de Ventas en Vivanuncios Houston, TX",
+    "canonical": "https://www.vivanuncios.us/gr/tutifruti/1147",
+    "description": "En Tutifruti venden 5 personas en Houston, TX | Vivanuncios",
+    "robots": "index, follow"
+  },
+  "facebook": {
+    "url": "https://www.vivanuncios.us/gr/tutifruti/1147",
+    "type": "website",
+    "title": "Tutifruti | Grupo de Ventas en Vivanuncios Houston, TX",
+    "description": "En Tutifruti venden 5 personas en Houston, TX | Vivanuncios",
+    "image": "http://i.ebayimg.com/00/s/MTA0MFg3ODA=/z/xesAAOSwGIRXYrnp/$_1.JPG?set_id=8800005007"
+  },
+  "twitter": {
+    "card": "summary",
+    "account": "@VivanunciosUSA",
+    "title": "Tutifruti | Grupo de Ventas en Vivanuncios Houston, TX",
+    "description": "En Tutifruti venden 5 personas en Houston, TX | Vivanuncios",
+    "image": "http://i.ebayimg.com/00/s/MTA0MFg3ODA=/z/xesAAOSwGIRXYrnp/$_1.JPG?set_id=8800005007"
+  }
+}

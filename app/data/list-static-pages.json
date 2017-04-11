@@ -1,0 +1,20 @@
+{
+	"statics" : [
+		{
+			"name": "Declaración Legal",
+			"canonical": "legalDisclosures"
+		},
+		{
+			"name": "Reglas de la Comunidad",
+			"canonical": "communityRules"
+		},
+		{
+			"name": "Sobre Vivanuncios",
+			"canonical": "about"
+		},
+		{
+			"name": "Contáctanos",
+			"canonical": "support"
+		}
+	]
+}

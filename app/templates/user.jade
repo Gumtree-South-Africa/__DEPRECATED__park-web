@@ -1,0 +1,20 @@
+extends layout
+
+block bodyContent
+
+  h1 Me gusta el perfil de #{data.username} en Vivanuncios, La App de Clasificados para Hispanos!
+  p(itemprop='name')=data.username
+  p(itemprop='description') Bájala y gana dinero vendiendo eso que no usas!
+  div(itemscope='', itemtype='http://schema.org/Person')
+    p(itemprop='homeLocation')=data.locationName
+    img(itemprop='image', src=data.profilePicture, alt=data.username)
+
+    div(itemscope='', itemtype='http://schema.org/ItemList')
+      h2 Items del usuario
+      each item in data.items
+        div(itemprop='itemListElement', itemscope='', itemtype='http://schema.org/Product')
+          a(href=item.vipUrl, itemprop='url')
+            img(src=item.pictureUrl, alt=item.description, itemprop='image')
+          p='$'+item.price
+          p(itemprop='name')=item.name
+

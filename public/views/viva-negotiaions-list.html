@@ -1,0 +1,34 @@
+
+<div class="viva-negotiation-list container">
+  <h1>Ofertas</h1>
+  <div class="container-offers">
+    <ul id="tabs-negotiation-offers" role="tablist" class="nav nav-tabs nav-justified">
+      <li id="seller-tab" role="presentation" class="active">
+        <button ng-click="showTab('seller')"><span ng-if="offersSeller.countOffersSeller &gt; 0" class="new-offers"></span> <span>Ofertas de venta</span> ({{offersSeller.countOffersSeller}})</button>
+      </li>
+      <li id="buyer-tab" role="presentation">
+        <button ng-click="showTab('buyer')"><span ng-if="offersBuyer.countOffersBuyer &gt; 0" class="new-offers"></span> <span>Ofertas de Compra</span> ({{offersBuyer.countOffersBuyer}})</button>
+      </li>
+    </ul>
+    <div class="tab-content">
+      <div id="seller" role="tabpanel" ng-class="{'no-items':offersSeller.offersSellerArray.length === 0}" infinite-scroll="getMoreConversationsSeller()" infinite-scroll-distance="0" infinite-scroll-disabled="scrollOptions.seller" class="tab-pane active">
+        <div ng-if="offersSeller.offersSellerArray.length &gt; 0" ng-repeat="offer in offersSeller.offersSellerArray">
+          <viva-negotiation-item offer="offer"></viva-negotiation-item>
+        </div>
+        <div ng-if="offersSeller.offersSellerArray.length === 0" class="message-no-items">
+          <p>Aún no has recibido ofertas de venta</p>
+          <p>Publica nuevos anuncios para comenzar a vender y ganar dinero</p>
+        </div>
+      </div>
+      <div id="buyer" role="tabpanel" ng-class="{'no-items': offersBuyer.offersBuyerArray.length === 0}" infinite-scroll="getMoreConversationsBuyer()" infinite-scroll-distance="0" infinite-scroll-disabled="scrollOptions.buyer" class="tab-pane">
+        <div ng-if="offersBuyer.offersBuyerArray.length &gt; 0" ng-repeat="offer in offersBuyer.offersBuyerArray">
+          <viva-negotiation-item offer="offer"></viva-negotiation-item>
+        </div>
+        <div ng-if="offersBuyer.offersBuyerArray.length === 0" class="message-no-items">
+          <p>Aún no has realizado ofertas de compra</p>
+          <p>Encuentra entre los miles de anuncios disponibles en Viva lo que estás buscando</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

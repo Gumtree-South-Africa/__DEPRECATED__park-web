@@ -1,0 +1,162 @@
+<div id="login-form" class="modal full-screen-modal">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <div type="button" data-dismiss="modal" aria-hidden="true" ng-hide="loginFormDisplayed || registrationFormDisplayed" class="back-button-overlay">
+        	<div ng-hide="loginFormDisplayed || registrationFormDisplayed" class="back"></div>
+        </div>
+      </div>
+      <div class="modal-body">
+        <div class="panel panel-default">
+          <div ng-if="$parent.$parent.displayTitleMessage" ng-hide="!runningOnMobile() || headerFormDisplayed" class="title">Bienvenido</div>
+          <div ng-if="!$parent.$parent.displayTitleMessage" ng-hide="!runningOnMobile() || headerFormDisplayed" class="title">Por favor ingresa para continuar</div>
+          <div ng-hide="recoverPasswordFormDisplayed" class="modal-header">
+            <div ng-show="(loginFormDisplayed || registrationFormDisplayed) && runningOnMobile()" ng-click="backToMainMenu()" class="back-button-overlay">
+            	<div ng-show="(loginFormDisplayed || registrationFormDisplayed) && runningOnMobile()" class="back"></div>
+            </div>
+          </div>
+          <div ng-show="loginFormDisplayed && runningOnMobile()" class="title">Ingresa con tu e-mail</div>
+          <div ng-show="registrationFormDisplayed && runningOnMobile()" class="title">Registración</div>
+          <div ng-show="recoverPasswordFormDisplayed" class="title">Restablecer contraseña</div>
+          <div class="panel-body">
+            <form role="form" ng-show="!headerFormDisplayed" class="col-md-12 form-horizontal">
+              <div class="need-login-title-container" ng-hide="runningOnMobile()" >
+                <div class="need-login-title " ng-if="!$parent.$parent.displayTitleMessage">
+                  Por favor ingresa para continuar
+                </div>
+              </div>
+
+              <div class="panel-heading col-md-12 col-sm-12" ng-if="$parent.$parent.displayTitleMessage">
+                <h1 ng-hide="runningOnMobile()">¡Bienvenido!</h1>
+              </div>
+
+              <div class="form-group">
+              	<label class="login-label">Conéctate fácil y rápido</label>
+                <button type="button" ng-click="submitFacebook()" class="btn btn-block btn-social btn-facebook">
+                  <span class="facebook-logo"></span>
+                  <p>Ingresa con Facebook</p>
+                </button>
+              </div>
+
+              <div class="form-group" style="margin-top: 40px">
+              	<div class="row">
+              		<div class="col-sm-12">
+	              	<label class="login-label">o usa tu e-mail</label>
+	              </div>
+              	</div>
+	              <div class="btn-group-login">
+
+	              	<div class="btn-group">
+	              		<button ng-click="showLoginForm()" class="btn btn-register">Ingresa</button>
+	              	</div>
+	              	<div class="btn-group">
+		              	<button type="button" ng-click="showEmailRegistration()" class="btn btn-register">Regístrate</button>
+	              	</div>
+	              </div>
+              </div>
+
+            </form>
+            <form ng-submit="loginEmail()" role="form" ng-show="loginFormDisplayed" class="col-md-12 form-horizontal login-form">
+              <div ng-hide="runningOnMobile()" class="panel-heading col-md-12 col-sm-12">
+                <span ng-click="backToMainMenu()" class="arrow_icon_left"></span>
+                <p class="login-link">Ingresa con tu e-mail</p>
+              </div>
+              <div class="form-group">
+                <input type="text" placeholder="Ingresa tu e-mail" name="usernameLogin" ng-model="username" ng-keyup="validateUsername()" ng-model-options="{ updateOn: 'default blur' }" class="modal-form-input" />
+                <div class="error-wrapper">
+                  <span ng-show="!validUsername" class="inline-error">Debes introducir el nombre de usuario o un e-mail válido</span>
+                </div>
+              </div>
+              <div class="form-group">
+                <input type="password" placeholder="Ingresa tu contraseña" name="passwordLogin" ng-model="password" ng-keyup="validateUsername()" class="modal-form-input" />
+              </div>
+              <div class="form-group has-error">
+                <span class="help-block">{{error}}</span>
+              </div>
+              <button type="submit" ng-disabled="!(username!==''&&password!=='')" class="btn btn-confirm">Ingresar</button>
+              <a ng-click="showRecoverPasswordForm()" class="forgot-password">¿Recuperar contraseña?</a>
+            </form>
+            <form ng-submit="signupSubmit()" role="form" ng-show="registrationFormDisplayed" name="registrationForm" novalidate="novalidate" class="col-md-12 form-horizontal login-form" autocomplete="off">
+              <div ng-hide="runningOnMobile()" class="panel-heading col-md-12 col-sm-12">
+                <span ng-click="backToMainMenu()" class="arrow_icon_left"></span>
+                <p class="login-link">Registración</p>
+              </div>
+              <div class="form-group">
+                <input type="text"  placeholder="Elige tu nombre de usuario" ng-model="user.username" ng-minlength="minUsernameLength" ng-pattern="/^[A-Za-z0-9]+$/" maxlength="15" name="userRegistration" required="required" class="modal-form-input"  autocomplete="nope" />
+                <div class="error-wrapper">
+                  <span ng-show="registrationForm.userRegistration.$pristine || registrationForm.userRegistration.$viewValue.length === 0 || registrationForm.userRegistration.$valid" class="input-register-message">No será posible modificarlo más adelante</span>
+                  <span ng-show="registrationForm.userRegistration.$error.minlength" class="inline-error">El nombre de usuario debe tener entre 5 y 15 caracteres</span>
+                  <span ng-show="registrationForm.userRegistration.$error.pattern" class="inline-error">El nombre de usuario solo puede contener números y letras</span></div>
+              </div>
+              <div class="form-group">
+                <input type="password"  placeholder="Elige una contraseña" ng-model="user.password" ng-minlength="minPasswordLength" maxLength="15" required="required" class="modal-form-input" name="passwordRegistration" autocomplete="nope" />
+                <div class="error-wrapper">
+                  <span ng-show="registrationForm.passwordRegistration.$error.minlength" class="inline-error">La contraseña debe tener entre 6 y 15 caracteres</span></div>
+              </div>
+              <div class="form-group">
+                <input type="email" placeholder="Ingresa tu e-mail" ng-model="user.email" name="userEmailRegistration" required="required" class="modal-form-input"  autocomplete="off" />
+                <div class="error-wrapper">
+                  <span ng-show="registrationForm.userEmailRegistration.$pristine || registrationForm.userEmailRegistration.$viewValue.length === 0 || registrationForm.userEmailRegistration.$valid" class="input-register-message">No será posible modificarlo más adelante</span>
+                  <span ng-show="registrationForm.userEmailRegistration.$error.email" class="inline-error">Debes ingresar un e-mail válido</span>
+                </div>
+              </div>
+              <div class="form-group">
+                <div class="location-input">
+                  <input type="text" placeholder="Ingresa tu zip code" ng-model="user.zipCode" name="zipCode" ng-pattern="/^[0-9]+$/" ng-minlength="5" maxlength="5" required="required" class="modal-form-input zip-code" />
+                  <div class="location-wrapper">
+                    <span ng-if="registrationForm.zipCode.$valid && !isLocationEmpty" class="register_location_icon"></span>
+                    <span ng-if="registrationForm.zipCode.$valid && !isLocationEmpty" class="location-suggestion">{{user.locationName}}</span>
+                  </div>
+                </div>
+                <div class="error-wrapper location-error">
+                  <span ng-show="registrationForm.zipCode.$pristine || registrationForm.zipCode.$viewValue.length === 0 || (validZipcode && !isLocationEmpty)" class="input-register-message">Limitado a USA y PR</span>
+                  <span ng-show="registrationForm.zipCode.$error.pattern" class="inline-error">Debe tener sólo dígitos.</span>
+                  <span ng-show="registrationForm.zipCode.$error.minlength" class="inline-error">Debe contener 5 dígitos</span>
+                  <span ng-if="!validZipcode && disableInvalidZipCodeMessage" class="inline-error">Ingrese un zip code válido (USA & PR)</span>
+                </div>
+              </div><span class="api-error">
+              <span class="inline-error">{{apiError.message}}</span>
+              </span>
+              <button type="submit" ng-disabled="registrationForm.$invalid || isLocationEmpty" ng-class="{registerValidBt:!registrationForm.$invalid && !isLocationEmpty}" class="btn btn-user-register">Registrarme</button>
+            </form>
+            <form ng-submit="recoverPasswordSubmit()" role="form" name="recoverPasswordForm" ng-show="recoverPasswordFormDisplayed" novalidate="novalidate" class="col-md-12 form-horizontal login-form">
+              <div ng-hide="recoverPwdSuccess">
+                <div class="modal-confirmation">
+                  <p>Ingresa tu e-mail y te enviaremos un correo con las instrucciones para restablecer tu contraseña</p>
+                </div>
+                <div class="form-group">
+                  <input type="email" placeholder="Ingresa tu e-mail" ng-model="recoverEmail" name="recEmail" required="required" class="modal-form-input" />
+                  <div class="error-wrapper">
+                    <span ng-show="recoverPasswordForm.recEmail.$error.email" class="inline-error">Debes ingresar un e-mail válido</span>
+                  </div>
+                </div>
+                <span class="api-error">
+                  <span class="inline-error">{{recoverPwdError}}</span>
+                </span>
+                <button type="submit" ng-disabled="recoverPasswordForm.$invalid" ng-class="{registerValidBt:!recoverPasswordForm.$invalid}" class="btn btn-user-register">Enviar correo</button>
+              </div>
+              <div ng-show="recoverPwdSuccess" class="modal-confirmation">
+                <h2>¡Correo enviado!</h2>
+                <p>Revisa tu casilla de entrada por un correo con las instrucciones para restablecer tu contraseña.</p>
+                <button type="button" data-dismiss="modal" class="btn btn-ok">Ok</button>
+              </div>
+            </form>
+            <div ng-hide="recoverPasswordFormDisplayed" class="login-footer">
+              <div class="promo">
+                <p>Descarga la App de Vivanuncios gratis</p>
+                <div class="store-links">
+                  <a href="https://play.google.com/store/apps/details?id=com.ebay.park&amp;hl=es_419" class="play-store"></a>
+                  <a href="https://itunes.apple.com/us/app/vivanuncios-clasificados-estados/id962230049?mt=8" class="app-store"></a>
+                </div>
+              </div>
+              <div class="legal-terms">
+                <p>Al registrarse está aceptando los</p>
+                <a ng-click="goToLegalTerms()" href="javascript:void(0)">Términos de uso y Políticas de Privacidad</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

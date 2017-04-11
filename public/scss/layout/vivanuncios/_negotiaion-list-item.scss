@@ -1,0 +1,126 @@
+.viva-negotiation-container-item {
+  position: relative;
+  width: 100%;
+  height: 80px;
+
+  @media (max-width:768px) {
+    height: 20vw;
+  }
+}
+
+.viva-negotiation-sub-container-item {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  align-items: center;
+  background: white;
+  border-bottom: 1px solid #e5e5e5;
+
+  &.item-new-chats {
+  background: #f2fdfd;
+
+    &::after {
+      background: $negotiation_triangle;
+      position: absolute;
+      top: 0;
+      left: 0;
+      content: '';
+      width: 30px;
+      height: 30px;
+
+      @media (max-width:768px) {
+        width: 5vw;
+        height: 5vw;
+      }
+    }
+  }
+
+  &:hover {
+    background: #d9f9f9;
+    cursor: pointer;
+  }
+
+  .user-box {
+    border: 2px solid white;
+    border-radius: 100%;
+    min-width: 65px;
+    height: 65px;
+    box-shadow: 3px 3px 25px 3px #ccc;
+    margin-left: 15px;
+    margin-right: 15px;
+    background: url('../../../images/vivanuncios/avatar_ph_image_4.svg') center center / cover;
+
+    @media (max-width: 768px) {
+      min-width: 12vw;
+      height: 12vw;
+      margin-right: 4vw;
+      margin-left: 3vw;
+      box-shadow: 0px 0px 12px 1px #ccc
+    }
+  }
+
+  .text-red{
+    color: #fd5632;
+  }
+
+  .text-green{
+    color: #84cc03;
+  }
+
+  .info-container {
+    .name-from {
+      color: #30adfe;
+      font-family: 'foundrysterling-mediumregular';
+      font-size: 16px;
+      @media (max-width: 768px) {
+        font-size: 4vw;
+      }
+    }
+
+    .chat-legend {
+      color: #666;
+      font-family: 'foundrysterling-bookregular';
+      font-weight: bold;
+      word-break: break-all;
+      max-width: 800px;
+      @media (max-width: 768px) {
+        font-size: 3.5vw;
+        max-width: 62vw;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        overflow: hidden;
+      }
+    }
+
+    .date-reciever {
+      color: #b0b0b0;
+      font-family: 'foundrysterling-lightregular';
+      @media (max-width: 768px) {
+        font-size: 3vw;
+      }
+    }
+  }
+
+  .image-item-container {
+    display: flex;
+    height: 80px;
+    min-width: 80px;
+    flex-grow: 10;
+    justify-content: flex-end;
+    @media (max-width: 768px) {
+      height: 19vw;
+      min-width: 19vw;
+    }
+
+    img {
+      height: 80px;
+      width: 80px;
+
+      @media (max-width: 768px) {
+        height: 19vw;
+        width: 19vw;
+      }
+    }
+  }
+
+}

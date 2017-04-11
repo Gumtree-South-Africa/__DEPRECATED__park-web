@@ -1,0 +1,4 @@
+--ui bdd
+-r test/helpers/setup
+-G
+-t 5000

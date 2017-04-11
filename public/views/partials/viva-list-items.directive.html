@@ -1,0 +1,52 @@
+<div>
+<div class="container home-items">
+  <div>
+    <div ng-if="items.length === 0 && !vivaLoader">
+      <div class="container container-static static-error-page location-error">
+        <div class="hero-unit justified js-content col-md-12">
+          <div class="static-page-title">
+            <div class="neutral-face"> </div>¡Lo sentimos!
+          </div><br/>
+          <div class="static-page-content">
+            <p>No hemos podido encontrar resultados para tu búsqueda de <b>{{ city }}.</b></p>
+            <p>Prueba con diferentes palabras o expande tu área de búsqueda.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div ng-if="items.length > 0">
+      <!--Title and image container-->
+      <div class="items-list" infinite-scroll="getMoreItems()" infinite-scroll-distance="0" infinite-scroll-disabled="scrollOptions.busy" >
+        <div ng-repeat="item in items" class="item-list-container">
+          <div class="list-product-image-container">
+            <div class="list-flag-container">
+              <div ng-class="item.status" class="list-flag"></div>
+            </div>
+            <div ng-click="likeToggle(item)" class="list-fav-me-container">
+              <div ng-class="{liked: item.followedByUser}" class="list-fav-me"></div>
+            </div>
+            <a style="background-image: url('{{ item.pictureUrl}}')" ng-href="{{item.vivaUrl}}" target="_blank" class="list-product-image"></a>
+          </div>
+          <div class="list-product-info-container">
+            <div class="list-price-section">
+              <div class="list-product-price">{{ item.price | vivaCurrency }}</div>
+              <div class="list-favs-share">
+                <div ng-if="item.totalOfFollowers &gt; 0" class="list-product-favs">
+                  <div class="list-fav-icon"></div> {{item.totalOfFollowers}}
+                </div>
+                <a ng-click="openModal('modal-share-item.html','item', item)" class="list-product-share"></a>
+              </div>
+            </div>
+            <div class="list-name-section">
+              <div class="list-item-name">{{item.name}} </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div ng-class="{'home-spinner': firstCall, 'pseudo-spinner': !firstCall}">
+  <spinner loading="vivaLoader"></spinner>
+</div>
+</div>

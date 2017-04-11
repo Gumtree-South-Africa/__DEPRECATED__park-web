@@ -1,0 +1,117 @@
+
+<div class="directory-section">
+  <div class="row">
+    <div class="col-md-8 col-md-offset-2">
+      <div class="directory-menu">
+        <ul class="nav nav-pills menu-navigation">
+          <li class="active option-directory"><a ui-sref="directory.people">People</a></li>
+          <!--lia(href='/directory-searches') Searches
+          -->
+          <li><a ui-sref="directory.location.all">Location</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="row text-center">
+    <div class="col-md-8 col-md-offset-2">
+      <ul class="list-inline">
+        <li ng-class="{ active: isActiveLocation('/directory/people/A')}"><a ui-sref="directory.people.letter({letter: &quot;A&quot;, page: 1})" class="filter">A</a></li>
+        <li ng-class="{ active: isActiveLocation('/directory/people/B')}"><a ui-sref="directory.people.letter({letter: &quot;B&quot;, page: 1})" class="filter">B</a></li>
+        <li ng-class="{ active: isActiveLocation('/directory/people/C')}"><a ui-sref="directory.people.letter({letter: &quot;C&quot;, page: 1})" class="filter">C</a></li>
+        <li ng-class="{ active: isActiveLocation('/directory/people/D')}"><a ui-sref="directory.people.letter({letter: &quot;D&quot;, page: 1})" class="filter">D</a></li>
+        <li ng-class="{ active: isActiveLocation('/directory/people/E')}"><a ui-sref="directory.people.letter({letter: &quot;E&quot;, page: 1})" class="filter">E</a></li>
+        <li ng-class="{ active: isActiveLocation('/directory/people/F')}"><a ui-sref="directory.people.letter({letter: &quot;F&quot;, page: 1})" class="filter">F</a></li>
+        <li ng-class="{ active: isActiveLocation('/directory/people/G')}"><a ui-sref="directory.people.letter({letter: &quot;G&quot;, page: 1})" class="filter">G</a></li>
+        <li ng-class="{ active: isActiveLocation('/directory/people/H')}"><a ui-sref="directory.people.letter({letter: &quot;H&quot;, page: 1})" class="filter">H</a></li>
+        <li ng-class="{ active: isActiveLocation('/directory/people/I')}"><a ui-sref="directory.people.letter({letter: &quot;I&quot;, page: 1})" class="filter">I</a></li>
+        <li ng-class="{ active: isActiveLocation('/directory/people/J')}"><a ui-sref="directory.people.letter({letter: &quot;J&quot;, page: 1})" class="filter">J</a></li>
+        <li ng-class="{ active: isActiveLocation('/directory/people/K')}"><a ui-sref="directory.people.letter({letter: &quot;K&quot;, page: 1})" class="filter">K</a></li>
+        <li ng-class="{ active: isActiveLocation('/directory/people/L')}"><a ui-sref="directory.people.letter({letter: &quot;L&quot;, page: 1})" class="filter">L</a></li>
+        <li ng-class="{ active: isActiveLocation('/directory/people/M')}"><a ui-sref="directory.people.letter({letter: &quot;M&quot;, page: 1})" class="filter">M</a></li>
+        <li ng-class="{ active: isActiveLocation('/directory/people/N')}"><a ui-sref="directory.people.letter({letter: &quot;N&quot;, page: 1})" class="filter">N</a></li>
+        <li ng-class="{ active: isActiveLocation('/directory/people/O')}"><a ui-sref="directory.people.letter({letter: &quot;O&quot;, page: 1})" class="filter">O</a></li>
+        <li ng-class="{ active: isActiveLocation('/directory/people/P')}"><a ui-sref="directory.people.letter({letter: &quot;P&quot;, page: 1})" class="filter">P</a></li>
+        <li ng-class="{ active: isActiveLocation('/directory/people/Q')}"><a ui-sref="directory.people.letter({letter: &quot;Q&quot;, page: 1})" class="filter">Q</a></li>
+        <li ng-class="{ active: isActiveLocation('/directory/people/R')}"><a ui-sref="directory.people.letter({letter: &quot;R&quot;, page: 1})" class="filter">R</a></li>
+        <li ng-class="{ active: isActiveLocation('/directory/people/S')}"><a ui-sref="directory.people.letter({letter: &quot;S&quot;, page: 1})" class="filter">S</a></li>
+        <li ng-class="{ active: isActiveLocation('/directory/people/T')}"><a ui-sref="directory.people.letter({letter: &quot;T&quot;, page: 1})" class="filter">T</a></li>
+        <li ng-class="{ active: isActiveLocation('/directory/people/U')}"><a ui-sref="directory.people.letter({letter: &quot;U&quot;, page: 1})" class="filter">U</a></li>
+        <li ng-class="{ active: isActiveLocation('/directory/people/V')}"><a ui-sref="directory.people.letter({letter: &quot;V&quot;, page: 1})" class="filter">V</a></li>
+        <li ng-class="{ active: isActiveLocation('/directory/people/W')}"><a ui-sref="directory.people.letter({letter: &quot;W&quot;, page: 1})" class="filter">W</a></li>
+        <li ng-class="{ active: isActiveLocation('/directory/people/X')}"><a ui-sref="directory.people.letter({letter: &quot;X&quot;, page: 1})" class="filter">X</a></li>
+        <li ng-class="{ active: isActiveLocation('/directory/people/Y')}"><a ui-sref="directory.people.letter({letter: &quot;Y&quot;, page: 1})" class="filter">Y</a></li>
+        <li ng-class="{ active: isActiveLocation('/directory/people/Z')}"><a ui-sref="directory.people.letter({letter: &quot;Z&quot;, page: 1})" class="filter">Z</a></li>
+      </ul>
+    </div>
+    <div class="col-md-8 col-md-offset-2">
+      <ul class="list-inline">
+        <li ng-class="{ active: isActiveLocation('/directory/people/1')}"><a ui-sref="directory.people.letter({letter: &quot;1&quot;, page: 1})" class="filter">1</a></li>
+        <li ng-class="{ active: isActiveLocation('/directory/people/2')}"><a ui-sref="directory.people.letter({letter: &quot;2&quot;, page: 1})" class="filter">2</a></li>
+        <li ng-class="{ active: isActiveLocation('/directory/people/3')}"><a ui-sref="directory.people.letter({letter: &quot;3&quot;, page: 1})" class="filter">3</a></li>
+        <li ng-class="{ active: isActiveLocation('/directory/people/4')}"><a ui-sref="directory.people.letter({letter: &quot;4&quot;, page: 1})" class="filter">4</a></li>
+        <li ng-class="{ active: isActiveLocation('/directory/people/5')}"><a ui-sref="directory.people.letter({letter: &quot;5&quot;, page: 1})" class="filter">5</a></li>
+        <li ng-class="{ active: isActiveLocation('/directory/people/6')}"><a ui-sref="directory.people.letter({letter: &quot;6&quot;, page: 1})" class="filter">6</a></li>
+        <li ng-class="{ active: isActiveLocation('/directory/people/7')}"><a ui-sref="directory.people.letter({letter: &quot;7&quot;, page: 1})" class="filter">7</a></li>
+        <li ng-class="{ active: isActiveLocation('/directory/people/8')}"><a ui-sref="directory.people.letter({letter: &quot;8&quot;, page: 1})" class="filter">8</a></li>
+        <li ng-class="{ active: isActiveLocation('/directory/people/9')}"><a ui-sref="directory.people.letter({letter: &quot;9&quot;, page: 1})" class="filter">9</a></li>
+        <li ng-class="{ active: isActiveLocation('/directory/people/10')}"><a ui-sref="directory.people.letter({letter: &quot;10&quot;, page: 1})" class="filter">10</a></li>
+        <li ng-class="{ active: isActiveLocation('/directory/people/11')}"><a ui-sref="directory.people.letter({letter: &quot;11&quot;, page: 1})" class="filter">11</a></li>
+        <li ng-class="{ active: isActiveLocation('/directory/people/12')}"><a ui-sref="directory.people.letter({letter: &quot;12&quot;, page: 1})" class="filter">12</a></li>
+        <li ng-class="{ active: isActiveLocation('/directory/people/13')}"><a ui-sref="directory.people.letter({letter: &quot;13&quot;, page: 1})" class="filter">13</a></li>
+        <li ng-class="{ active: isActiveLocation('/directory/people/14')}"><a ui-sref="directory.people.letter({letter: &quot;14&quot;, page: 1})" class="filter">14</a></li>
+        <li ng-class="{ active: isActiveLocation('/directory/people/15')}"><a ui-sref="directory.people.letter({letter: &quot;15&quot;, page: 1})" class="filter">15</a></li>
+        <li ng-class="{ active: isActiveLocation('/directory/people/16')}"><a ui-sref="directory.people.letter({letter: &quot;16&quot;, page: 1})" class="filter">16</a></li>
+        <li ng-class="{ active: isActiveLocation('/directory/people/17')}"><a ui-sref="directory.people.letter({letter: &quot;17&quot;, page: 1})" class="filter">17</a></li>
+        <li ng-class="{ active: isActiveLocation('/directory/people/18')}"><a ui-sref="directory.people.letter({letter: &quot;18&quot;, page: 1})" class="filter">18</a></li>
+        <li ng-class="{ active: isActiveLocation('/directory/people/19')}"><a ui-sref="directory.people.letter({letter: &quot;19&quot;, page: 1})" class="filter">19</a></li>
+        <li ng-class="{ active: isActiveLocation('/directory/people/20')}"><a ui-sref="directory.people.letter({letter: &quot;20&quot;, page: 1})" class="filter">20</a></li>
+        <li ng-class="{ active: isActiveLocation('/directory/people/21')}"><a ui-sref="directory.people.letter({letter: &quot;21&quot;, page: 1})" class="filter">21</a></li>
+        <li ng-class="{ active: isActiveLocation('/directory/people/22')}"><a ui-sref="directory.people.letter({letter: &quot;22&quot;, page: 1})" class="filter">22</a></li>
+        <li ng-class="{ active: isActiveLocation('/directory/people/23')}"><a ui-sref="directory.people.letter({letter: &quot;23&quot;, page: 1})" class="filter">23</a></li>
+        <li ng-class="{ active: isActiveLocation('/directory/people/24')}"><a ui-sref="directory.people.letter({letter: &quot;24&quot;, page: 1})" class="filter">24</a></li>
+        <li ng-class="{ active: isActiveLocation('/directory/people/25')}"><a ui-sref="directory.people.letter({letter: &quot;25&quot;, page: 1})" class="filter">25</a></li>
+        <li ng-class="{ active: isActiveLocation('/directory/people/26')}"><a ui-sref="directory.people.letter({letter: &quot;26&quot;, page: 1})" class="filter">26</a></li>
+      </ul>
+    </div>
+    <div class="col-md-8 col-md-offset-2">
+      <div class="input-group search-group">
+        <input type="text" placeholder="Search in current page" ng-model="query" ng-change="search()" class="form-control search-form"/>
+        <button class="btn btn-default search-button">Search</button>
+      </div>
+    </div>
+  </div>
+  <!-- topSellers variable is not responding => undefined, please solve-->
+  <!--.row
+  .col-sm-8.col-sm-offset-2
+  	.filters-results-tables
+  		.col-md-12.list-column-item
+  			h3.title Users with the most active listings
+  
+  		div(ng-repeat='array in topSellers')
+  			.col-sm-3.col-xs-6(ng-repeat='user in array')
+  					a.list-result-item(href='/users/{{user.id}}') {{user.name}}
+  
+  -->
+  <div class="row">
+    <div class="col-sm-8 col-sm-offset-2">
+      <div class="filters-results-tables">
+        <div class="col-md-12 list-column-item"><span ng-show="!query" ng-bind="letter" class="title-letter"></span><span ng-bind="query" class="text-muted"></span></div>
+        <div ng-repeat="item in pagedItems[currentPage] | orderBy:sortingOrder:reverse" class="col-sm-3 col-xs-6 list-column-inner-item"><a href="/users/{{item.userId}}" class="list-result-item">{{item.name}}</a></div>
+        <div ng-show="pagedItems.length == 0" class="col-md-12">
+          <p>No results.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div ng-show="pagedItems.length !== 0" class="row">
+    <div class="col-sm-8 col-sm-offset-2">
+      <nav class="navigation filters-results">
+        <ul class="pagination">
+          <li ng-class="{disabled: currentPage == 0}"><a href="" ng-click="prevPage()">« Prev</a></li>
+          <li ng-repeat="n in range(pagedItems.length)" ng-class="{active: n == currentPage}" ng-click="setPage()"><a href="" ng-bind="n + 1">1</a></li>
+          <li ng-class="{disabled: currentPage == pagedItems.length - 1}"><a href="" ng-click="nextPage()">Next »</a></li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+</div>

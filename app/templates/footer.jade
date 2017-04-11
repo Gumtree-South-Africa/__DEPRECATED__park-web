@@ -1,0 +1,18 @@
+div
+  //- Category links
+  h3 Categories
+  ul
+    each category in categories
+      li #[a(href=category.link)=category.name]
+
+  //- Main cities
+  h3 Main Cities
+  ul
+    each city in cities
+      li #[a(href=city.link)=city.name]
+
+  //- Static information
+  h3 Statics
+  ul
+    each static in statics
+      li #[a(href=static.link)=static.name]

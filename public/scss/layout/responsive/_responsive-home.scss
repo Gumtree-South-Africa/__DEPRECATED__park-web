@@ -1,0 +1,27 @@
+@media (min-width: 991px) {
+	.container,.close-find-container{
+		width: $max-container-width;
+		margin: 0 auto;
+	}
+	.no-results{
+		width: $max-width-screen;
+		margin: 0 auto;
+	}
+}
+@media (max-width: 991px) {
+  .most-recent-container{
+  	.ad-container{
+	    .item-title-top{
+	    	.user-image{
+	    		padding-right: 0px;
+	    	}
+	    	.user-name{
+	    		padding-left: 0px;
+	    		p.title{
+	    			margin-left: 0px;
+	    		}
+	    	}
+	    }
+	  }   
+  }
+}

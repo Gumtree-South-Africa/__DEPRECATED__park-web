@@ -1,0 +1,21 @@
+//- Sign In
+
+form( ng-submit="loginEmail()" role="form" ng-show="loginFormDisplayed" class="col-md-12 form-horizontal login-form")
+  div( ng-hide="runningOnMobile()" class="panel-heading col-md-12 col-sm-12")
+    span( ng-click="backToMainMenu()" class="arrow_icon_left")
+    p( class="login-link") Ingresa con tu e-mail
+
+  div( class="form-group")
+    input( type="text" placeholder="Ingresa tu e-mail" name="usernameLogin" ng-model="username" ng-model-options="{ updateOn: 'default blur' }" class="modal-form-input" )
+    div( class="error-wrapper")
+      span( ng-show="!validUsername" class="inline-error") Debes introducir el nombre de usuario o un e-mail válido
+
+
+  div( class="form-group")
+    input( type="password" placeholder="Ingresa tu contraseña" name="passwordLogin" ng-model="password" class="modal-form-input")
+
+  div( class="form-group has-error")
+    span( class="help-block") {{error}}
+
+  button( type="submit" ng-disabled="!(username!==''&&password!=='')" class="btn btn-confirm") Ingresar
+  a( ng-click="showRecoverPasswordForm()" class="forgot-password") ¿Recuperar contraseña?

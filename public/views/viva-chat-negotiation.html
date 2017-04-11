@@ -1,0 +1,34 @@
+
+<div class="viva-chat container">
+  <div class="left-container">
+    <h1>Negociación</h1>
+    <div class="image-container visible-xs mobile">
+      <div ng-style="itemImageStyle" ng-click="openItem()" class="image-box"></div>
+    </div>
+    <div class="sub-container">
+      <div class="vip-container">
+        <div class="image-container hidden-xs">
+          <div ng-style="itemImageStyle" ng-click="openItem()" class="image-box"></div>
+        </div>
+        <div class="data-container">
+          <p ng-click="openItem()" class="first-line">{{item.name}}</p>
+          <p ng-class="{'text-green':myConversation.status.isAccepted}" class="second-line">{{phrase}} {{itemPrice | vivaCurrency}}</p>
+        </div>
+      </div>
+      <div class="actions-container">
+        <div ng-hide="myConversation.status.isAccepted" class="actions btn-make-offer-container">
+          <button ng-click="makeOffer()" ng-disabled="myConversation.status.isRejected || isSold" class="btn btn-make-offer-negotiation">HAZ UNA OFERTA</button>
+        </div>
+        <div ng-show="(myConversation.conversation.hasOffer || isSeller) &amp;&amp; !myConversation.status.isAccepted &amp;&amp; (sellerHasOffer || isSeller)" class="actions btn-accept-offer-container">
+          <button ng-click="acceptOffer()" ng-disabled="myConversation.status.isRejected || isSold" class="btn btn-accept-offer">ACEPTAR OFERTA</button>
+        </div>
+        <div ng-hide="myConversation.status.isRejected || !myConversation.conversation.conversationId" class="hidden-xs actions btn-cancel-offer-container">
+          <button ng-click="rejectOffer()" class="btn btn-cancel-offer">Cancelar negociación</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="right-container">
+    <viva-chat-negotiation my-conversation="myConversation"></viva-chat-negotiation>
+  </div>
+</div>

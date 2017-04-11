@@ -1,0 +1,35 @@
+<svg id="avatar_ph_3.svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="181" height="181" viewBox="0 0 181 181">
+  <defs>
+    <style>
+      .cls-1, .cls-2 {
+        fill: #ff5531;
+      }
+
+      .cls-1 {
+        fill-opacity: 0;
+      }
+
+      .cls-2, .cls-3 {
+        fill-rule: evenodd;
+      }
+
+      .cls-2 {
+        filter: url(#filter);
+      }
+
+      .cls-3 {
+        fill: #fff;
+      }
+    </style>
+    <filter id="filter" x="241" y="201" width="180" height="180" filterUnits="userSpaceOnUse">
+      <feOffset result="offset" dx="0.5" dy="0.866" in="SourceAlpha"/>
+      <feGaussianBlur result="blur" stdDeviation="2.828"/>
+      <feFlood result="flood" flood-opacity="0.3"/>
+      <feComposite result="composite" operator="in" in2="blur"/>
+      <feBlend result="blend" in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <rect id="area_copy_3" data-name="area copy 3" class="cls-1" width="181" height="181"/>
+  <path id="avatar_area" data-name="avatar area" class="cls-2" d="M329.5,207.5a82,82,0,1,1-82,82A82,82,0,0,1,329.5,207.5Zm12,45a1.25,1.25,0,1,1-1.25,1.25A1.25,1.25,0,0,1,341.5,252.5Z" transform="translate(-240 -200)"/>
+  <path id="tag_:_" data-name="tag :)" class="cls-3" d="M329.5,373A83.5,83.5,0,1,1,413,289.5,83.5,83.5,0,0,1,329.5,373Zm-6.485-63.279c-13.08,13.081-27.909,17.06-30.923,20.074a4.154,4.154,0,0,0,.361,5.907c2.11,2.11,3.738,2.17,15.492-2.592,9.163-3.737,17.361-8.8,23.51-14.949s11.212-14.347,14.949-23.51c4.763-11.755,4.7-13.382,2.592-15.492a4.154,4.154,0,0,0-5.907-.362C340.075,281.811,336.1,296.64,323.015,309.721Zm-1.447-32.191a6.99,6.99,0,1,0,0,9.886A7.023,7.023,0,0,0,321.568,277.53Zm-22.063,22.063a6.99,6.99,0,1,0,0,9.886A7.021,7.021,0,0,0,299.505,299.593ZM329.5,211a78.533,78.533,0,0,0-76.819,94.7l74.491-74.49a16.445,16.445,0,0,1,23.258,0l37.678,37.678a16.445,16.445,0,0,1,0,23.258L313.819,366.43A78.505,78.505,0,1,0,329.5,211Z" transform="translate(-240 -200)"/>
+</svg>

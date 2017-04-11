@@ -1,0 +1,28 @@
+div(class="viva-chat container")
+  div(class="left-container")
+    h1 Negociación
+
+    div(class="image-container visible-xs mobile")
+        div(class="image-box" ng-style="itemImageStyle" ng-click="openItem()")
+
+    div.sub-container
+      div(class="vip-container")
+        div(class="image-container hidden-xs")
+          div(class="image-box" ng-style="itemImageStyle" ng-click="openItem()")
+        div(class="data-container")
+          p(class="first-line" ng-click="openItem()")
+            | {{item.name}}
+          p(class="second-line" ng-class="{'text-green':myConversation.status.isAccepted}")
+            | {{phrase}} {{itemPrice | vivaCurrency}}
+
+      div(class="actions-container")
+        div(class="actions btn-make-offer-container" ng-hide="myConversation.status.isAccepted")
+          button(class="btn btn-make-offer-negotiation" ng-click="makeOffer()" ng-disabled="myConversation.status.isRejected || isSold") HAZ UNA OFERTA
+        div(class="actions btn-accept-offer-container" ng-show="(myConversation.conversation.hasOffer || isSeller) && !myConversation.status.isAccepted && (sellerHasOffer || isSeller)")
+          button(class="btn btn-accept-offer" ng-click="acceptOffer()" ng-disabled="myConversation.status.isRejected || isSold") ACEPTAR OFERTA
+        div.hidden-xs(class="actions btn-cancel-offer-container" ng-hide="myConversation.status.isRejected || !myConversation.conversation.conversationId")
+          button(class="btn btn-cancel-offer" ng-click="rejectOffer()") Cancelar negociación
+
+
+  div(class="right-container")
+    viva-chat-negotiation(my-conversation="myConversation")

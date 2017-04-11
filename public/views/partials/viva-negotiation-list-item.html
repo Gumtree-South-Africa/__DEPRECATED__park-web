@@ -1,0 +1,12 @@
+
+<div class="viva-negotiation-container-item">
+  <div ng-click="goToThisConversation()" ng-class="{'item-new-chats': offer.newChats}" class="viva-negotiation-sub-container-item">
+    <div ng-style="userStyle" class="user-box"></div>
+    <div class="info-container">
+      <div class="name-from">{{offer.username}}</div>
+      <div class="chat-legend">{{offer.lastChat.comment}} <span ng-if="offer.lastChat.offeredPrice &amp;&amp; offer.lastChat.action==='OFFER'">{{offer.lastChat.offeredPrice | vivaCurrency}} </span></div>
+      <div ng-bind-html="date" class="date-reciever"></div>
+    </div>
+    <div class="image-item-container"><img ng-style="itemStyle" class="item-image"/></div>
+  </div>
+</div>

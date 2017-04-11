@@ -1,0 +1,12 @@
+
+<div class="container no-results">
+  <div class="titles text-center"><img src="/images/Close5-Sorry-Icon.svg" height="75" class="tag"/>
+    <h3>Sorry!</h3>
+    <p>We couldn’t find any listings for <b>{{ no_results_category }}.</b></p>
+    <p class="advice">Select a category or expand your search area.</p>
+  </div>
+  <div class="cities-title-container"><span>Discover by Category </span></div>
+  <div class="cities-names-container text-left col-md-12 col-xs-12">
+    <div ng-repeat="category in categories | orderBy:[&quot;name&quot;]" class="col-md-3 col-xs-4"><a href="#" ng-click="searchByCategory(category.id)">{{ category.name }}</a></div>
+  </div>
+</div>

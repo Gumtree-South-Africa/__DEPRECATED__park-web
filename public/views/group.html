@@ -1,0 +1,119 @@
+<spinner loading="loadingGroup"></spinner>
+<div ng-if="!loadingGroup && !pageTypeError" class="group-container">
+  <div class="container group-information">
+    <div class="col-image">
+      <div class="group-image-wrapper">
+        <div class="flag-group-container">
+          <div class="flag-group"></div>
+        </div>
+        <div class="group-image group-avatar-default" ng-if="!group.pictureUrl"></div>
+        <div class="group-image" ng-if="group.pictureUrl"  style="background-image: url('{{group.pictureUrl}}')"></div>
+      </div>
+    </div>
+    <div class="col-group-details">
+      <div class="name-description">
+        <div class="name-followers-items">
+          <div class="group-name">{{  group.name  }}</div>
+          <div class="followers-items --mobile">
+            <span class="subscribers-icon"></span>
+            <span class="followers-items-amount">{{ group.totalSubscribers }}</span>
+            <span class="items-icon"></span>
+            <span class="followers-items-amount">{{ group.totalItems }}</span>
+          </div>
+        </div>
+        <div class="group-description">{{  group.description  }}</div>
+        <!-- Descripcion larga de grupo de prueba con un texto estupidamente largo y sin sentido para llegar a los ciento sesenta caracteres que tiene que tener como maximo -->
+      </div>
+      <div class="location-subscribers">
+        <div class="location-share-subscribe">
+          <div class="group-location">
+            <span class="location-icon"></span>
+            <p class="location">{{ group.locationName }}</p>
+          </div>
+          <div class="share-subscribe">
+            <span ng-click="openShareModal('modal-share-group.html', 'group', group)" class="group-share"></span>
+            <button ng-if="!isOwner" ng-click="toggleSubscribe()" class="subscribe button btn {{group.subscribed ? 'btn-unfollow' : 'btn-follow'}}">{{  subscribeButtonText  }}</button>
+          </div>
+        </div>
+        <div class="subscribers-followers-items border-top --desktop">
+          <div class="subscribers">
+            <div ng-repeat="subscriber in subscribersPreview" class="subscriber-image-wrapper" ui-sref="userProfile({id:subscriber.username})">
+              <div ng-if="subscriber.picture" ng-style="{'background-image': 'url({{subscriber.picture}})'}" class="subscriber-image"></div>
+              <div ng-if="!subscriber.picture" class="subscriber-ph"></div>
+              <img src="../../../images/vivanuncios/avatar_mask_4.png" alt="" class="subscriber-image-mask" />
+            </div>
+            <div class="subscriber-image-wrapper" ng-if="subscribersPreview.length < group.totalSubscribers">
+              <div ng-click="showSubscribersModal()" class="more-subscribers"></div>
+            </div>
+          </div>
+          <div class="followers-items --desktop">
+            <span class="subscribers-icon"></span>
+            <span class="followers-items-amount">{{ group.totalSubscribers }}</span>
+            <span class="items-icon"></span>
+            <span class="followers-items-amount">{{ group.totalItems }}</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="subscribers-followers-items border-top --tablet --mobile">
+      <div class="subscribers">
+        <div ng-repeat="subscriber in subscribersPreview" class="subscriber-image-wrapper" ui-sref="userProfile({id:subscriber.username})">
+          <div ng-if="subscriber.picture" ng-style="{'background-image': 'url({{subscriber.picture}})'}" class="subscriber-image"></div>
+          <div ng-if="!subscriber.picture" class="subscriber-ph"></div>
+          <img src="../../../images/vivanuncios/avatar_mask_4.png" alt="" class="subscriber-image-mask" />
+        </div>
+        <div class="subscriber-image-wrapper" ng-if="subscribersPreview.length < group.totalSubscribers">
+          <div ng-click="showSubscribersModal()" class="more-subscribers"></div>
+        </div>
+      </div>
+      <div class="followers-items --tablet">
+        <span class="subscribers-icon"></span>
+        <span class="followers-items-amount">{{ group.totalSubscribers }}</span>
+        <span class="items-icon"></span>
+        <span class="followers-items-amount">{{ group.totalItems }}</span>
+      </div>
+    </div>
+  </div>
+</div>
+<spinner loading="loadingItems"></spinner>
+<div ng-if="!loadingItems && !pageTypeError" class="container">
+  <div ng-if="groupItems.length > 0">
+    <div class="items-list">
+      <div ng-repeat="item in groupItems" class="item-list-container">
+        <div class="list-product-image-container" >
+          <div class="list-flag-container">
+            <div ng-class="item.status" class="list-flag"></div>
+          </div>
+          <div ng-click="likeToggle(item)" class="list-fav-me-container">
+            <div ng-class="{liked: item.followedByUser}" class="list-fav-me"></div>
+          </div>
+          <a style="background-image: url('{{ item.pictureUrl}}')" target="_blank" ng-href="{{item.vivaUrl}}" class="list-product-image"></a>
+        </div>
+        <div class="list-product-info-container">
+          <div class="list-price-section">
+            <div class="list-product-price">{{ item.price | vivaCurrency }}</div>
+            <div class="list-favs-share">
+              <div ng-if="item.totalOfFollowers > 0" class="list-product-favs">
+                <div class="list-fav-icon"></div> {{  item.totalOfFollowers  }}
+              </div>
+              <a ng-click="openShareModal('modal-share-item.html','item', item)" class="list-product-share"></a>
+            </div>
+          </div>
+          <div class="list-name-section">
+            <div class="list-item-name">{{  item.name  }} </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div ng-if="hasMore" ng-click="getMoreItemsPaged()" class="row">
+      <div class="col-md-12 col-xs-12 text-center">
+        <button class="btn btn-load-more">
+          <i class="glyphicon glyphicon-plus"></i>
+          Cargar más items
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+<div ng-include="" src="'views/partials/404-page.html'" ng-if="!loading && pageTypeError"></div>
+<modal-group-subscribers group-subscribers="groupSubscribers" group-name="groupName" get-more-subscribers="getMoreSubscribers()" has-more-subscribers="hasMoreSubscribers" scroll-busy="modalScrollBusy"></modal-group-subscribers>

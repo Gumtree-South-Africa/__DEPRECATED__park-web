@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #666;
+        fill-rule: evenodd;
+      }
+    </style>
+  </defs>
+  <path id="icon_loupe.svg" class="cls-1" d="M1028.68,140.622l4.63,4.628a1.456,1.456,0,1,1-2.06,2.057l-4.63-4.628,0.52-.514-0.54-.54a10.23,10.23,0,1,1,1.02-1.029l0.55,0.54Zm-3.79-11.633a7,7,0,1,0,0,9.9A7,7,0,0,0,1024.89,128.989Z" transform="translate(-1009.75 -123.75)"/>
+</svg>

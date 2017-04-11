@@ -1,0 +1,136 @@
+.login-form {
+
+    .modal-dialog {
+      width: 420px;
+      @media (max-width: 768px){
+        .modal-dialog {
+            width: 100vw;
+            margin: 0;
+        }
+      }
+    }
+
+    .panel-heading {
+        h1 {
+            margin-left: 18px;
+            font-size: 34px;
+            color: #666;
+            font-family: 'foundrysterling-lightregular';
+        }
+    }
+
+    @media (max-width: 768px) {
+        .panel{
+            .title {
+                font-size: 5.2vw;
+                padding: 7vw 11vw 5.8vw;
+            }
+        }
+    }
+
+    label.login-label{
+        font-size: 22px;
+        margin-bottom: 15px;
+        color: #999;
+
+        @media (max-width: 768px) {
+            font-size: 6vw;
+        }
+    }
+
+    .facebook-logo {
+        margin-right: 32px;
+    }
+
+    .modal-content .modal-body .panel .panel-body .form-horizontal .form-group .btn-facebook p {
+        font-size: 21px;
+        font-family:"foundrysterling-demiregular";
+
+        @media (max-width: 768px) {
+            font-size: 5.6vw;
+        }
+    }
+
+    .modal-content {
+        @media (max-width: 768px) {
+            background-color: #fafafa;
+        }
+    }
+
+    .btn-group-login {
+        display: flex;
+        justify-content: space-between;
+
+        .btn {
+            font-size: 21px;
+            font-family:"foundrysterling-demiregular";
+            padding-bottom: 8px;
+            padding-top: 6px;
+
+            @media (max-width: 768px) {
+                width: 38vw;
+                padding-top:1.8vw;
+                font-size: 5.6vw;
+            }
+        }
+    }
+
+    .btn-register {
+        width: 141px;
+
+        &:hover {
+            color: #FFF;
+        }
+    }
+
+    .login-footer {
+        margin-top: 40px;
+        background-color: #fafafa;
+        padding: 20px 0px;
+        width: 100%;
+        border-radius: 0 0px 20px 20px;
+        display: inline-block;
+
+        @media (max-width: 768px) {
+            border-radius: 0;
+        }
+
+        .promo {
+            padding: 0px 50px;
+
+            p {
+                padding-bottom: 5px;
+
+                @media (max-width: 768px) {
+                    font-size: 4.2vw;
+                }
+            }
+
+            .store-links {
+                display: -webkit-box;
+                display: -webkit-flex;
+                display: flex;
+                -webkit-box-pack: space-between;
+                -webkit-justify-content: space-between;
+                justify-content: space-between;
+
+                @media (max-width: 768px) {
+                  -webkit-box-pack: center;
+                  -webkit-justify-content: center;
+                  justify-content: center;
+                }
+            }
+        }
+
+        .legal-terms {
+            margin-top: 25px;
+            p, a {
+                @media (max-width: 768px) {
+                    font-size: 3.6vw;
+                }
+            }
+        }
+
+    }
+
+}

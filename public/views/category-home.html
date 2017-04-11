@@ -1,0 +1,8 @@
+<div class="container content category-home">
+  <div ng-repeat="category in categories" class="row category-keywords">
+    <p class="title-category"> <a ui-sref="byCategory.category({category: category.name})">{{ category.name }}</a></p>
+    <div class="row">
+      <div ng-repeat="subcategory in category.subcategories" class="col-md-3 keyword"><a ui-sref="search.keyword({keyword:subcategory, page:1})">{{ subcategory }}</a></div>
+    </div>
+  </div>
+</div>

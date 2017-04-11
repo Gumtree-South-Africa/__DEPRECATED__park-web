@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="520" height="340" viewBox="0 0 520 340">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fff;
+        fill-rule: evenodd;
+        opacity: 0.5;
+      }
+    </style>
+  </defs>
+  <path id="map_mask.svg" class="cls-1" d="M1279.91,788c43.96-42.162,71.47-102.27,71.47-169,0-67.787-28.37-128.751-73.56-171H1387V788H1279.91Zm-305.831,0H867V448H976.169C930.976,490.249,902.6,551.213,902.6,619,902.6,685.73,930.11,745.838,974.079,788Z" transform="translate(-867 -448)"/>
+</svg>

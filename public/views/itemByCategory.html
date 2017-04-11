@@ -1,0 +1,25 @@
+
+<link rel="stylesheet" href="css/app/productDetail.css"/>
+<div class="container content item">
+  <div class="row reverse">
+    <div class="six columns omega">
+      <div class="card item-basic">
+        <h1 class="item-price">${{ product.price }}</h1>
+        <p class="item-owner"><a href="/54f274666647bf93090003ea"></a><a href="/54f274666647bf93090003ea" class="item-owner-name">Maira</a></p>
+        <p class="item-description">{{ product.description }}</p>
+      </div>
+      <div ng-show="runningOnMobile" class="crosslink-banner"><a href="vivaApp/Item/{{ product.productId }}" class="crosslink">Buy</a></div>
+    </div>
+    <div class="container">
+      <ul ng-controller="ItemByCategoryController">
+        <li ng-repeat="item in itemList">
+          <div class="item"><a href="#/productDetail/{{ item.ProductId }}"><img src="{{ item.PictureUrl }}"/></a>
+            <div class="details">
+              <div class="price">${{ item.Price }}  </div>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>

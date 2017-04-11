@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="36.6" height="32.032" viewBox="0 0 36.6 32.032">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #00d9dc;
+        fill-rule: evenodd;
+      }
+    </style>
+  </defs>
+  <path id="icon_like_filled.svg" class="cls-1" d="M1174.32,189.146c-8.29-11.486-21.65-1.506-17.51,9.226,2.73,7.083,7.72,11.486,17.51,17.686,9.79-6.2,14.78-10.6,17.51-17.686C1195.97,187.64,1182.6,177.66,1174.32,189.146Z" transform="translate(-1156.03 -184.031)"/>
+</svg>

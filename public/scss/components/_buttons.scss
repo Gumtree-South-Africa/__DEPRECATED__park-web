@@ -1,0 +1,251 @@
+//Download app button
+.btn-download-app{
+  font-family: $stack-verlag-bold;
+  background: $btn-download-app-back;
+  height: $btn-download-app-height;
+  width: $btn-download-app-width;
+  border-radius: 100px;
+  -webkit-box-shadow: 0px 1px 2px 0px rgba(0,0,0,7);
+  -moz-box-shadow: 0px 1px 2px 0px rgba(0,0,0,7);
+  box-shadow: 0px 1px 2px 0px rgba(0,0,0,7);
+  color:$btn-download-app-font;
+  font-size: 18px;
+}
+a.btn-download-app{
+  padding-top: 17px;
+}
+
+//Load more button
+.btn-load-more{
+  margin: 60px;
+  background: $btn-color-back;
+  border-radius: 100px;
+  height  : $btn-height;
+  width   : $btn-width;
+  color   : $btn-color-font;
+  font-size: 16px;
+  line-height: 1.2;
+  border: $btn-color-border solid 1px;
+  font-family: $stack-verlag-bold;
+  margin-bottom: 50px;
+}
+
+//make an offer button
+.btn-make-offer{
+  background: $btn-small-color-back;
+  height  : $btn-small-height;
+  width   : $btn-small-width;
+  color   : $btn-small-color-font;
+  font-size: 16px;
+  line-height: 1.2;
+  font-family: $stack-verlag-bold;
+  margin-bottom: 10px;
+  text-align: center;
+  border-radius:8px;
+  &:hover {
+    color: $btn-small-color-font !important;
+  }
+}
+
+.clear-button{
+  padding:5px 10px!important;
+  position:absolute!important;
+  top:19px;
+  right:15px;
+  font-size: 10px;
+  color: rgba(255, 255, 255, 0.6);
+  background: none;
+  &:focus{
+    background: none!important;
+    color: rgba(255, 255, 255, 0.6);
+  }
+
+  &:hover, &:active{
+    color: #fff;
+    background: none!important;
+  }
+  span{
+    padding:0;
+    margin: 0;
+  }
+}
+@media(max-width: 767px){
+  .clear-button{
+    top:15px;
+    right:20px;
+  }
+}
+
+//==============================
+// buttons Vivaanuncios
+//==============================
+
+.btn-search {
+  display: inline-block;
+  border: none;
+  padding: 0;
+  margin: -6px -50px 0 10px;
+  width: 40px;
+  height: 40px;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  background: transparent;
+}
+
+//Load more button
+.btn-load-more {
+  margin-top: 0px;
+  background: $btn-color-back;
+  border-radius: 100px;
+  height  : $btn-height;
+  width   : auto;
+  @include text(18px, 1.2, null, $btn-color-font)
+  border: $btn-color-border solid 1px;
+  margin-bottom: 50px;
+  font-family: 'foundrysterling-bookregular';
+  &:hover {
+    color: $btn-hover-color-font !important;
+  }
+  &.all {
+    width: 144px;
+    color: $btn-unfollow-color-font;
+    margin: 0px;
+    border-radius: 22px
+    &:hover {
+      color: $btn-unfollow-color-font !important;
+    }
+  }
+}
+
+.btn-follow {
+  background: $btn-follow-color-back;
+  border-radius: 10px;
+  height  : $btn-follow-height;
+  width   : $btn-follow-width;
+  letter-spacing: 1px;
+  @include text(23px, 1.2, normal, $btn-follow-color-font)
+  font-family: 'foundrysterling-mediumregular';
+  &:hover {
+    color: $btn-follow-color-font;
+    background: $btn-follow-color-back-hover;
+  }
+  &:focus, &:active, &:active:focus {
+    background: $btn-follow-color-back;
+    color: $btn-follow-color-font;
+    outline: none;
+  }
+}
+.btn-follow-group {
+  background: $btn-follow-color-back;
+  border-radius: 10px;
+  height  : 34px;
+  width   : 102px;
+  letter-spacing: 1px;
+  @include text(16px, 1.2, normal, $btn-follow-color-font)
+  font-family: 'foundrysterling-mediumregular';
+  &:hover {
+    color: $btn-follow-color-font;
+    background: $btn-follow-color-back-hover;
+  }
+  &:focus, &:active, &:active:focus {
+    background: $btn-follow-color-back;
+    color: $btn-follow-color-font;
+    outline: none;
+  }
+}
+.btn-unfollow {
+  background: $btn-unfollow-color-back;
+  border-radius: 10px;
+  height  : $btn-follow-height;
+  width   : $btn-follow-width;
+  @include text(23px, 1.2, normal, $btn-unfollow-color-font)
+  font-family: 'foundrysterling-demiregular';
+  border: 1px solid $btn-unfollow-color-border;
+  &:hover {
+    border: 1px solid $btn-unfollow-color-border-hover;
+    color: $btn-unfollow-color-font-hover;
+  }
+  &:focus, &:active, &:active:focus {
+    border: 1px solid $btn-unfollow-color-border;
+    color: $btn-unfollow-color-font;
+    outline: none;
+  }
+}
+.btn-unfollow-group {
+  background: $btn-unfollow-color-back;
+  border-radius: 10px;
+  height  : 34px;
+  width   : 102px;
+  @include text(16px, 1.2, normal, $btn-unfollow-color-font)
+  font-family: 'foundrysterling-demiregular';
+  border: 1px solid $btn-unfollow-color-border;
+  &:hover {
+    border: 1px solid $btn-unfollow-color-border-hover;
+    color: $btn-unfollow-color-font-hover;
+  }
+  &:focus, &:active, &:active:focus {
+    border: 1px solid $btn-unfollow-color-border;
+    color: $btn-unfollow-color-font;
+    outline: none;
+  }
+}
+.btn-facebook {
+  background-color: $btn-facebook-color-back;
+  border-radius: 10px;
+  width: $btn-confirm-width;
+  height: $btn-follow-height;
+  @include text(18px, null, normal, $btn-facebook-color-font)
+  border: 2px solid $btn-facebook-color-border;
+}
+.btn-register{
+  background-color: $btn-register-color-back;
+  border-radius: 10px;
+  width: $btn-confirm-width;
+  height: $btn-follow-height;
+  @include text(18px, null, normal, $btn-register-color-font);
+  &:hover {
+    cursor: pointer;
+    background-color: $btn-register-color-back-hover ;
+  }
+}
+.btn-confirm, btn-confirm:focus {
+  background-color: $btn-confirm-color-back;
+  border-radius: 10px;
+  width: $btn-confirm-width;
+  height: $btn-follow-height;
+  margin-left: 5px;
+  @include text(20px, null, normal, $btn-facebook-color-font)
+  color: $white !important;
+  &:hover {
+    color: $btn-confirm-color-font-hover !important;
+    background-color: $btn-confirm-color-back-hover ;
+  }
+  &:disabled {
+      background-color: #eee;
+      color: #cfcfcf !important;
+  }
+}
+.btn-cancel {
+  background-color: $btn-cancel-color-back;
+  border-radius: 10px;
+  width: $btn-confirm-width;
+  height: $btn-follow-height;
+  margin-right: 5px;
+  @include text(20px, null, normal, $btn-facebook-color-font)
+  &:hover {
+    color: $btn-cancel-color-font;
+    background-color: $btn-cancel-color-back-hover ;
+  }
+}
+.btn-ok {
+  background: $btn-follow-color-back;
+  border-radius: 10px;
+  height  : $btn-follow-height;
+  width   : $btn-follow-width;
+  @include text(20px, 1, normal, $btn-follow-color-font)
+  font-family: 'foundrysterling-demiregular';
+  &:hover {
+    color: $btn-follow-color-font !important;
+    background: $btn-follow-color-back-hover;
+  }
+}

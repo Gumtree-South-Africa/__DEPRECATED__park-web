@@ -1,0 +1,80 @@
+
+<div class="directory-section">
+  <div class="row">
+    <div class="col-md-8 col-md-offset-2">
+      <div class="directory-menu">
+        <ul class="nav nav-pills menu-navigation">
+          <li><a ui-sref="directory.people">People</a></li>
+          <!--lia(href='/directory-searches') Searches
+          -->
+          <li class="active option-directory"><a ui-sref="directory.location.all">Location</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="row text-center">
+    <div class="col-md-8 col-md-offset-2">
+      <ul class="list-inline">
+        <li ng-class="{ active: isActiveLocation('/directory/location/all')}" class="list-viewall"><a ui-sref="directory.location.all" class="filter">View All</a></li><span class="filter filter-bar">|</span>
+        <li ng-class="{ active: isActiveLocation('/directory/location/A')}"><a ui-sref="directory.location.letter({letter: &quot;A&quot;, page: 1})" class="filter">A</a></li>
+        <li ng-class="{ active: isActiveLocation('/directory/location/B')}"><a ui-sref="directory.location.letter({letter: &quot;B&quot;, page: 1})" class="filter">B</a></li>
+        <li ng-class="{ active: isActiveLocation('/directory/location/C')}"><a ui-sref="directory.location.letter({letter: &quot;C&quot;, page: 1})" class="filter">C</a></li>
+        <li ng-class="{ active: isActiveLocation('/directory/location/D')}"><a ui-sref="directory.location.letter({letter: &quot;D&quot;, page: 1})" class="filter">D</a></li>
+        <li ng-class="{ active: isActiveLocation('/directory/location/E')}"><a ui-sref="directory.location.letter({letter: &quot;E&quot;, page: 1})" class="filter">E</a></li>
+        <li ng-class="{ active: isActiveLocation('/directory/location/F')}"><a ui-sref="directory.location.letter({letter: &quot;F&quot;, page: 1})" class="filter">F</a></li>
+        <li ng-class="{ active: isActiveLocation('/directory/location/G')}"><a ui-sref="directory.location.letter({letter: &quot;G&quot;, page: 1})" class="filter">G</a></li>
+        <li ng-class="{ active: isActiveLocation('/directory/location/H')}"><a ui-sref="directory.location.letter({letter: &quot;H&quot;, page: 1})" class="filter">H</a></li>
+        <li ng-class="{ active: isActiveLocation('/directory/location/I')}"><a ui-sref="directory.location.letter({letter: &quot;I&quot;, page: 1})" class="filter">I</a></li>
+        <li ng-class="{ active: isActiveLocation('/directory/location/J')}"><a ui-sref="directory.location.letter({letter: &quot;J&quot;, page: 1})" class="filter">J</a></li>
+        <li ng-class="{ active: isActiveLocation('/directory/location/K')}"><a ui-sref="directory.location.letter({letter: &quot;K&quot;, page: 1})" class="filter">K</a></li>
+        <li ng-class="{ active: isActiveLocation('/directory/location/L')}"><a ui-sref="directory.location.letter({letter: &quot;L&quot;, page: 1})" class="filter">L</a></li>
+        <li ng-class="{ active: isActiveLocation('/directory/location/M')}"><a ui-sref="directory.location.letter({letter: &quot;M&quot;, page: 1})" class="filter">M</a></li>
+        <li ng-class="{ active: isActiveLocation('/directory/location/N')}"><a ui-sref="directory.location.letter({letter: &quot;N&quot;, page: 1})" class="filter">N</a></li>
+        <li ng-class="{ active: isActiveLocation('/directory/location/O')}"><a ui-sref="directory.location.letter({letter: &quot;O&quot;, page: 1})" class="filter">O</a></li>
+        <li ng-class="{ active: isActiveLocation('/directory/location/P')}"><a ui-sref="directory.location.letter({letter: &quot;P&quot;, page: 1})" class="filter">P</a></li>
+        <li ng-class="{ active: isActiveLocation('/directory/location/Q')}"><a ui-sref="directory.location.letter({letter: &quot;Q&quot;, page: 1})" class="filter">Q</a></li>
+        <li ng-class="{ active: isActiveLocation('/directory/location/R')}"><a ui-sref="directory.location.letter({letter: &quot;R&quot;, page: 1})" class="filter">R</a></li>
+        <li ng-class="{ active: isActiveLocation('/directory/location/S')}"><a ui-sref="directory.location.letter({letter: &quot;S&quot;, page: 1})" class="filter">S</a></li>
+        <li ng-class="{ active: isActiveLocation('/directory/location/T')}"><a ui-sref="directory.location.letter({letter: &quot;T&quot;, page: 1})" class="filter">T</a></li>
+        <li ng-class="{ active: isActiveLocation('/directory/location/U')}"><a ui-sref="directory.location.letter({letter: &quot;U&quot;, page: 1})" class="filter">U</a></li>
+        <li ng-class="{ active: isActiveLocation('/directory/location/V')}"><a ui-sref="directory.location.letter({letter: &quot;V&quot;, page: 1})" class="filter">V</a></li>
+        <li ng-class="{ active: isActiveLocation('/directory/location/W')}"><a ui-sref="directory.location.letter({letter: &quot;W&quot;, page: 1})" class="filter">W</a></li>
+        <li ng-class="{ active: isActiveLocation('/directory/location/X')}"><a ui-sref="directory.location.letter({letter: &quot;X&quot;, page: 1})" class="filter">X</a></li>
+        <li ng-class="{ active: isActiveLocation('/directory/location/Y')}"><a ui-sref="directory.location.letter({letter: &quot;Y&quot;, page: 1})" class="filter">Y</a></li>
+        <li ng-class="{ active: isActiveLocation('/directory/location/Z')}"><a ui-sref="directory.location.letter({letter: &quot;Z&quot;, page: 1})" class="filter">Z</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-sm-8 col-sm-offset-2">
+      <div class="input-group search-group">
+        <input type="text" placeholder="Search by name" ng-model="searchAux" ng-focus="searchBarReset()" ng-change="checkEmptyField()" class="form-control search-form"/>
+        <button ng-click="onclickSearchButton()" class="btn btn-default search-button">Search</button>
+      </div>
+      <div class="filters-results-tables">
+        <!--h3.title(ng-bind='letter')-->
+        <div ng-repeat="state in states" ng-show="state.locations.length">
+          <div class="col-md-12 list-column-item">
+            <div class="row">
+              <h3 class="title">{{state.name}}</h3>
+              <div ng-repeat="city in state.locations" class="col-sm-3 col-xs-6 list-column-inner-item"><a ui-sref="homeLocation({locationId: city.id})" class="list-result-item">{{ city.name }}</a></div>
+            </div>
+          </div>
+        </div>
+        <div ng-if="notCityFlag" class="col-md-12 list-column-item">
+          <h3 class="title">No Location was found</h3>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-sm-8 col-sm-offset-2">
+      <nav class="navigation filters-results">
+        <p class="title">Page {{page}} of {{numberOfPages}}</p>
+        <ul class="pagination">
+          <li ng-repeat="np in pagesNumbers" ng-class="{disabled: isCurrentPage($index), page: isCurrentPage($index)}"><a ui-sref="directory.location.letter({letter: letter, page: np})" ng-show="$state.current.name==&quot;directory.location.letter&quot;">{{np}}</a><a ui-sref="directory.location.all({page: np})" ng-show="$state.current.name==&quot;directory.location.all&quot;">{{np}}</a><a ui-sref="directory.location.search({text: searchText, page: np})" ng-show="$state.current.name==&quot;directory.location.search&quot;">{{np}}</a><a ui-sref="directory.location.letter({letter: letter, page: np})" ng-show="$state.current.name==&quot;directory.location&quot;">{{np}}</a></li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+</div>

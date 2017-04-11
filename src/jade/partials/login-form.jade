@@ -1,0 +1,38 @@
+div.modal-header
+  div.back-button-overlay( type="button" aria-hidden="true" ng-hide="loginFormDisplayed || registrationFormDisplayed" ng-click="closeModal()")
+    div.back(ng-hide="loginFormDisplayed || registrationFormDisplayed")
+
+div.modal-body
+  div.panel.panel-default
+    div(ng-if="displayTitleMessage" ng-hide="!runningOnMobile() || headerFormDisplayed" class="title") Bienvenido
+    div(ng-if="!displayTitleMessage" ng-hide="!runningOnMobile() || headerFormDisplayed" class="title") Por favor ingresa para continuar
+    div(ng-hide="recoverPasswordFormDisplayed" class="modal-header")
+      div(ng-show="(loginFormDisplayed || registrationFormDisplayed) && runningOnMobile()" ng-click="backToMainMenu()" class="back-button-overlay")
+        div(ng-show="(loginFormDisplayed || registrationFormDisplayed) && runningOnMobile()" class="back")
+
+    div(ng-show="loginFormDisplayed && runningOnMobile()" class="title")
+      | Ingresa con tu e-mail
+    div(ng-show="registrationFormDisplayed && runningOnMobile()" class="title") Registración
+    div(ng-show="recoverPasswordFormDisplayed" class="title") Restablecer contraseña
+
+    div(class="panel-body")
+
+      include login-form-main.jade
+
+      include login-form-sign-in.jade
+
+      include login-form-recover-password.jade
+
+      include login-form-sign-up.jade
+
+      div( ng-hide="recoverPasswordFormDisplayed" class="login-footer")
+        div( class="promo")
+          p Descarga la App de Vivanuncios gratis
+          div( class="store-links")
+            a( href="https://play.google.com/store/apps/details?id=com.ebay.park&amp;hl=es_419" class="play-store")
+            a( href="https://itunes.apple.com/us/app/vivanuncios-clasificados-estados/id962230049?mt=8" class="app-store")
+
+
+        div( class="legal-terms")
+          p Al registrarse está aceptando los
+          a( ng-click="goToLegalTerms()" href="javascript:void(0)") Términos de uso y Políticas de Privacidad

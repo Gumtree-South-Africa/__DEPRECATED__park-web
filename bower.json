@@ -1,0 +1,43 @@
+{
+  "name": "angular",
+  "version": "1.0.0",
+  "dependencies": {
+    "bootstrap": "latest",
+    "angular": "1.4.8",
+    "angular-route": "1.4.8",
+    "angular-translate": "~2.8.1",
+    "angular-translate-loader-url": "~2.8.1",
+    "angular-translate-loader-static-files": "~2.8.1",
+    "angular-translate-storage-local": "~2.8.1",
+    "angular-translate-storage-cookie": "~2.8.1",
+    "angular-leaflet-directive": "latest",
+    "animate.css": "latest",
+    "jquery-visible": "latest",
+    "angular-socialshare": "~1.4.4",
+    "angular-css": "~1.0.7",
+    "angular-ui-router": "~0.2.15",
+    "angular-breadcrumb": "~0.4.1",
+    "angular-media-queries": "~0.4.1",
+    "lodash": "~4.10.0",
+    "ng-directive-lazy-image": "afkl-lazy-image#~0.2.3",
+    "angulartics": "~1.0.3",
+    "angulartics-google-analytics": "~0.1.4",
+    "angular-bootstrap": "^1.2.4",
+    "satellizer": "^0.14.0",
+    "bootstrap-social": "^4.12.0",
+    "angular-moment": "^0.10.3",
+    "moment": "^2.12.0",
+    "ngclipboard": "^1.1.1",
+    "clipboard": "^1.5.10",
+    "ngInfiniteScroll": "1.2.2",
+    "angular-touch": "latest"
+  },
+  "resolutions": {
+    "angular": "1.4.8",
+    "angular-translate": "~2.8.1",
+    "moment": "^2.12.0"
+  },
+  "devDependencies": {
+    "angular-sanitize": "1.4.8"
+  }
+}

@@ -1,0 +1,63 @@
+
+<div id="rate-info" class="modal rate-info full-screen-modal">
+  <div class="modal-dialog">
+    <div class="modal-content col-md-12 col-sm-12 col-xs-12 col-md-offset-3 col-xs-offset-2">
+      <div class="modal-header">
+        <button type="button" data-dismiss="modal" aria-hidden="true" class="close">×</button>
+      </div>
+      <div class="modal-body">
+        <div class="panel panel-default">
+          <div class="title-header">
+            <div class="title">
+              <h3>Reputación de <b>{{user.username|capitalize:true}}</b></h3>
+            </div>
+            <div class="ratings pull-right">
+              <p class="numbers"><span class="badge positive">{{user.positiveRatings}}</span><span class="badge neutral">{{user.neutralRatings}}</span><span class="badge bg-danger negative">{{user.negativeRatings}}</span></p>
+              <p>{{user.positiveRatings + user.neutralRatings + user.negativeRatings}} calificaciones</p>
+            </div>
+          </div>
+          <div class="panel-body">
+            <ul role="tablist" class="nav nav-tabs nav-justified">
+              <li role="presentation" class="active"><a href="#as-buyer" aria-controls="as-buyer" role="tab" data-toggle="tab">Como Vendedor</a></li>
+              <li role="presentation"><a href="#as-seller" aria-controls="as-seller" role="tab" data-toggle="tab">Como Comprador</a></li>
+            </ul>
+            <div class="tab-content">
+              <div id="as-buyer" role="tabpanel" class="tab-pane active">
+                <div ng-repeat="rating in ratesBuyer" class="row rating">
+                  <div class="col-sm-1 user-image">
+                    <image src="{{rating.userImageUrl}}" class="img-circle"></image>
+                  </div>
+                  <div class="col-sm-2 user-data">
+                    <p class="username">{{rating.username|capitalize:true}}</p>
+                    <p class="date">{{rating.rateDate | amDateFormat:'DD/MM/YY'}}</p>
+                  </div>
+                  <div class="col-sm-8 item-data">
+                    <p class="item-name"> <b>{{rating.itemName}}</b></p>
+                    <p class="item-comment">{{rating.comment}}</p>
+                  </div>
+                  <div class="col-sm-1 rating-icon {{rating.ratingStatus}}"> </div>
+                </div>
+              </div>
+              <div id="as-seller" role="tabpanel" class="tab-pane">
+                <div ng-repeat="rating in ratesSeller" class="row rating">
+                  <div class="col-sm-1 user-image">
+                    <image src="{{rating.userImageUrl}}" class="img-circle"></image>
+                  </div>
+                  <div class="col-sm-2 user-data">
+                    <p class="username">{{rating.username|capitalize:true}}</p>
+                    <p class="date">{{rating.rateDate | amDateFormat:'DD/MM/YY'}}</p>
+                  </div>
+                  <div class="col-sm-8 item-data">
+                    <p class="item-name"><b>{{rating.itemName}}</b></p>
+                    <p class="item-comment">{{rating.comment}}</p>
+                  </div>
+                  <div class="col-sm-1 rating-icon {{rating.ratingStatus}}"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

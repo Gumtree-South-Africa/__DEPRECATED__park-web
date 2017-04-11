@@ -1,0 +1,35 @@
+.search-bar-container{
+
+  .notification-data-header {
+    margin-top: -5px;
+    margin-right: 13px;
+  }
+
+  .notifications-alert {
+    background: $negotiation_notification;
+    width: 35px;
+    height: 35px;
+  }
+
+  .categories-menu .dropdown-menu, .mapbox-menu .dropdown-menu{
+    width: 100%;
+    display: inline;
+  }
+
+  .dropdown-menu{
+    background: none;
+    -webkit-background-clip: none;
+    background-clip: none;
+    border: none;
+    border-radius: 0;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+
+  }
+
+}
+.navbar{
+  margin-bottom: 0;
+  border: none;
+  border-radius: 0;
+}

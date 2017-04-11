@@ -1,0 +1,222 @@
+.viva-chat.container {
+    width: 65%;
+    margin: 160px auto 0px;
+    background-color: #FFF;
+    display: flex;
+    border-radius: 5px;
+    max-width: 1189px;
+
+    @media (max-width: 768px) {
+      border-radius: 0px;
+      display: inline-block;
+      height: 90vh;
+      margin: 0px;
+      margin-top: 10vh;
+      width: 100%;
+
+      .sub-container {
+        padding-left: 3vw;
+        flex-grow: 10;
+      }
+    }
+
+    .left-container {
+      order: 1;
+      padding: 0px 0px 0;
+
+      @media (max-width: 768px) {
+        display: flex;
+        padding: 1.4vh;
+        width: 100%;
+      }
+
+      .text-green {
+        color: #84cc03!important;
+      }
+
+      h1{
+        font-family: 'foundrysterling-mediumregular';
+        font-size: 1.3vw;
+        margin: 1.6vw 0 0;
+        color: #666;
+        padding-left: 2vw;
+        height: 1.6vw;
+
+        @media (max-width: 768px) {
+          display: none;
+        }
+      }
+
+      @media (max-width: 768px) {
+        .image-container{
+          width: 27vw;
+          height: 27vw;
+
+          .image-box {
+            cursor: pointer;
+            height: 27vw;
+            width: 27vw;
+            border-radius: 5px;
+          }
+        }
+      }
+
+      .vip-container {
+        padding: 0 2vw;
+
+        @media(max-width:768px) {
+          padding: 0;
+        }
+
+        .image-container {
+          height: 12vw;
+          width: 12vw;
+          margin: 1vw 0;
+
+          .image-box {
+            cursor: pointer;
+            height: 12vw;
+            width: 12vw;
+            border-radius: 10px;
+          }
+        }
+      }
+
+      .data-container {
+        p {
+          color: #666;
+          font-family: 'foundrysterling-mediumregular';
+        }
+
+        .first-line {
+          font-size: 1.2vw;
+          font-weight: bold;
+          cursor: pointer;
+
+          @media(max-width:768px) {
+            font-size: 5vw;
+            margin-bottom: 3px;
+          }
+        }
+
+        .second-line {
+          font-size: 1vw;
+          font-family: 'foundrysterling-lightregular';
+
+          @media(max-width:768px) {
+            font-size: 3.5vw;
+          }
+        }
+      }
+
+      .actions-container {
+        padding: 2vw 2vw 0;
+        border-top: 1px solid #ddd;
+        margin-top: 1.8vw;
+
+        @media(max-width: 768px) {
+          display: flex;
+          padding: 0px;
+          margin: 0;
+          justify-content: flex-end;
+          padding-top: 1.6vh;
+
+          .btn-make-offer-container {
+            order: 2;
+          }
+
+          .btn-accept-offer-container {
+            order: 1;
+            padding-right: 1.5vw;
+          }
+        }
+      }
+
+      .actions {
+        display: flex;
+        webkit-justify-content: center;
+        ms-text-justify: center;
+        apple-justify-content: center;
+        khtml-justify-content: center;
+        justify-content: center;
+
+        .btn{
+          margin: 0.1vw 0 0.9vw;
+          width: 100%;
+          height: 8vh;
+          font-size: 1.2vw;
+          line-height: 1.2;
+          border-radius: 10px;
+          letter-spacing: 0px;
+          font-weight: normal;
+          color: #FFF;
+          font-family: 'foundrysterling-demiregular';
+
+          &:disabled {
+            background: #f0f0f0;
+          }
+
+          @media(max-width:768px) {
+            height: 9.4vw;
+            width: 100%;
+            font-size: 3.5vw;
+            padding: 0;
+            border-radius: 5px;
+            padding: 0.5vw;
+            margin: 0;
+            padding-right: 2.1vw;
+            padding-left: 2.1vw;
+          }
+        }
+      }
+
+      .btn-make-offer-negotiation{
+        background: #09F;
+
+        &:hover{
+          background: #0070FF;
+        }
+      }
+
+      .btn-accept-offer{
+        background: $green;
+
+        &:hover{
+          background: #3AAD01;
+        }
+      }
+
+      .btn-cancel-offer{
+        background: transparent;
+        color: #09F!important;
+        font-family: 'foundrysterling-bookregular'!important;
+        font-size: 1vw!important;
+
+        &:active {
+          box-shadow: none;
+        }
+
+        &:hover {
+          text-decoration: underline;
+        }
+
+      }
+
+
+    }
+
+    .right-container {
+      order: 2;
+      flex-grow: 10;
+
+      @media (max-width: 768px) {
+        display: inline-block;
+        width: 100%;
+      }
+    }
+
+}
+
+// 0070FF AZUL ROLE HOVER
+// 3AAD01 VERDE ROLE HOVER
+// CANCELAR UNDERLINE

@@ -1,0 +1,157 @@
+.items-list {
+  -webkit-box-flex-wrap: wrap;
+  -webkit-flex-wrap: wrap;
+  flex-wrap: wrap;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  width: auto;
+  margin: 30px -15px 20px 0;
+  .item-list-container {
+    width: calc(20% - 15px);
+    height: auto;
+    margin: 0 15px 30px 0;
+    border-radius: 10px;
+    background: white;
+    border: 1px solid $gallery;
+    overflow: hidden;
+    .list-product-image-container {
+      position: relative;
+      width: 100%;
+      padding-bottom: 100%;
+      cursor: pointer;
+      .list-product-image {
+        width: 100%;
+        height: 100%;
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: absolute;
+        border-top-left-radius: 12px;
+      }
+      .list-fav-me-container{
+        overflow: hidden;
+        transform: rotate(45deg);
+        width: 40px;
+        height: 84px;
+        margin: 0;
+        padding: 0;
+        position: absolute;
+        top: -29px;
+        left: -5px;
+        z-index: 10;
+      }
+      .list-fav-me{
+        position: absolute;
+        bottom: 10px;
+        right: -32px;
+        z-index: 10;
+        width: 60px;
+        height: 60px;
+        background: $product_fav_not_liked;
+        cursor: pointer;
+        transform: rotate(-45deg);
+        &.liked {
+          background: $product_fav_liked;
+        }
+      }
+      .list-flag-container {
+        overflow: hidden;
+        transform: rotate(45deg);
+        margin: 0;
+        padding: 0;
+        position: absolute;
+        z-index: 9;
+        width: 20px;
+        height: 120px;
+        top: -27px;
+        left: 26px;
+        .list-flag {
+          position: absolute;
+          bottom: 16px;
+          right: -41px;
+          z-index: 9;
+          width: 83px;
+          height: 83px;
+          transform: rotate(-45deg);
+          &.EXPIRED {
+            background: $flag_expired;
+          }
+          &.SOLD {
+            background: $flag_sold;
+          }
+          &.NOT_VERIFIED {
+            background: $flag_not_verified;
+          }
+          &.PENDING {
+            background: $flag_pending;
+          }
+          &.ACTIVE {
+            background: none;
+          }
+        }
+      }
+    }
+    .list-product-info-container {
+      width: 100%;
+      padding: 6px 11px 8px 12px;
+      border-top: 1px solid $ligthSilver;
+      .list-price-section {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-box-pack: justify;  
+        -webkit-justify-content: space-between;
+        justify-content: space-between;
+        -webkit-box-align: center;
+        -webkit-align-items: center;
+        align-items: center;
+        width: 100%;
+        .list-product-price {
+          font-family: 'foundrysterling-demiregular';
+  				@include text(18px, null, null, $empeoror);
+        }
+        .list-favs-share {
+          display: -webkit-box;
+          display: -webkit-flex;
+          display: flex;
+          -webkit-box-align: center;
+          -webkit-align-items: center;
+          align-items: center;
+          .list-product-favs {
+            display: -webkit-box;
+            display: -webkit-flex;
+            display: flex;
+            -webkit-box-align: center;
+            -webkit-align-items: center;
+            align-items: center;
+            margin-right: 8px;
+            font-family: 'foundrysterling-bookregular';
+            @include text(15px, null, null, $silver);
+            .list-fav-icon {
+              width: 14px;
+              height: 14px;
+              background: $icon_like_small;
+              margin-right: 3px;
+              margin-bottom: 1px;
+            }
+          }
+          .list-product-share {
+            background: $icon_share_red;
+  			    width: 15px;
+  			  	height: 15px;
+            cursor: pointer;
+            margin-bottom: 2px;
+          }
+        }
+      }
+      .list-name-section {
+        .list-item-name {
+          font-family: 'foundrysterling-bookregular';
+  				@include text(16px, null, null, $empeoror);
+          margin-left: -1px;
+        }
+      }
+    }
+  }
+}

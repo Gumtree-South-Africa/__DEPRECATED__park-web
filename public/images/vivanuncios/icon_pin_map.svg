@@ -1,0 +1,32 @@
+<svg id="icon_pin_map.svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="40" height="53" viewBox="0 0 40 53">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #c33;
+        filter: url(#filter);
+      }
+
+      .cls-1, .cls-2, .cls-3 {
+        fill-rule: evenodd;
+      }
+
+      .cls-2 {
+        fill: #932424;
+      }
+
+      .cls-3 {
+        fill: #fff;
+      }
+    </style>
+    <filter id="filter" x="897" y="98" width="40" height="53" filterUnits="userSpaceOnUse">
+      <feOffset result="offset" in="SourceAlpha"/>
+      <feGaussianBlur result="blur" stdDeviation="2.449"/>
+      <feFlood result="flood"/>
+      <feComposite result="composite" operator="in" in2="blur"/>
+      <feBlend result="blend" in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <path id="Ellipse_1_copy_2" data-name="Ellipse 1 copy 2" class="cls-1" d="M916.5,103.169a14.07,14.07,0,0,1,14.07,14.069c0,7.771-14.07,27.093-14.07,27.093s-14.07-19.322-14.07-27.093A14.07,14.07,0,0,1,916.5,103.169Z" transform="translate(-897 -98)"/>
+  <path id="Ellipse_1_copy" data-name="Ellipse 1 copy" class="cls-2" d="M916.5,109.552a7.686,7.686,0,1,1-7.686,7.686A7.686,7.686,0,0,1,916.5,109.552Z" transform="translate(-897 -98)"/>
+  <path class="cls-3" d="M916.5,112.883a4.356,4.356,0,1,1-4.355,4.355A4.355,4.355,0,0,1,916.5,112.883Z" transform="translate(-897 -98)"/>
+</svg>

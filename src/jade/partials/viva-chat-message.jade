@@ -1,0 +1,9 @@
+div.viva-chat-message-container(ng-class="{sender:isMyMessage, 'rejected-offer': isRejected, 'accepted-offer': isAccepted}")
+  div.user-box(ng-show="!isMyMessage && !isAccepted && !isRejected" ng-style="userStyle")
+  div.chat-box(ng-class="{reciever:!isMyMessage && !isAccepted && !isRejected, sender:isMyMessage && !isAccepted && !isRejected, 'message-disabled': myConversation.status.isRejected , 'accepted-offer': isAccepted, 'rejected-offer': isRejected}" )
+    div.icon-alert(ng-if="isRejected")
+      span.icon
+    div.message-text
+      span.chat-message(ng-bind-html="comment")
+    div.message-meta
+      span.chat-data(ng-hide="isAccepted || isRejected") {{postTime}}

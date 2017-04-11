@@ -1,0 +1,66 @@
+#nav-bar-modal {
+  display: none;
+
+  @media (max-width: 768px) {
+    display: inline-block;
+    height: 10vh;
+    max-height: 10vh;
+    min-height: 10vh;
+
+    .container-top-header {
+      display: flex;
+      align-items: center;
+      height: 10vh;
+    }
+
+    h1 {
+      font-size: 5.4vw;
+      margin: 0;
+      color: white;
+      line-height: normal;
+    }
+
+    .back-container-button {
+      padding: 3vw;
+      width: 40px;
+      height: 44px;
+    }
+
+    .back {
+      width: 3vw;
+      height: 5.6vw;
+      background: $arrow_back_modals_mobile;
+      border: none;
+    }
+
+    .container-actions{
+      display: flex;
+      justify-content: flex-end;
+      flex-grow: 10;
+
+      button{
+        font-size: 4.0vw;
+        margin: 3px 0 0;
+        color: white;
+        font-family: 'foundrysterling-bookregular';
+        border: none;
+        background: transparent;
+        padding-right: 4vw;
+      }
+    }
+  }
+
+  @media (max-width:768px) and (orientation:landscape) {
+    .back-container-button {
+      padding: 10px;
+      width: 40px;
+      height: 44px;
+    }
+    .back {
+      width: 25px;
+      height: 25px;
+      background: $arrow_back_modals_mobile;
+      border: none;
+    }
+  }
+}

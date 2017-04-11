@@ -1,0 +1,44 @@
+//White background container
+.search-keywords-container{
+  margin-bottom: 60px;
+  .breadcrumb {
+    padding: 0px;
+    margin: 35px 0px 35px 20px; 
+    background: none;
+    border: none;
+    li {
+      a, span {
+        font-family: $stack-verlag;
+        @include text(16px,1.1,null,$cinnabar-red);
+      }
+      &.active {
+        a, span {
+          @include text(16px,1.1,null,$black);
+        }
+      }
+      + li:before {
+        content: ">>";
+        padding: 0 5px;
+        @include text(12px,1.1,null,$bombay-gray);
+        margin: 0px 12px;
+      }
+    }
+  }
+
+  .search-results-container{
+    img{
+      width: 100%;
+    }
+    .search-results-mid-container{
+      padding: 2px;
+      margin: 0;
+    }
+  }
+}
+
+@media (min-width: 991px) {
+  .search-keywords-container {
+    width: $max-container-width;
+    margin: 0 auto;
+  }
+}

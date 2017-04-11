@@ -1,0 +1,174 @@
+.user-profile-title-container{
+  .user-profile-mid-container{
+    padding-left: 0;
+    padding-right: 0;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    height: 100%;
+    .img-container{
+      padding:0px;
+      width: 100px;
+    }
+
+    .number-social{
+      font-family: $stack-verlag-bold;
+      @include text(16px,null,null,$tangaroa-blue);
+      padding-right:2px;
+    }
+    .title-social{
+      @include text(16px,null,null,$pickled-blue);
+      padding-left:2px;
+    }
+
+    h1.h1_metatag_title {
+      font-size: 3px;
+      color: $sea-shell-gray;
+      float: right;
+      margin: 0px;
+    }
+  }
+}
+
+.user-profile-mid-titles {
+  padding-left: 0px;
+  padding-right: 0px;
+  .col-md-6{
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+  h5{
+    font-family: $stack-verlag-bold;
+    @include text(18px,null,null,$close5-red);
+  }
+  h6{
+    padding-top: 0;
+    @include text(16px,null,null,$bombay-gray);
+  }
+  .btn-follow{
+    width: 100px;
+    height: 40px;
+    border-radius: 6px;
+    background-color: $close5-red;
+    font-family: $stack-verlag-bold;
+    @include text(16px,null,null,$white);
+    padding-top: 7px;
+    &:hover {
+      color: $white !important;
+    }
+  }
+  .social-data{
+    .col-md-4{
+      padding-right: 0;
+      padding-left: 0;
+    }
+  }
+}
+
+.user-profile-ads-container{
+  padding-bottom: 60px;
+  .col-md-3{
+    margin:0;
+    padding: 5px;
+  }
+  img{ width: 100%;}
+  a span{
+    position: absolute;
+    float: left;
+    z-index: 200;
+    top: -webkit-calc(100% - 35px);
+    top: -moz-calc(100% - 35px);
+    top: calc(100% - 35px);
+    left: 15px;
+    font-family: $stack-verlag-bold;
+    @include text(18px,null,null,$white);
+
+  }
+}
+
+@media (max-width: 1188px) {
+  .user-profile-mid-titles h6{
+    font-size: 14px;
+  }
+}
+@media (max-width: 1080px){
+  .user-profile-mid-titles h6{
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 992px){
+  .user-profile-mid-titles h6{
+    font-size: 16px;
+  }
+  .user-profile-mid-titles, .user-profile-mid-titles p, .user-profile-mid-titles .text-right{
+    text-align: center;
+  }
+}
+
+
+.user-logged {
+  
+  &.container-user {
+    background-color: #555!important;
+  }
+
+  .title, .user-location, .user-published, .date, .following-numbers p, .ratings p, .promo p {
+    color: white!important;
+  }
+
+  .promo .play-store {
+    background: $google_playstore_logo_white!important;
+  }
+
+  .promo .app-store {
+    background: $apple_store_logo_white!important;
+  }
+
+  .user-follow-button .user-share, .user-name .user-share {
+    background: $icon_share_white!important;
+  }
+
+  .user-location {
+    .map-marker {
+      background: $icon_pin_1_white!important;
+    }
+  }
+
+  .item-info-container .user-social-info {
+    border-top: 1px solid #838383!important;
+  }
+
+  .social-icons {
+      padding: 9px 18px;
+      span {
+        float: left;
+        width: 50px;
+        height: 38px;
+        &.facebook-icon {
+          margin-right: 5px;
+          background: $facebook-icon-light-disabled!important;
+          &.checked {
+            background: $facebook-icon-light-checked!important;
+          }
+        }
+        &.twitter-icon {
+          background: $twitter-icon-light-disabled!important;
+          &.checked {
+            background: $twitter-icon-light-checked!important;
+          }
+        }
+        &.email-icon {
+          background: $email-icon-light-disabled!important;
+          &.checked {
+            background: $email-icon-light-checked!important;
+          }
+        }
+      }
+    }
+
+
+  p {
+    color: white;
+  }
+
+}

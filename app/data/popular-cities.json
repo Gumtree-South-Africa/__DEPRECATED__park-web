@@ -1,0 +1,44 @@
+{
+	"cities" : [
+		{
+			"name": "New York",
+			"canonical": "new-york-ny",
+			"state": "NY"
+		},
+		{
+			"name": "Los Angeles",
+			"canonical": "los-angeles-ca",
+			"state": "CA"
+		},
+		{
+			"name": "Houston",
+			"canonical": "houston-tx",
+			"state": "TX"
+		},
+		{
+			"name": "San Juan Puerto Rico",
+			"canonical": "san-juan-pr",
+			"state": "PR"
+		},
+		{
+			"name": "Miami",
+			"canonical": "miami-fl",
+			"state": "FL"
+		},
+		{
+			"name": "Dallas",
+			"canonical": "dallas-tx",
+			"state": "TX"
+		},
+		{
+			"name": "San Antonio",
+			"canonical": "san-antonio-tx",
+			"state": "TX"
+		},
+		{
+			"name": "El Paso",
+			"canonical": "el-paso-tx",
+			"state": "TX"
+		}
+	]
+}

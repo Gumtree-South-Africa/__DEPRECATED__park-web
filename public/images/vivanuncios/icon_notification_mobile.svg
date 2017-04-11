@@ -1,0 +1,24 @@
+<svg id="icon_notification_mobile.svg" xmlns="http://www.w3.org/2000/svg" width="42" height="40.969" viewBox="0 0 42 40.969">
+  <defs>
+    <style>
+      .cls-1 {
+        fill-opacity: 0.2;
+      }
+
+      .cls-1, .cls-2 {
+        fill-rule: evenodd;
+      }
+
+      .cls-2 {
+        fill: #fff;
+      }
+
+      .cls-3 {
+        fill: #ff5531;
+      }
+    </style>
+  </defs>
+  <path id="chat_icon_copy" data-name="chat icon copy" class="cls-1" d="M373,31a7.993,7.993,0,0,0,10.99,7.417v8.338A9.244,9.244,0,0,1,374.746,56H359.789l-7.778,7.972V55.714a9.239,9.239,0,0,1-7-8.959V37.26a9.244,9.244,0,0,1,9.244-9.244h19.33A7.978,7.978,0,0,0,373,31Z" transform="translate(-345 -23)"/>
+  <path id="chat_icon" data-name="chat icon" class="cls-2" d="M373,29a7.993,7.993,0,0,0,10.99,7.417v8.338A9.244,9.244,0,0,1,374.746,54H359.789l-7.778,7.972V53.714a9.239,9.239,0,0,1-7-8.959V35.26a9.244,9.244,0,0,1,9.244-9.244h19.33A7.978,7.978,0,0,0,373,29Z" transform="translate(-345 -23)"/>
+  <circle id="red_dot" data-name="red dot" class="cls-3" cx="36" cy="6" r="6"/>
+</svg>

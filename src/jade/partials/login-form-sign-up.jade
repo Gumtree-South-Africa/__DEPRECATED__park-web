@@ -1,0 +1,9 @@
+//- Sign Up
+
+div(  ng-show="registrationFormDisplayed" class="col-md-12 form-horizontal login-form")
+  div( ng-hide="runningOnMobile()" class="panel-heading col-md-12 col-sm-12")
+    span( ng-click="backToMainMenu()" class="arrow_icon_left")
+    p( class="login-link") Registración
+
+  viva-login-sign-up(user="user" registration-form="registrationForm" api-error="apiError" valid-zipcode="validZipcode" disable-invalid-zip-code-message="disableInvalidZipCodeMessage" is-location-empty="isLocationEmpty" registration-form-displayed="registration-form-displayed" signup-submit="signupSubmit")
+

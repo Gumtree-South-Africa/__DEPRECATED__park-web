@@ -1,0 +1,5 @@
+<ol itemscope="" itemtype="http://schema.org/BreadcrumbList" class="breadcrumb">
+  <li ng-repeat="step in steps" ng-class="{active: $last}" ng-switch="$last || !!step.abstract" itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem"><a ng-switch-when="false" href="{{step.ncyBreadcrumbLink}}" itemprop="item"><span itemprop="name">{{step.ncyBreadcrumbLabel}}</span></a><span ng-switch-when="true" itemprop="name">{{step.ncyBreadcrumbLabel}}</span>
+    <meta itemprop="position" content="{{$index + 1}}" />
+  </li>
+</ol>

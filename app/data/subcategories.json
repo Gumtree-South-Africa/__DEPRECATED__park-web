@@ -1,0 +1,79 @@
+[
+   {
+      "id":"fashion",
+      "name":"Fashion",
+      "category":"fashion",
+      "subcategories":["Men's Clothing","Women's Clothing","Children's Clothes","Shoes","Jewelry & Watches","Purses & Accessories","Health & Beauty"],
+      "mapping":["clothingAccessories", "jewelry", "healthBeauty"]
+   },
+   {
+      "id":"home",
+      "name":"Home Goods",
+      "category":"home",
+      "subcategories":["Furniture","Home Décor","Appliances","Home Improvement","Pet Supplies","Garden Décor"] ,
+      "mapping":["householdItems","appliances"] 
+   },
+   {
+      "id":"baby",
+      "name":"Baby & Kids",
+      "category":"baby",
+      "subcategories":["Baby Clothes","Nursery Décor","Car Seats","Furniture","Strollers","Baby Accessories","Children's Toys"] ,
+      "mapping":["toysGames", "babyKidStuff"]
+   },
+   {
+      "id":"sporting",
+      "name":"Sporting Goods",
+      "category":"sporting",
+      "subcategories":["Golf Equipment","Bicycles","Hunting & Fishing","Water Sports","Fitness Equipment","Sports Equipment","Camping Gear"],
+      "mapping":["bicycles", "boats", "sportingGoods"]
+   },
+   {
+      "id":"entertainment",
+      "name":"Entertainment",
+      "category":"entertainment",
+      "subcategories":["DVDs/CDs","Video Games & Accessories","Video Game Consoles","Books / Magazines","Musical Instruments","Games"],
+      "mapping":["booksMagazines", "cdsDvdsVhs", "videoGaming", "musicalInstruments", "tickets"]
+   },
+   {
+      "id":"electronics",
+      "name":"Electronics",
+      "category":"electronics",
+      "subcategories":["Computers & Laptops","Computer Accessories","Cell Phones & Accessories","TV & DVD Equipment","Tablets","Cameras & Video"],
+      "mapping":["cellPhones", "computers", "electronics", "photoVideo"]
+   },
+   {
+      "id":"automobile",
+      "name":"Automobile",
+      "category":"automobile",
+      "subcategories":["Cars & Car Accessories","Trucks","Auto Parts","Motorcycles & Scooters","Boats","Trailers"] ,
+      "mapping":["autoParts", "carsTrucks", "motorcyclesScooters", "rvs"]
+   },
+   {
+      "id":"collectibles",
+      "name":"Collectibles & Art",
+      "category":"collectibles",
+      "subcategories":["Trading Cards","Fine Art","Autographs","Comics"] ,
+      "mapping":["collectibles", "artsCrafts", "antiques", "arts"]
+   },
+   {
+      "id":"garageMovingSales",
+      "name":"Garage Sales",
+      "category":"garageMovingSales",
+      "subcategories":[],
+      "mapping":["garageMovingSales"]
+   },
+   {
+      "id":"miscellaneous",
+      "name":"Miscellaneous",
+      "category":"miscellaneous",
+      "subcategories":[],
+      "mapping":[]
+   },
+   {
+      "id":"allcategories",
+      "name":"All Categories",
+      "category":"allcategories",
+      "subcategories":[],
+      "mapping":[]
+   }
+]

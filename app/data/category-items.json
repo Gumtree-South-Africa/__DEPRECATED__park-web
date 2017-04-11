@@ -1,0 +1,366 @@
+{
+    "totalElements": 11,
+    "numberOfElements": 10,
+    "items": [
+      {
+        "id": 1156,
+        "name": "Asdsda",
+        "description": "Asdsda sad sdsadoksks jodi of o assad \nsad pass\nas\ndad\ndata\ndad\nf\nas\ndad\nda\n\nsad\ndad\ndad\ndad\ndad\nfassfaaa\nadd\nads\nd\nd\nsa\ns \nadd\nd\ndad\ndad\nd\nas\nd\nas\ns\nd\nasme md",
+        "price": 1100.0,
+        "totalOfFollowers": 0,
+        "category": {
+          "id": 9,
+          "name": "Electrodomésticos",
+          "color": "23c5cf",
+          "selectable": true
+        },
+        "pictureUrl": "http://i.ebayimg.sandbox.ebay.com/00/s/NTM0WDgwMA==/z/2VMAAOSwyKBXn5C9/$_1.JPG?set_id=8800005007",
+        "latitude": 40.7508,
+        "longitude": -73.998,
+        "published": "2016-08-01T18:13:24Z",
+        "user": {
+          "id": 689,
+          "username": "nicolasporpigl50",
+          "profilePicture": null,
+          "locationName": "Nueva York, NY"
+        },
+        "groups": [
+
+        ],
+        "status": "ACTIVE",
+        "localizedStatus": "ACTIVO",
+        "zipCode": "10001",
+        "publishedBy": "nicolasporpigl50",
+        "url": "http://dev-web.newapptest.com/pr/electrodomesticos/asdsda/1156"
+      },
+      {
+        "id": 1052,
+        "name": "Cascada",
+        "description": "Producto",
+        "price": 10001.0,
+        "totalOfFollowers": 0,
+        "category": {
+          "id": 9,
+          "name": "Electrodomésticos",
+          "color": "23c5cf",
+          "selectable": true
+        },
+        "pictureUrl": "http://i.ebayimg.com/00/s/NTM0WDgwMA==/z/uTMAAOSwgtJXTdkd/$_1.JPG?set_id=8800005007",
+        "latitude": 40.7508,
+        "longitude": -73.998,
+        "published": "2016-05-31T18:35:58Z",
+        "user": {
+          "id": 645,
+          "username": "nicodemo1",
+          "profilePicture": null,
+          "locationName": "New York, NY"
+        },
+        "groups": [
+
+        ],
+        "status": "ACTIVE",
+        "localizedStatus": "ACTIVO",
+        "zipCode": "10001",
+        "publishedBy": "nicodemo1",
+        "url": "http://dev-web.newapptest.com/pr/electrodomesticos/cascada/1052"
+      },
+      {
+        "id": 1029,
+        "name": "todo",
+        "description": "",
+        "price": 250.0,
+        "totalOfFollowers": 1,
+        "category": {
+          "id": 9,
+          "name": "Electrodomésticos",
+          "color": "23c5cf",
+          "selectable": true
+        },
+        "pictureUrl": "http://i.ebayimg.com/00/s/NzQwWDk2MA==/z/FPYAAOSw1DtXH3i8/$_1.JPG?set_id=8800005007",
+        "latitude": 40.7537,
+        "longitude": -73.9992,
+        "published": "2016-04-26T14:21:02Z",
+        "user": {
+          "id": 530,
+          "username": "xPeke",
+          "profilePicture": "http://i.ebayimg.com/00/s/NjEyWDgxNg==/z/5DIAAOSwAoRXFpbd/$_1.JPG?set_id=8800005007",
+          "locationName": "New York, NY"
+        },
+        "groups": [
+
+        ],
+        "status": "ACTIVE",
+        "localizedStatus": "ACTIVO",
+        "zipCode": "10001",
+        "publishedBy": "xPeke",
+        "url": "http://dev-web.newapptest.com/pr/electrodomesticos/todo/1029"
+      },
+      {
+        "id": 1027,
+        "name": "Taza",
+        "description": "",
+        "price": 20.0,
+        "totalOfFollowers": 1,
+        "category": {
+          "id": 9,
+          "name": "Electrodomésticos",
+          "color": "23c5cf",
+          "selectable": true
+        },
+        "pictureUrl": "http://i.ebayimg.com/00/s/NzQwWDk2MA==/z/hiMAAOSwaZdXH3hA/$_1.JPG?set_id=8800005007",
+        "latitude": 40.7537,
+        "longitude": -73.9992,
+        "published": "2016-04-26T14:18:57Z",
+        "user": {
+          "id": 530,
+          "username": "xPeke",
+          "profilePicture": "http://i.ebayimg.com/00/s/NjEyWDgxNg==/z/5DIAAOSwAoRXFpbd/$_1.JPG?set_id=8800005007",
+          "locationName": "New York, NY"
+        },
+        "groups": [
+
+        ],
+        "status": "ACTIVE",
+        "localizedStatus": "ACTIVO",
+        "zipCode": "10001",
+        "publishedBy": "xPeke",
+        "url": "http://dev-web.newapptest.com/pr/electrodomesticos/taza/1027"
+      },
+      {
+        "id": 1021,
+        "name": "xkdidbek",
+        "description": "",
+        "price": 50.0,
+        "totalOfFollowers": 0,
+        "category": {
+          "id": 9,
+          "name": "Electrodomésticos",
+          "color": "23c5cf",
+          "selectable": true
+        },
+        "pictureUrl": "http://i.ebayimg.com/00/s/NzQwWDk2MA==/z/4agAAOSw-tNXH23G/$_1.JPG?set_id=8800005007",
+        "latitude": 40.7537,
+        "longitude": -73.9992,
+        "published": "2016-04-26T13:33:30Z",
+        "user": {
+          "id": 487,
+          "username": "Mewtwo",
+          "profilePicture": "http://i.ebayimg.com/00/s/MzA2WDQwMA==/z/SSgAAOSwAvJXBzbh/$_1.JPG?set_id=8800005007",
+          "locationName": "New York, NY"
+        },
+        "groups": [
+          {
+            "id": 55,
+            "name": "helou grupo",
+            "pictureUrl": null,
+            "totalSubscribers": 9,
+            "totalItems": 9,
+            "locationName": "Beverly Hills, CA",
+            "location": "34.103,-118.41",
+            "zipCode": "77002",
+            "owner": {
+              "id": 335,
+              "username": "linkAndroid",
+              "profilePicture": null,
+              "locationName": "Beverly Hills, CA"
+            },
+            "url": null
+          }
+        ],
+        "status": "ACTIVE",
+        "localizedStatus": "ACTIVO",
+        "zipCode": "10001",
+        "publishedBy": "Mewtwo",
+        "url": "http://dev-web.newapptest.com/pr/electrodomesticos/xkdidbek/1021"
+      },
+      {
+        "id": 1000,
+        "name": "vdsjs",
+        "description": "Ncnddkd",
+        "price": 181881.0,
+        "totalOfFollowers": 0,
+        "category": {
+          "id": 9,
+          "name": "Electrodomésticos",
+          "color": "23c5cf",
+          "selectable": true
+        },
+        "pictureUrl": "http://i.ebayimg.com/00/s/NjAwWDYwMA==/z/QDkAAOSwZ8ZXB~nJ/$_1.JPG?set_id=8800005007",
+        "latitude": 40.7164,
+        "longitude": -73.9859,
+        "published": "2016-04-08T18:36:56Z",
+        "user": {
+          "id": 608,
+          "username": "NicolasP",
+          "profilePicture": null,
+          "locationName": "Nueva York, NY"
+        },
+        "groups": [
+
+        ],
+        "status": "ACTIVE",
+        "localizedStatus": "ACTIVO",
+        "zipCode": "10002",
+        "publishedBy": "NicolasP",
+        "url": "http://dev-web.newapptest.com/pr/electrodomesticos/vdsjs/1000"
+      },
+      {
+        "id": 967,
+        "name": "asdsad",
+        "description": "Sadsad",
+        "price": 12312.0,
+        "totalOfFollowers": 2,
+        "category": {
+          "id": 9,
+          "name": "Electrodomésticos",
+          "color": "23c5cf",
+          "selectable": true
+        },
+        "pictureUrl": "http://i.ebayimg.com/00/s/NTMyWDgwMA==/z/pi0AAOSwoudW8CRh/$_1.JPG?set_id=8800005007",
+        "latitude": 40.7164,
+        "longitude": -73.9859,
+        "published": "2016-03-21T16:44:06Z",
+        "user": {
+          "id": 608,
+          "username": "NicolasP",
+          "profilePicture": null,
+          "locationName": "Nueva York, NY"
+        },
+        "groups": [
+
+        ],
+        "status": "ACTIVE",
+        "localizedStatus": "ACTIVO",
+        "zipCode": "10002",
+        "publishedBy": "NicolasP",
+        "url": "http://dev-web.newapptest.com/pr/electrodomesticos/asdsad/967"
+      },
+      {
+        "id": 953,
+        "name": "assadsd",
+        "description": "ASDsasdasaddasasdsdaadsaddsasdasadsdasddassasdadssdadsadsa",
+        "price": 12213.0,
+        "totalOfFollowers": 0,
+        "category": {
+          "id": 9,
+          "name": "Electrodomésticos",
+          "color": "23c5cf",
+          "selectable": true
+        },
+        "pictureUrl": "http://i.ebayimg.com/00/s/NTM0WDgwMA==/z/-gAAAOSwvFZW8BhP/$_1.JPG?set_id=8800005007",
+        "latitude": 40.7164,
+        "longitude": -73.9859,
+        "published": "2016-03-21T15:52:07Z",
+        "user": {
+          "id": 608,
+          "username": "NicolasP",
+          "profilePicture": null,
+          "locationName": "Nueva York, NY"
+        },
+        "groups": [
+
+        ],
+        "status": "ACTIVE",
+        "localizedStatus": "ACTIVO",
+        "zipCode": "10002",
+        "publishedBy": "NicolasP",
+        "url": "http://dev-web.newapptest.com/pr/electrodomesticos/assadsd/953"
+      },
+      {
+        "id": 907,
+        "name": "jdjdjdjd",
+        "description": "af",
+        "price": 85.0,
+        "totalOfFollowers": 2,
+        "category": {
+          "id": 9,
+          "name": "Electrodomésticos",
+          "color": "23c5cf",
+          "selectable": true
+        },
+        "pictureUrl": "http://i.ebayimg.com/00/s/MzAwWDMwMA==/z/DjkAAOSwa-dWpukt/$_1.JPG?set_id=8800004005",
+        "latitude": 40.7508,
+        "longitude": -73.998,
+        "published": "2016-01-26T03:23:20Z",
+        "user": {
+          "id": 128,
+          "username": "juanitobot",
+          "profilePicture": "http://i.ebayimg.com/00/s/NTM0WDgwMA==/z/ohQAAOSwh-1W3Yju/$_1.JPG?set_id=8800005007",
+          "locationName": "New York, NY"
+        },
+        "groups": [
+          {
+            "id": 33,
+            "name": "aaaaa",
+            "pictureUrl": null,
+            "totalSubscribers": 6,
+            "totalItems": 4,
+            "locationName": "Los Angeles, CA",
+            "location": "34.1031,-118.417",
+            "zipCode": "90210",
+            "owner": {
+              "id": 165,
+              "username": "diana",
+              "profilePicture": null,
+              "locationName": "Rosario, Santa Fe, Argentina"
+            },
+            "url": null
+          },
+          {
+            "id": 34,
+            "name": "bbbbbb",
+            "pictureUrl": null,
+            "totalSubscribers": 8,
+            "totalItems": 7,
+            "locationName": "Los Angeles, CA",
+            "location": "34.1031,-118.417",
+            "zipCode": "90210",
+            "owner": {
+              "id": 165,
+              "username": "diana",
+              "profilePicture": null,
+              "locationName": "Rosario, Santa Fe, Argentina"
+            },
+            "url": null
+          }
+        ],
+        "status": "ACTIVE",
+        "localizedStatus": "ACTIVO",
+        "zipCode": "10001",
+        "publishedBy": "juanitobot",
+        "url": "http://dev-web.newapptest.com/pr/electrodomesticos/jdjdjdjd/907"
+      },
+      {
+        "id": 720,
+        "name": "rshx",
+        "description": "Yahshjdueuehshdgehjd dhsbsjdj dusuus dudiusbsusis hsushdbsh",
+        "price": 575484.0,
+        "totalOfFollowers": 0,
+        "category": {
+          "id": 9,
+          "name": "Electrodomésticos",
+          "color": "23c5cf",
+          "selectable": true
+        },
+        "pictureUrl": "http://i.ebayimg.sandbox.ebay.com/00/s/NjAwWDYwMA==/z/e10AAOSwyKBWlnt5/$_1.JPG?set_id=8800005007",
+        "latitude": 40.7508,
+        "longitude": -73.998,
+        "published": "2016-01-13T16:32:10Z",
+        "user": {
+          "id": 128,
+          "username": "juanitobot",
+          "profilePicture": "http://i.ebayimg.com/00/s/NTM0WDgwMA==/z/ohQAAOSwh-1W3Yju/$_1.JPG?set_id=8800005007",
+          "locationName": "New York, NY"
+        },
+        "groups": [
+
+        ],
+        "status": "ACTIVE",
+        "localizedStatus": "ACTIVO",
+        "zipCode": "10001",
+        "publishedBy": "juanitobot",
+        "url": "http://dev-web.newapptest.com/pr/electrodomesticos/rshx/720"
+      }
+    ],
+    "serverTime": "1473187187"
+  }

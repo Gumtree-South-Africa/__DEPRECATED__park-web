@@ -1,0 +1,29 @@
+
+<div ng-hide="confirmOffer" class="contariner-make-offer">
+  <div class="modal-header">
+    <h1>Tu oferta</h1>
+  </div>
+  <div class="modal-body">
+    <p>{{presentationText}}</p>
+    <p class="black-text">{{questionText}}</p>
+    <form id="make-offer" name="formMakeOffer">
+      <input placeholder="Ingresa el monto de tu oferta" name="price" ng-model="offer.price" viva-currency-input="viva-currency-input"/>
+      <p class="error-message">La oferta debe estar entre $0.01 y $999999.99</p>
+    </form>
+  </div>
+  <div class="modal-footer">
+    <button ng-click="cancel()" class="btn btn-cancel">Cancelar</button>
+    <button ng-click="makeOffer()" class="btn btn-make-offer">Ofertar</button>
+  </div>
+</div>
+<div ng-show="confirmOffer" class="container-confirm-offer">
+  <div class="modal-body">
+    <p>Estás ofertando por</p>
+    <p ng-bind="offer.price | vivaCurrency" class="black-text"></p>
+    <p>¿Confirmas tu oferta?</p>
+  </div>
+  <div class="modal-footer top-border">
+    <button ng-click="confirm(false)" class="btn btn-confirm no">NO</button>
+    <button ng-click="confirm(true)" class="btn btn-confirm yes">SI</button>
+  </div>
+</div>

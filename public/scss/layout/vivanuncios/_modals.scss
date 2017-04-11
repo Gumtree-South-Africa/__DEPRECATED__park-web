@@ -1,0 +1,509 @@
+// modal
+.modal-content {
+  font-family: $foundrysterling-bookregular;
+  .modal-header {}
+  .modal-body {
+    padding: 15px;
+    .panel {
+      .title {
+        @include text(23px, 1.0, normal, $doveGray);
+        border-bottom: 1px solid $mercury;
+        text-align: left;
+        padding: 20px 0;
+        margin: 10px 25px 0;
+      }
+      border-radius: 20px;
+      .modal-share {
+        padding: 15px 20px;
+        margin: 0px;
+        .img-item-share {
+          width: 62px;
+          height: 62px;
+          float: left;
+          margin: 10px 15px 0px 0px;
+          border-radius: 5px;
+        }
+        .img-circle {
+          width: 65px;
+          height: 65px;
+          float: left;
+          box-shadow: 2px 2px 10px #555;
+          border: 2px solid $white;
+        }
+        .avatar {
+          float: left;
+          background: $avatar;
+          width: 65px;
+          height: 65px;
+        }
+        .modal-header-image {
+          background: $share-app-icon;
+          float: left;
+          width: 77px;
+          height: 77px;
+          margin-right: 10px;
+        }
+        .title {
+          margin: 5px 0px 0px 85px;
+          h3 {
+            margin: -6px 0px 0px 0px;
+            &.share-app {
+              margin: 0px;
+            }
+          }
+          p {
+            margin-bottom: -5px;
+            margin-top: 5px;
+            font-size: 18px;
+          }
+        }
+      }
+      .panel-body {
+
+
+
+        .need-login-title {
+          width: 100%;
+          text-align: center;
+          font-size: 22px;
+          color: #666;
+          margin-top: -20px;
+          margin-bottom: 40px;
+          padding-bottom: 10px;
+          border-bottom: 1px solid #eee;
+        }
+
+        .copy-to-clipboard-message {
+          &.item {
+            margin-top: 10px;
+          }
+          position: absolute;
+          top: 242px;
+          left: 130px;
+          width: 210px;
+          height: 38px;
+          background: #FFE49D;
+          color: $gray;
+          font-weight: bolder;
+          font-size: 15px;
+          padding: 10px;
+          border-radius: 5px;
+          font-family: 'foundrysterling-bookregular';
+        }
+        padding: 30px 0px 44px;
+        .panel-heading {
+          padding: 0px 0px 20px;
+          margin-left: -10px;
+          margin-top: -20px;
+          margin-bottom: 20px;
+          .login-link {
+            padding-left: 10px;
+            font-weight: bold;
+          }
+        }
+        .form-horizontal {
+          padding: 0px 50px;
+          // height: 400px;
+          .form-group {
+            margin: 0px 0px 20px 0px;
+            min-height: 35px;
+            p {
+              margin: 20px 0px;
+              @include text(16px, 1.0, normal, $dustyGray);
+            }
+            .modal-form-input {
+              border: none;
+              box-shadow: none;
+              border-bottom: 1px solid $mercury;
+              border-radius: 0;
+              width: 100%;
+              margin: 5px 0 0;
+              &:active,
+              &:focus {
+                outline: none;
+              }
+            }
+          }
+        }
+        .share-links {
+          -webkit-box-pack: center;
+          -webkit-justify-content: center;
+          justify-content: center;
+          display: -webkit-box;
+          display: -webkit-flex;
+          display: flex;
+          padding-bottom: 15px;
+          a {
+            float: left;
+            width: 80px;
+            height: 80px;
+            margin: 5px 15px;
+            cursor: pointer;
+            &:hover {
+              width: 90px;
+              height: 90px;
+              margin: 0px 10px;
+            }
+            &.facebook-logo {
+              background: $logo-share-facebook;
+              &:hover {
+                background: $logo-share-facebook-over;
+
+                // &::before {
+                //   content: 'Compartir en Facebook';
+                // }
+              }
+            }
+            &.twitter-logo {
+              background: $logo-share-twitter;
+              &:hover {
+                background: $logo-share-twitter-over;
+              }
+            }
+            &.link-logo {
+              background: $logo-share-link;
+              &:hover {
+                background: $logo-share-link-over;
+              }
+            }
+          }
+          .tooltip.tooltip-modal-share {
+            .tooltip-arrow {
+              display: none;
+            }
+            .tooltip-inner {
+              font-family: 'foundrysterling-bookregular';
+              @include text(16px, 1.0, normal, $dustyGray);
+              background: none;
+              box-shadow: none;
+            }
+          }
+        }
+      }
+    }
+    .has-error {
+      padding-bottom: 30px;
+      position: relative;
+      .help-block {
+        position: absolute;
+        bottom: 0;
+        color: red;
+      }
+    }
+    .modal-btns {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: flex;
+    }
+    .modal-confirmation {
+      h2 {
+        @include text(21px, 1.0, bold, $turquoise);
+        letter-spacing: 1px;
+      }
+      p {
+        @include text(17px, 1.2, normal, $doveGray);
+        padding: 16px 0 35px;
+      }
+    }
+    .error-wrapper {
+      min-height: 28px;
+      margin-top: 8px;
+    }
+    .inline-error {
+      color: $coral;
+      float: left;
+      margin-right: 5px;
+    }
+    .api-error {
+      min-height: 32px;
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: flex;
+      -webkit-box-pack: center;
+      -webkit-justify-content: center;
+      justify-content: center;
+      .inline-error {
+        margin-top: 0;
+      }
+    }
+  }
+}
+
+// login modal
+.login-form {
+
+	.modal-body {
+		width: 420px;
+	}
+
+	.panel-body {
+		padding: 25px 0px 0px!important;
+	}
+
+  .login-link {
+    @include text(18px, 1.0, normal, $doveGray);
+    float: left;
+    padding-left: 18px;
+  }
+  .arrow_icon_left {
+    background: $icon_arrow_ingresar_left;
+    width: 18px;
+    height: 30px;
+    float: left;
+    margin-top: -6px;
+    margin-left: -21px;
+    &:hover {
+      cursor: pointer;
+    }
+  }
+  .panel-heading {
+    padding: 0px 0px 10px;
+    margin-left: -10px;
+    margin-top: -20px;
+    margin-bottom: 20px;
+    .login-link {
+      padding-left: 10px;
+      font-weight: bold;
+    }
+  }
+  .modal-content .modal-body .panel .panel-body .form-horizontal .form-group .btn-facebook {
+    padding: 5px 10px;
+    .facebook-logo {
+      background: $logo_facebook_ingresar_btn;
+      float: left;
+      width: 32px;
+      height: 32px;
+      position: relative;
+      border-right: none;
+      margin-right: 20px;
+    }
+    p {
+      float: left;
+      margin: 6px 0px;
+      @include text(18px, 1.0, normal, $btn-facebook-color-font);
+    }
+  }
+  .form-group {
+    .btn-register {
+      padding: 5px 10px;
+      p {
+        float: left;
+        margin: 6px 0px;
+        @include text(18px, 1.0, normal, $btn-facebook-color-font);
+        text-align: center;
+        width: 100%;
+      }
+    }
+    .location-input {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: flex;
+      -webkit-box-align: center;
+      -webkit-align-items: center;
+      align-items: center;
+      min-height: 64px;
+      margin-top: -10px;
+      .zip-code {
+        @media (min-width: 768px) {
+          width: 50%;
+        }
+        margin-right: 15px;
+      }
+      .location-wrapper {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-box-align: center;
+        -webkit-align-items: center;
+        align-items: center;
+        width: 60%;
+        -webkit-box-pack: justify;
+        -webkit-justify-content: flex-end;
+        justify-content: flex-end;
+      }
+    }
+    .location-error {
+      margin-top: -8px;
+    }
+    .login-link {
+      @include text(18px, 1.0, normal, $doveGray);
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: flex;
+      -webkit-box-pack: center;
+      -webkit-justify-content: center;
+      justify-content: center;
+      width: 100%;
+      .arrow_icon_right {
+        background: $icon_arrow_ingresar_right;
+        width: 18px;
+        height: 30px;
+        float: right;
+        margin: -5px 0px 0px 10px;
+      }
+      &:hover {
+        @include text(18px, 1.0, normal, $blue);
+        cursor: pointer;
+        .arrow_icon_right {
+          background: $icon_arrow_ingresar_right_over;
+        }
+      }
+    }
+    .form-control {
+      border: none;
+      box-shadow: none;
+      border-bottom: 1px solid $ligthSilver;
+      border-radius: 0;
+      color: $mineShaft;
+    }
+  }
+  .has-error {
+    margin-top: 55px;
+    margin-bottom: 0;
+  }
+  .forgot-password {
+    color: $blue;
+    float: right;
+    margin: 5px 0 34px 0;
+  }
+  .promo {
+    padding: 0px 28px;
+    p {
+      @include text(16px, 1.0, normal, $dustyGray);
+      margin-bottom: 10px;
+      text-align: center;
+    }
+    .store-links {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: flex;
+      -webkit-box-pack: center;
+      -webkit-justify-content: center;
+      justify-content: center;
+    }
+    a {
+      display: block;
+      float: left;
+      width: 163px;
+      height: 56px;
+      &.app-store {
+        background: $apple_store_logo;
+      }
+      &.play-store {
+        background: $google_playstore_logo;
+        margin-right: 6px;
+      }
+    }
+  }
+  .legal-terms {
+    margin-top: 40px;
+    padding: 0px;
+    p {
+      margin: 0px;
+    }
+    a {
+      color: $blue;
+      margin-top: 10px;
+    }
+  }
+}
+
+.input-register-message {
+  color: $turquoise;
+  float: left;
+}
+
+.register_location_icon {
+  background: $map-marker-item;
+  display: block;
+  width: 25px;
+  height: 28px;
+  margin-right: 10px;
+}
+
+.location-suggestion {
+  color: $mineShaft;
+  font-size: 17px;
+}
+
+.error-register-message {
+  display: block;
+  margin-top: 50px;
+}
+
+.registerValidBt {
+  background-color: $coral!important;
+  color: $white!important;
+  &:hover {
+    background-color: #ff2600;
+  }
+}
+
+// change-password modal
+#change-password-form {}
+
+#edit-zipcode-form {
+  .user-info {
+    display: flex;
+    > .info {
+      padding: 7px 0 0 17px;
+      text-align: left;
+      color: $dustyGray;
+      > .username {
+        font-size: 22px;
+      }
+      > .email {
+        font-size: 18px;
+        margin-top: -4px;
+      }
+    }
+  }
+  .profile-picture {
+    @include profile-picture-circle(80px);
+    margin-top: -9px;
+    margin-left: -12px;
+  }
+  .avatar {
+    background: $avatar;
+    margin-top: -9px;
+    margin-left: -15px;
+    width: 90px;
+    height: 90px;
+  }
+  .subtitle {
+    float: left;
+    font-size: 17px;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    color: $dustyGray;
+    font-weight: 200;
+  }
+  .location-wrapper {
+    display: flex;
+    margin-top: 17px;
+    > .register_location_pin {
+      width: 20px;
+      height: 20px;
+      margin-right: 4px;
+    }
+    > .location-suggestion {
+      color: $dustyGray;
+      font-size: 18px;
+    }
+  }
+}
+
+#verify-email-form {
+  .panel-body {
+    padding: 5px 24px 26px;
+  }
+  .modal-confirmation p {
+    text-align: left;
+  }
+  .modal-btns {
+    margin-top: 70px;
+  }
+  .inline-error {
+    width: 100%;
+  }
+}

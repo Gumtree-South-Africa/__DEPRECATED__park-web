@@ -1,0 +1,310 @@
+//====== Descriptive color variables
+// Color's names: http://chir.ag/projects/name-that-color
+
+$white            : #FFFFFF;
+$black            : #000000;
+$sea-shell-gray   : #F1F1F1;
+$bombay-gray      : #B1B6C0;
+$cinnabar-red     : #E2393D;
+$persion-green    : #00AFA9;
+$comet-blue       : #575A72;
+$fiord-blue       : #47576F;
+$deep-cove-blue   : #041531;
+$tarawera-blue    : #0B4360;
+$pickled-blue     : #374861;
+$tangaroa-blue	  : #031D40;
+$mercury		  : #E1E1E1;
+$cool-grey        : #b1b6c0;
+$azalea			  : #F9D5D6;
+$smaltBlue		  : #547b8f;
+$persianGreen	  : #00aea8;
+$dawnPink		  : #faf6f4;
+$givry			  : #f8d1c2;
+$btn-hover-grey   : #d3d1d1;
+$summer-sky       : #47A8FF;
+
+//Functional color variables
+
+$banner-background-temporal : $bombay-gray url("https://static.close5.com/public/web/home-download-l.jpg") repeat scroll right center / cover;
+$close5-red                 : $cinnabar-red;
+$body-background            : $sea-shell-gray;
+$body-background-directory	: $white;
+$menu-blue-color            : $tarawera-blue;
+
+//Banner sizes
+$banner-height: 300px;
+
+//Home titles
+$home-titles-color: $comet-blue;
+// Search-bar
+$search-bar-back: $close5-red;
+$ad-container-back: $white;
+$search-color: $tangaroa-blue;
+
+//Home Menu
+
+// menu-color-border is in mixins.scss
+$menu-color-border : #B1B6C0;
+//BTN-DOWNLOAD-APP variables
+$btn-download-app-height: 60px;
+$btn-download-app-width: 180px;
+$btn-download-app-back: $white;
+$btn-download-app-font: $close5-red;
+
+//BTN-variables
+$btn-height: 60px;
+$btn-width: 180px;
+$btn-color-back: $white;
+$btn-color-font: $tarawera-blue;
+$btn-color-border: $bombay-gray;
+$btn-small-height: 40px;
+$btn-small-width: 126px;
+$btn-small-color-back: $cinnabar-red;
+$btn-small-color-font: $white;
+
+
+//Font stacks
+$stack-sans-serif   : Helvetica, Arial, sans-serif;
+$stack-verlag       : verlag, $stack-sans-serif;
+$stack-verlag-bold  : "verlag-bold", $stack-sans-serif;
+
+// Asset paths
+
+$path-img  : '../images';
+$path-font : '../fonts';
+
+// Max width ads and containers
+$max-width-screen    							: 600px;
+$max-container-width 							: 900px;
+$item-details-slider-images-width : 72px;
+
+$password-reset-color: $tarawera-blue;
+$password-reset-btn-color: $fiord-blue;
+
+
+
+//Footer colors
+$footer-cities-color        : $bombay-gray;
+$footer-cities-color-bg     : rgba($tangaroa-blue,0.7);
+$footer-color-1-bg          : rgba($tangaroa-blue,0.85);
+$footer-color-2-bg          : rgba($tangaroa-blue,1);
+
+
+//==============================
+// variables Vivaanuncios
+//==============================
+
+//colors
+$white						: #FFF;
+$silver 					: #BBB;
+$silverChalice    : #B2B2B2;
+$doveGray 				: #666;
+$turquoise 				: #00D9DC;
+$turquoiseBlue    : #4DE4E7;
+$eggBlue 				  : #00C3C6;
+$keppel           : #369FA1;
+$spray            : #79E7E9;
+$cruise 					: #C6EFE1;
+$hummingBird 			: #CCF7F8;
+$gallery 					: #ECECEC;
+$coral            : #FF5531;
+$alto 		 				: #DDD;
+$empeoror  				: #555;
+$mineShaft 				: #333;
+$dustyGray 				: #999;
+$gray 						: #888;
+$darkGray         : #777;
+$alabaster 				: #F7F7F7;
+$blue							: #09F;
+$blueRibbon				: #0070FF;
+$green						: #84CC03;
+$yellow						: #FFBC0A;
+$ligthSilver			:	#CCC;
+$aqua							: #33E5FF;
+$chambray					: #3B5998;
+$black            : #000;
+$astronaut				: #2D4373;
+$scarlet					: #FF2A18;
+//Functional color variables and background images
+
+$regular-header-background 				: $turquoise;
+$location_select_background_hover : $turquoise;
+$background-item-description 			: $white;
+$background_floating_indicator 		: $mineShaft;
+$background-site-container				: $alabaster;
+
+$main_title_background: url("../../../images/vivanuncios/logo_viva_header.svg") top / contain no-repeat;
+$avatar_logged_user_mask: url("../../../images/vivanuncios/avatar_logged_user_mask.svg") top / contain no-repeat;
+$avatar_logged_user_ph: url("../../../images/vivanuncios/avatar_logged_user_ph.svg") top / contain no-repeat;
+$avatar_group_default: url("../../../images/vivanuncios/avatar_group_default.svg") top / contain no-repeat;
+$icon_arrow_user_menu: url("../../../images/vivanuncios/icon_arrow_user_menu.svg") top / contain no-repeat;
+$share_app_background: url("../../../images/vivanuncios/icon_share_header_small.svg") no-repeat 1px 4px;
+$location_select_background_gray: url("../../../images/vivanuncios/icon_pin_1_gray.png") no-repeat right 15px top 8px rgba(255,255,255,0.3);
+$location_select_background: url("../../../images/vivanuncios/icon_pin_1_white.svg") no-repeat right 15px top 8px rgba(255,255,255,0.3);
+$location_pin_btn_mobile: url("../../../images/vivanuncios/icon_pin_1_white.svg") top / contain no-repeat;
+$location_select_background_mobile: url("../../../images/vivanuncios/icon_pin_1_white.svg") no-repeat right 14px top 20px rgba(255,255,255,0.3);
+$category_select_background: url("../../../images/vivanuncios/arrow_category_down.svg") no-repeat right 16px top 16px $hummingBird;
+$category_select_background_active: url("../../../images/vivanuncios/arrow_category_right.svg") no-repeat right 15px top 10px $hummingBird;
+$category_select_btn_mobile: url("../../../images/vivanuncios/arrow_category_down.svg") top / contain no-repeat;
+$category_select_btn_active_mobile: url("../../../images/vivanuncios/arrow_category_right.svg") top / contain no-repeat;
+$map_displayed_on_mobile_background: url("../../../images/vivanuncios/arrow_category_left_white.png") no-repeat right 70% top 26px $hummingBird;
+$mobile_hide_search: url("../../../images/vivanuncios/icon_arrow_up.svg") top / contain no-repeat;
+$search_box_background: url("../../../images/vivanuncios/icon_loupe.svg") top / contain no-repeat;
+$search_box_background_white: url("../../../images/vivanuncios/icon_loupe_white.svg") top / contain no-repeat;
+$promo_container_background: url("../../../images/vivanuncios/banner_blurred_bg_long_repeat.jpg");
+$promo_slogan_background: url("../../../images/vivanuncios/copy_slogan.svg") no-repeat;
+$promo_banner_background: url("../../../images/vivanuncios/phones_1200.png") no-repeat;
+$slogan_phones_1200: url("../../../images/vivanuncios/slogan_w_phones_1200.png") no-repeat;
+$slogan_phones_992: url("../../../images/vivanuncios/slogan_w_phones_992.png") no-repeat;
+$slogan_phones_768: url("../../../images/vivanuncios/slogan_w_phones_768.png") no-repeat;
+$apple_store_logo: url("../../../images/vivanuncios/logo_apple_store_black_1.svg") top / contain no-repeat;
+$apple_store_logo_white: url("../../../images/vivanuncios/logo_apple_store_white.svg") top / contain no-repeat;
+$apple_store_logo_login_mobile: url("../../../images/vivanuncios/logo_apple_store_black_mobile_login.png") no-repeat;
+$apple_store_logo_item: url("../../../images/vivanuncios/logo_apple_store_black_3.png") no-repeat;
+$google_playstore_logo: url("../../../images/vivanuncios/logo_google_play_black_1.svg") top / contain no-repeat;
+$google_playstore_logo_white: url("../../../images/vivanuncios/logo_google_play_white.svg") top / contain no-repeat;
+$google_playstore_logo_login: url("../../../images/vivanuncios/logo_google_play_black_2.png") no-repeat;
+$google_playstore_logo_login_mobile: url("../../../images/vivanuncios/logo_google_play_black_mobile_login.png") no-repeat;
+$google_playstore_logo_item: url("../../../images/vivanuncios/logo_google_play_black_3.png") no-repeat;
+$product_share_img: url("../../../images/vivanuncios/icon_share_red_small.png") no-repeat center;
+$icon_share_red: url("../../../images/vivanuncios/icon_share_red_big.svg") top / contain no-repeat;
+$icon_share_white: url("../../../images/vivanuncios/icon_share_white.svg") top / contain no-repeat;
+$user_share_img: url("../../../images/vivanuncios/icon_share_red_big.png") no-repeat center;
+$product_fav_not_liked: url("../../../images/vivanuncios/flag_not_liked_round.svg") top / contain no-repeat;
+$product_fav_liked: url("../../../images/vivanuncios/flag_liked_round.svg") top / contain no-repeat;
+$cross_search_button: url("../../../images/vivanuncios/icon_close_filter.svg") top / contain no-repeat;
+$negotiate_background: url("../../../images/vivanuncios/btn_chat.svg") top / contain no-repeat;
+$negotiate_background_over: url("../../../images/vivanuncios/btn_chat_over.svg") top / contain no-repeat;
+$negotiation_triangle: url("../../../images/vivanuncios/triangle.svg") top / contain no-repeat;
+$negotiation_notification: url("../../../images/vivanuncios/icon_notification_dot.svg") top / contain no-repeat;
+$negotiation_notification_red_dot: url("../../../images/vivanuncios/notification_red_dot.svg") top / contain no-repeat;
+$icon_alert_white: url("../../../images/vivanuncios/icon_alert_white.svg") top / contain no-repeat;
+$share_app_big_background: url("../../../images/vivanuncios/icon_share_red_big.png") no-repeat;
+$item_like_fill: url("../../../images/vivanuncios/icon_like_filled.svg") top / contain no-repeat;
+$item_like_empty: url("../../../images/vivanuncios/icon_like_empty.svg") top / contain no-repeat;
+$item_like_small: url("../../../images/vivanuncios/icon_like_small.svg") top / contain no-repeat;
+$item_like_small_vip: url("../../../images/vivanuncios/icon_likes_small.svg") top / contain no-repeat;
+$icon_groups: url("../../../images/vivanuncios/icon_groups.svg") top / contain no-repeat;
+$icon_pin_2_gray: url("../../../images/vivanuncios/icon_pin_2_gray.svg") top / contain no-repeat;
+$icon_pin_1_white: url("../../../images/vivanuncios/icon_pin_1_white.svg") top / contain no-repeat;
+$facebook-icon-disabled: url("../../../images/vivanuncios/sotial_fb_dark_off.svg") top / contain no-repeat;
+$facebook-icon-checked: url("../../../images/vivanuncios/sotial_fb_dark_on.svg") top / contain no-repeat;
+$twitter-icon-disabled: url("../../../images/vivanuncios/sotial_twitter_dark_off.svg") top / contain no-repeat;
+$twitter-icon-checked: url("../../../images/vivanuncios/sotial_twitter_dark_on.svg") top / contain no-repeat;
+$email-icon-disabled: url("../../../images/vivanuncios/sotial_mail_dark_off.svg") top / contain no-repeat;
+$email-icon-checked: url("../../../images/vivanuncios/sotial_mail_dark_on.svg") top / contain no-repeat;
+$facebook-icon-light-disabled: url("../../../images/vivanuncios/sotial_fb_light_off.svg") top / contain no-repeat;
+$facebook-icon-light-checked: url("../../../images/vivanuncios/sotial_fb_light_on.svg") top / contain no-repeat;
+$twitter-icon-light-disabled: url("../../../images/vivanuncios/sotial_twitter_light_off.svg") top / contain no-repeat;
+$twitter-icon-light-checked: url("../../../images/vivanuncios/sotial_twitter_light_on.svg") top / contain no-repeat;
+$email-icon-light-disabled: url("../../../images/vivanuncios/sotial_mail_light_off.svg") top / contain no-repeat;
+$email-icon-light-checked: url("../../../images/vivanuncios/sotial_mail_light_on.svg") top / contain no-repeat;
+$map-marker-item: url("../../../images/vivanuncios/icon_pin_1_blue.svg") top / contain no-repeat;
+$icon_plus_turquoise: url("../../../images/vivanuncios/icon_plus_turquoise.svg") top / contain no-repeat;
+$icon_like_small: url("../../../images/vivanuncios/icon_like_small.svg") top / contain no-repeat;
+$logo_facebook_ingresar_btn: url("../../../images/vivanuncios/logo_facebook_ingresar_btn.svg") top / contain no-repeat;
+$icon_arrow_ingresar_left: url("../../../images/vivanuncios/icon_arrow_ingresar_left.svg") top / contain no-repeat;
+$icon_arrow_ingresar_right: url("../../../images/vivanuncios/icon_arrow_ingresar_right.svg") top / contain no-repeat;
+$icon_arrow_ingresar_right_over: url("../../../images/vivanuncios/icon_arrow_ingresar_right_over.svg") top / contain no-repeat;
+$icon_logout_gray: url("../../../images/vivanuncios/icon_logout_gray.svg") top / contain no-repeat;
+$icon_logout_white: url("../../../images/vivanuncios/icon_logout_white.svg") top / contain no-repeat;
+$logo-share-facebook: url("../../../images/vivanuncios/logo_share_facebook.svg") top / contain no-repeat;
+$logo-share-facebook-over: url("../../../images/vivanuncios/logo_share_facebook_over.svg") top / contain no-repeat;
+$logo-share-link: url("../../../images/vivanuncios/logo_share_link.svg") top / contain no-repeat;
+$logo-share-link-over: url("../../../images/vivanuncios/logo_share_link_over.svg") top / contain no-repeat;
+$logo-share-twitter: url("../../../images/vivanuncios/logo_share_twitter.svg") top / contain no-repeat;
+$logo-share-twitter-over: url("../../../images/vivanuncios/logo_share_twitter_over.svg") top / contain no-repeat;
+$share-app-icon: url("../../../images/vivanuncios/share_app_icon.svg") top / contain no-repeat;
+$face_red: url("../../../images/vivanuncios/rating_icon_red.svg") top / contain no-repeat;
+$face_green: url("../../../images/vivanuncios/rating_icon_green.svg") top / contain no-repeat;
+$face_yellow: url("../../../images/vivanuncios/rating_icon_yellow.svg") top / contain no-repeat;
+$avatar: url("../../../images/vivanuncios/avatar_ph_3.svg") top / contain no-repeat;
+$avatar_mask: url("../../../images/vivanuncios/avatar_mask_3.svg") top / contain no-repeat;
+$flag_expired: url("../../../images/vivanuncios/flag_expired.svg") top / contain no-repeat;
+$flag_expired_big: url("../../../images/vivanuncios/flag_expired_big.svg") top / contain no-repeat;
+$flag_new: url("../../../images/vivanuncios/flag_new.svg") top / contain no-repeat;
+$flag_new_big: url("../../../images/vivanuncios/flag_new_big.svg") top / contain no-repeat;
+$flag_not_verified: url("../../../images/vivanuncios/flag_not_verified.svg") top / contain no-repeat;
+$flag_not_verified_big: url("../../../images/vivanuncios/flag_not_verified_big.svg") top / contain no-repeat;
+$flag_pending: url("../../../images/vivanuncios/flag_pending.svg") top / contain no-repeat;
+$flag_pending_big: url("../../../images/vivanuncios/flag_pending_big.svg") top / contain no-repeat;
+$flag_sold: url("../../../images/vivanuncios/flag_sold.svg") top / contain no-repeat;
+$flag_sold_big: url("../../../images/vivanuncios/flag_sold_big.svg") top / contain no-repeat;
+$flag_group_turquoise_round: url("../../../images/vivanuncios/flag_group_turquoise_round.svg") top / contain no-repeat;
+$flag_group_red: url("../../../images/vivanuncios/flag_group_red.svg") top / contain no-repeat;
+$arrow_back_modals_mobile: url("../../../images/vivanuncios/icon_back.svg") top / contain no-repeat;
+$icon-legal-pin: url("../../../images/vivanuncios/icon_legal_pin.svg") top / contain no-repeat;
+$icon-legal-si: url("../../../images/vivanuncios/icon_legal_si.svg") top / contain no-repeat;
+$icon-legal-camera: url("../../../images/vivanuncios/icon_legal_camera.svg") top / contain no-repeat;
+$icon-legal-ebay-logo: url("../../../images/vivanuncios/icon_legal_ebay_logo.svg") top / contain no-repeat;
+$icon-legal-tools: url("../../../images/vivanuncios/icon_legal_tools.svg") top / contain no-repeat;
+$icon-legal-shield: url("../../../images/vivanuncios/icon_legal_shield.svg") top / contain no-repeat;
+$icon-legal-padlock: url("../../../images/vivanuncios/icon_legal_padlock.svg") top / contain no-repeat;
+$error-sad-face: url("../../../images/vivanuncios/sad_face.svg") top / contain no-repeat;
+$error-neutral-face: url("../../../images/vivanuncios/neutral_face.svg") top / contain no-repeat;
+$btn_more: url("../../../images/vivanuncios/bn_more.svg") top / contain no-repeat;
+$btn_more_hover: url("../../../images/vivanuncios/bn_more_over.svg") top / contain no-repeat;
+$avatar_ph_image: url("../../../images/vivanuncios/avatar_ph_image_4.svg") top / contain no-repeat;
+$icon_people: url("../../../images/vivanuncios/icon_people.svg") top / contain no-repeat;
+$icon_items: url("../../../images/vivanuncios/icon_items.svg") top / contain no-repeat;
+$btn_send_active: url("../../../images/vivanuncios/btn_send_active.svg") top / contain no-repeat;
+$btn_send_inactive: url("../../../images/vivanuncios/btn_send_inactive.svg") top / contain no-repeat;
+
+// Vivanuncios max width
+$max-container-width	: 1200px;
+$item-details-slider-images-width : 194px;
+
+// Asset paths
+$path-img-vivanuncios  : '../images/vivanuncios/';
+$path-font-vivanuncios : '../fonts/vivanuncios/';
+
+//BTN-variables
+$btn-height				 : 44px;
+$btn-width				 : 170px;
+$btn-follow-height : 52px;
+$btn-follow-width	 : 170px;
+$btn-follow-height-responsive : 10.4vw;
+$btn-follow-width-responsive	 : 34vw;
+$btn-confirm-width	 : 100%;
+
+$btn-color-back				       : $white;
+$btn-color-font				       : $dustyGray;
+$btn-color-border			       : $gallery;
+$btn-color-font				 			 : $dustyGray;
+$btn-hover-color-font	 			 : $empeoror;
+
+$btn-follow-color-back 			 : $blue;
+$btn-follow-color-back-hover : $blueRibbon;
+$btn-follow-color-font       : $white;
+
+
+$btn-unfollow-color-back		     : $white;
+$btn-unfollow-color-font		     : $turquoise;
+$btn-unfollow-color-font-hover   : $eggBlue;
+$btn-unfollow-color-border       : $turquoise;
+$btn-unfollow-color-border-hover : $eggBlue;
+
+
+$btn-facebook-color-back			 : $chambray;
+$btn-facebook-color-back-hover : $astronaut;
+$btn-facebook-color-font       : $white;
+$btn-facebook-color-border     : $black;
+
+$btn-register-color-back			 : $turquoise;
+$btn-register-color-back-hover : $eggBlue;
+$btn-register-color-font       : $white;
+
+$btn-confirm-color-back       : $coral;
+$btn-confirm-color-back-hover : $scarlet;
+$btn-confirm-color-font       : $white;
+$btn-confirm-color-font-hover : $white;
+
+$btn-cancel-color-back        : $dustyGray;
+$btn-cancel-color-back-hover  : $gray;
+$btn-cancel-color-font        : $white;
+
+$banner-color: rgba(255, 85, 49, 0.8);
+
+//Font stacks
+$foundrysterling-demiregular  : "foundrysterling-demiregular";
+$foundrysterling-bookregular  : "foundrysterling-bookregular";

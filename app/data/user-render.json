@@ -1,0 +1,46 @@
+{
+  "data": {
+    "username": "veritocuatro345",
+    "profilePicture": "http://i.ebayimg.com/00/s/MjI0WDIyNA==/z/3bIAAOSw6n5XvvCg/$_1.JPG?set_id=8800004005",
+    "creationDate": "1472065096",
+    "locationName": "New York, NY",
+    "zipCode": "10004",
+    "positiveRatings": 0,
+    "negativeRatings": 0,
+    "neutralRatings": 0,
+    "followers": 1,
+    "following": 2,
+    "userSocials": [
+
+    ],
+    "offersMade": 0,
+    "offersReceived": 1,
+    "status": "ACTIVE",
+    "itemsPublishedCount": 5,
+    "url": "http://qa-web.newapptest.com/profile/veritocuatro345",
+    "verified": true,
+    "lastname": "none",
+    "mobileVerified": false,
+    "name": "none"
+  },
+  "seo": {
+    "title": "veritocuatro345 vende en Vivanuncios New York, NY",
+    "canonical": "https://www.vivanuncios.us/profile/veritocuatro345",
+    "description": "Encuentra todos los anuncios de veritocuatro345 en New York, NY",
+    "robots": "index, follow"
+  },
+  "facebook": {
+    "url": "https://www.vivanuncios.us/profile/veritocuatro345",
+    "type": "profile",
+    "title": "veritocuatro345 vende en Vivanuncios New York, NY",
+    "description": "Encuentra todos los anuncios de veritocuatro345 en New York, NY",
+    "image": "http://i.ebayimg.com/00/s/MjI0WDIyNA==/z/3bIAAOSw6n5XvvCg/$_1.JPG?set_id=8800004005"
+  },
+  "twitter": {
+    "card": "summary",
+    "account": "@VivanunciosUSA",
+    "title": "veritocuatro345 vende en Vivanuncios New York, NY",
+    "description": "Encuentra todos los anuncios de veritocuatro345 en New York, NY",
+    "image": "http://i.ebayimg.com/00/s/MjI0WDIyNA==/z/3bIAAOSw6n5XvvCg/$_1.JPG?set_id=8800004005"
+  }
+}

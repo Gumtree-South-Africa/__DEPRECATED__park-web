@@ -1,0 +1,82 @@
+
+.modal-accept-offer-negotiation  {
+
+  .modal-dialog {
+    margin-top: 150px;
+  }
+
+  .modal-content {
+    width: 440px;
+    margin: auto;
+
+    @media(max-width: 768px) {
+      width: 80vw;
+      margin-top: 18vw;
+      margin-right: 12vw;
+      margin-left: 12vw;
+
+      @media only screen and (orientation: landscape) {
+        margin-top: 18vh;
+      }
+    }
+  }
+
+  .modal-body {
+    text-align: center;
+    p {
+      font-size: 20px;
+      color: #555;
+
+      b {
+        font-family: 'foundrysterling-bookregular';
+      }
+
+      @media (max-width: 768px) {
+        font-size: 4vw;
+      }
+    }
+
+    input {
+      font-size: 20px;
+      border: 0;
+      border-bottom: 1px solid #e5e5e5;
+      color: #555;
+      text-align: left;
+      margin-top: 20px;
+      height: 40px;
+      width: 270px;
+
+      @media (max-width: 768px) {
+        font-size: 4.8vw;
+        width: 50vw;
+      }
+    }
+
+    input::-webkit-input-placeholder {
+     font-size: 18px;
+     @media (max-width: 768px) {
+        font-size: 3.6vw;
+      }
+    }
+    input::-moz-placeholder {
+     font-size: 18px;
+     @media (max-width: 768px) {
+        font-size: 3.6vw;
+      }
+    }
+    input:-ms-input-placeholder {
+     font-size: 18px;
+     @media (max-width: 768px) {
+        font-size: 3.6vw;
+      }
+    }
+    input:-moz-placeholder {
+     font-size: 18px;
+     @media (max-width: 768px) {
+        font-size: 3.6vw;
+      }
+    }
+
+  }
+
+}

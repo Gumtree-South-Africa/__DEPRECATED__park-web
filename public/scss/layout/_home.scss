@@ -1,0 +1,102 @@
+//==============================
+// Banner section
+//==============================
+.banner-section{
+  background: $banner-background-temporal;
+  height: $banner-height;
+  padding-top: ($banner-height / 2) - ($btn-download-app-height / 2);
+  padding-bottom: ($banner-height / 2) - ($btn-download-app-height / 2);
+}
+
+//Common home view
+.titles{
+  padding-top: 60px;
+  color: $home-titles-color;
+  h2{
+    padding-top: 0px;
+  }
+  p{
+    font-size: 24px;
+  }
+}
+
+
+//Menu home
+.border-back-home{
+  @include border-bottom-opacity($menu-color-border, 0.29, 1px);
+  background: rgba(255,255,255,0.46);
+
+  .navbar .navbar-nav {
+    display: inline-block;
+    float: none;
+    vertical-align: top;
+  }
+
+  .navbar-default{
+    border      : none;
+  }
+}
+
+
+
+#menu-home{
+  text-align: center;
+  li a{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    color       : $cool-grey;
+    font-family : $stack-verlag-bold;
+  }
+}
+
+.navbar-default .navbar-nav>.active>a,
+.navbar-default .navbar-nav>.active>a:focus,
+.navbar-default .navbar-nav>.active>a:hover {
+  background: none;
+  color: $menu-blue-color!important;
+}
+
+
+////////=========================================== price and description of every ad
+.home-price,.home-description{
+  position: absolute;
+  color:white;
+  
+}
+
+.home-price{
+  left: 15px;
+  bottom: 21px;
+  font-family: $stack-verlag-bold;
+  font-size: 18px;
+  text-shadow: 1px 1px 2px #333;
+  z-index: 200;
+}
+.home-description{
+  padding-left: 15px;
+  padding-right: 18px;
+  bottom: 50px;
+  font-size: 16px;
+  line-height: 1.1;
+  text-shadow: 1px 1px 2px #333;
+}
+
+@media(min-width: 992px){
+  .col-xs-6.col-sm-4.col-md-3{
+    .home-description{
+      bottom: 35px;
+      font-size: 14px;
+    }
+  }
+}
+
+.scroll-menu{
+  display: block;
+  position: relative;
+  //top: -100px;
+  visibility: hidden;
+}
+
+.afkl-lazy-wrapper.afkl-img-ratio-1-1 {
+  padding-bottom: 0px;
+}

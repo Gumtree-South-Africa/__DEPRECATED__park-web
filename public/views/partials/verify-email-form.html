@@ -1,0 +1,31 @@
+<div id="verify-email-form" class="modal full-screen-modal">
+  <div class="modal-dialog">
+    <div class="modal-content col-md-9 col-sm-9 col-md-offset-3 col-xs-offset-2">
+      <div class="modal-header">
+        <div type="button" data-dismiss="modal" aria-hidden="true" class="back"></div>
+      </div>
+      <div class="modal-body">
+        <div class="panel panel-default">
+          <div class="title">Verificar e-mail</div>
+          <div class="panel-body">
+            <div ng-if="!hasSuccess" class="modal-confirmation">
+              <p>
+                Por favor presiona <b>'Enviar'</b> para reenviar el mail de verificación.
+              </p>
+              <span class="inline-error">{{error}}</span>
+              <div class="modal-btns">
+                <button type="button" data-dismiss="modal" class="btn btn-cancel">Cancelar</button>
+                <button type="button" ng-click="sendVerification()" class="btn btn-confirm">Enviar</button>
+              </div>
+            </div>
+            <div ng-show="hasSuccess" class="modal-confirmation">
+              <h2>¡Correo enviado!</h2>
+              <p>Revisa tu casilla de entrada por un correo con las instrucciones para verificar tu e-mail.</p>
+              <button type="button" data-dismiss="modal" class="btn btn-ok">Ok</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

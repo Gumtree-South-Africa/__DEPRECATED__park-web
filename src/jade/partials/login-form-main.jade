@@ -1,0 +1,29 @@
+
+//- main
+
+form(role="form" ng-show="!headerFormDisplayed" class="col-md-12 form-horizontal")
+  div(class="need-login-title-container" ng-hide="runningOnMobile()" )
+    div(class="need-login-title " ng-if="!displayTitleMessage")
+      | Por favor ingresa para continuar
+
+  div(class="panel-heading col-md-12 col-sm-12" ng-if="displayTitleMessage")
+    h1(ng-hide="runningOnMobile()") ¡Bienvenido!
+
+  div(class="form-group")
+    label(class="login-label") Conéctate fácil y rápido
+    button(type="button" ng-click="submitFacebook()" class="btn btn-block btn-social btn-facebook")
+      span(class="facebook-logo")
+      p Ingresa con Facebook
+
+  div( class="form-group" style="margin-top: 40px")
+    div( class="row")
+      div( class="col-sm-12")
+      label( class="login-label") o usa tu e-mail
+
+
+    div( class="btn-group-login")
+      div( class="btn-group")
+        button( ng-click="showLoginForm()" class="btn btn-register") Ingresa
+
+      div( class="btn-group")
+        button( type="button" ng-click="showEmailRegistrationView()" class="btn btn-register") Regístrate

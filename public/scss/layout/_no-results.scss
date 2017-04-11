@@ -1,0 +1,37 @@
+.no-results {
+	.text-center {
+		padding:60px 0px;
+    .tag {
+      margin-left: 10px;
+    }
+    h3 {
+      margin-top: 10px;
+    }
+		.advice {
+			@include text(18px,null,null,$bombay-gray);
+			margin:0px;
+	  }
+  }
+  .cities-title-container {
+    text-align: center;
+    span{
+      font-family: $stack-verlag-bold;
+      @include text(16px,1.6,null,$close5-red);
+    }
+  }
+  .cities-names-container {
+    padding: 30px 0px;
+    a {
+      @include text(14px,1.9,null,$tangaroa-blue);
+    }
+    .view-all {
+      @include text(12px,1.9,null,$tangaroa-blue);
+      a {
+        color: $tangaroa-blue;
+        text-decoration: underline;
+      }
+    }
+  }
+}
+  
+  

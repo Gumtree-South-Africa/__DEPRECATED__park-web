@@ -1,0 +1,16 @@
+@media (max-width: 991px) {
+	.container-terms {
+		padding: 30px;
+	}
+	.container-community {
+		.container.two-columns {
+			.buying {
+	    	border-right: none;
+	    	border-bottom: 1px solid $mercury;
+	    }	
+			.seeling  {
+				margin-top: 40px;
+			}
+		}
+	}	
+}

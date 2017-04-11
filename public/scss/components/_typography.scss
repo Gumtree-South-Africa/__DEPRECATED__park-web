@@ -1,0 +1,11 @@
+// Web fonts
+
+@include font-face('verlag', verlag);
+@include font-face('verlag-bold', verlag-bold);
+
+@include font-face-vivanuncios('foundrysterling-boldregular', foustbd);
+@include font-face-vivanuncios('foundrysterling-bookregular', foustbk);
+@include font-face-vivanuncios('foundrysterling-demiregular', foustdm);
+@include font-face-vivanuncios('foundrysterling-lightregular', foustli);
+@include font-face-vivanuncios('foundrysterling-mediumregular', foustmd);
+@include font-face-vivanuncios('foundrysterling-extraboldRg', foustxb);

@@ -1,0 +1,35 @@
+<svg id="avatar_ph.svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="182" height="182" viewBox="0 0 182 182">
+  <defs>
+    <style>
+      .cls-1, .cls-2 {
+        fill: #ff5531;
+      }
+
+      .cls-1 {
+        fill-opacity: 0;
+      }
+
+      .cls-2, .cls-3 {
+        fill-rule: evenodd;
+      }
+
+      .cls-2 {
+        filter: url(#filter);
+      }
+
+      .cls-3 {
+        fill: #fff;
+      }
+    </style>
+    <filter id="filter" x="585" y="1157" width="181" height="182" filterUnits="userSpaceOnUse">
+      <feOffset result="offset" dx="0.5" dy="0.866" in="SourceAlpha"/>
+      <feGaussianBlur result="blur" stdDeviation="2.828"/>
+      <feFlood result="flood" flood-opacity="0.3"/>
+      <feComposite result="composite" operator="in" in2="blur"/>
+      <feBlend result="blend" in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <rect id="Rectangle_1_copy_2" data-name="Rectangle 1 copy 2" class="cls-1" width="182" height="182"/>
+  <path id="avatar_area" data-name="avatar area" class="cls-2" d="M674,1163.39a82.9,82.9,0,1,1-82.9,82.89A82.892,82.892,0,0,1,674,1163.39Zm12.667,42.28a2.33,2.33,0,1,1-2.334,2.33A2.33,2.33,0,0,1,686.667,1205.67Z" transform="translate(-584 -1157)"/>
+  <path id="tag_:_" data-name="tag :)" class="cls-3" d="M674,1329.84a83.56,83.56,0,1,1,83.562-83.56A83.561,83.561,0,0,1,674,1329.84Zm-6.985-63.12c-13.08,13.08-27.909,17.06-30.923,20.07a4.157,4.157,0,0,0,.361,5.91c2.11,2.11,3.738,2.17,15.492-2.59,9.163-3.74,17.361-8.8,23.51-14.95s11.212-14.35,14.949-23.51c4.762-11.75,4.7-13.38,2.592-15.49a4.15,4.15,0,0,0-5.907-.36C684.075,1238.81,680.1,1253.64,667.015,1266.72Zm-1.447-32.19a6.992,6.992,0,1,0,0,9.89A7.027,7.027,0,0,0,665.568,1234.53Zm-22.063,22.06a6.992,6.992,0,1,0,0,9.89A7.027,7.027,0,0,0,643.505,1256.59Zm30.5-88.7a78.453,78.453,0,0,0-76.785,94.27l73.957-73.96a16.45,16.45,0,0,1,23.258,0l37.678,37.68a16.447,16.447,0,0,1,0,23.26l-73.937,73.94A78.4,78.4,0,1,0,674,1167.89Z" transform="translate(-584 -1157)"/>
+</svg>

@@ -1,0 +1,13 @@
+.error-messages {
+  min-height: 400px;
+  .titles.text-center {
+    font-family: 'foundrysterling-bookregular';
+    padding-top: 100px;
+    h3 {
+      @include text(36px, null, null, $doveGray);
+    }
+    p {
+      @include text(24px, 29px, null, $doveGray);
+    }
+  }
+}

@@ -1,0 +1,18 @@
+
+<div class="category-home">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="titles text-center"> 
+          <p>{{ 'CATEGORIES.SUB_TITLE' | translate }}</p>
+        </div>
+      </div>
+    </div>
+    <div ng-repeat="category in categories" class="row category-keywords">
+      <div class="col-md-12">
+        <p class="title-category"><a ui-sref="byCategory.category({category: category.id})">{{ category.name }}</a></p>
+      </div>
+      <div ng-repeat="subcategory in category.subcategories" class="col-xs-12 col-sm-4 col-md-3 keyword"><a ui-sref="search.keyword({keyword:subcategory, page:1})">{{ subcategory }}        </a></div>
+    </div>
+  </div>
+</div>

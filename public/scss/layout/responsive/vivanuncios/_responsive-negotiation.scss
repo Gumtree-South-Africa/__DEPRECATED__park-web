@@ -1,0 +1,8 @@
+@media (max-width: 768px) {
+  margin: 0px;
+  margin-top: 18vw;
+
+  @media only screen and (orientation: landscape) {
+    margin-top: 18vh;
+  }
+}

@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="8.5" height="8.5" viewBox="0 0 8.5 8.5">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #ccc;
+        fill-rule: evenodd;
+      }
+    </style>
+  </defs>
+  <path id="icon_close_notification.svg" class="cls-1" d="M495.243,2700.83l-1.415,1.41L491,2699.41l-2.829,2.83-1.414-1.41,2.829-2.83-2.829-2.83,1.414-1.41,2.829,2.83,2.828-2.83,1.415,1.41-2.829,2.83Z" transform="translate(-486.75 -2693.75)"/>
+</svg>

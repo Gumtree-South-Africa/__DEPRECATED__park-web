@@ -1,0 +1,609 @@
+.img-square-wrapper {
+  position: relative;
+  padding-bottom: 99.5%;
+  overflow: hidden;
+  .img-square {
+    width: 100%;
+    height: 100%;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+  }
+}
+.item-detail-view {
+  padding: 25px 0px 0;
+  .item-info-container {
+    .item-column-picture {
+      padding: 0;
+      margin-top: 0px;
+    }
+    .item-column-details {
+      padding: 0 0 0 20px;
+    }
+    .primary-group {
+      .flag-container {
+        overflow: hidden;
+        transform: rotate(45deg);
+        margin: 0;
+        padding: 0;
+        position: absolute;
+        z-index: 9;
+        width: 40px;
+        height: 197px;
+        top: -41px;
+        left: 37px;
+        .flag {
+          position: absolute;
+          bottom: 28px;
+          right: -70px;
+          z-index: 9;
+          width: 142px;
+          height: 142px;
+          transform: rotate(-45deg);
+          &.EXPIRED {
+            background: $flag_expired_big;
+          }
+          &.SOLD {
+            background: $flag_sold_big;
+          }
+          &.NOT_VERIFIED {
+            background: $flag_not_verified_big;
+          }
+          &.PENDING {
+            background: $flag_pending_big;
+          }
+          &.ACTIVE {
+            background: none;
+          }
+        }
+      }
+      .img-square-wrapper {
+        border-radius: 5px;
+        border: 1px solid $white;
+      }
+      // margin-bottom: 50px;
+      .navigation-container {
+        display: block;
+        text-align: center;
+        ul.navigation-images {
+          list-style-type: none;
+          padding: 0px;
+          z-index: 1;
+          margin-top: 6px;
+          margin-bottom: 0;
+          display: inline-block;
+          width: 100%;
+          li {
+            float: left;
+            cursor: pointer;
+            padding: 0px 2px;
+            &:last-child {
+              padding-left: 4px;
+              padding-right: 0px;
+            }
+            &:first-child {
+              padding-left: 0px;
+              padding-right: 4px;
+            }
+            .thumbnail {
+              padding: 0px;
+              margin-bottom: 0px;
+              background: none;
+              border: none;
+              height: auto;
+              display: block;
+              img {
+                min-height: 175px;
+                border: 1px solid $white;
+              }
+            }
+          }
+        }
+      }
+      .navigation-container {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: flex;
+        width: 100%;
+        -webkit-box-align: stretch;
+        -webkit-align-items: stretch;
+        align-items: stretch;
+        -webkit-box-pack: justify;
+        -webkit-justify-content: space-between;
+        justify-content: space-between;
+      }
+      .carousel {
+        display: none;
+      }
+    }
+    .item-details,
+    .item-location {
+      background-color: $white;
+      width: 100%;
+      float: left;
+      border-radius: 5px;
+    }
+    .item-price-section {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: flex;
+      -webkit-box-pack: justify;
+      -webkit-justify-content: space-between;
+      justify-content: space-between;
+      padding: 12px 16px 9px;
+      border-bottom: 1px solid $gallery;
+      .price {
+        font-family: 'foundrysterling-bookregular';
+        @include text(36px, null, null, $doveGray);
+        padding-top: 5px;
+        padding-left: 12px;
+        margin-right: 50px;
+      }
+      .like-share-neg-icons {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-box-pack: justify;
+        -webkit-justify-content: space-between;
+        justify-content: space-between;
+        -webkit-box-flex-grow: 1;
+        -webkit-flex-grow: 1;
+        flex-grow: 1;
+        -webkit-box-align: center;
+        -webkit-align-items: center;
+        align-items: center;
+        max-width: 188px;
+      }
+      .owned-by-user {
+        margin-right: 10px;
+        max-width: 86px;
+      }
+      a {
+        cursor: pointer;
+        &.product-share {
+          background: $icon_share_red;
+          width: 30px;
+          height: 30px;
+          margin-right: -4px;
+        }
+        &.product-like {
+          background: $item_like_empty;
+          width: 40px;
+          height: 35px;
+          &.liked {
+            background: $item_like_fill;
+          }
+        }
+        &.product-negotiate {
+          width: 76px;
+          height: 62px;
+          background: $negotiate_background;
+          margin-right: -8px;
+          margin-top: -3px;
+          &:hover {
+            background: $negotiate_background_over;
+            width: 78px;
+            margin-right: -10px;
+            height: 64px;
+            margin-top: -3px;
+            margin-bottom: -2px;
+          }
+        }
+      }
+      .start-offer-container {
+        display: relative;
+      }
+      .negociate-dialog {
+        z-index: 1;
+        background-color: $blue;
+        padding: 10px 5px 0px;
+        border-radius: 15px;
+        margin: 4px 0px 0px -300px;
+        position: absolute;
+        width: 300px;
+        box-shadow: 4px 4px 10px 0px $doveGray;
+        p {
+          @include text(18px, 1.2, null, $white);
+          width: 100%;
+          float: left;
+          margin-bottom: 0px;
+          span.product-negotiate {
+            background: $negotiate_background;
+            width: 74px;
+            margin: -16px -7px -14px -11px;
+            float: left;
+            height: 58px;
+          }
+        }
+        a {
+          float: right;
+          width: 135px;
+          height: 48px;
+          margin: 10px 5px;
+          &.app-store {
+            background: $apple_store_logo_white;
+          }
+          &.play-store {
+            background: $google_playstore_logo_white;
+          }
+        }
+      }
+    }
+    .item-details {
+      .details {
+        padding: 28px 28px 10px;
+        float: left;
+        width: 100%;
+        p {
+          word-wrap: break-word;
+          font-family: 'foundrysterling-lightregular';
+          @include text(22px, 26px, null, $doveGray);
+          &.title {
+            font-family: 'foundrysterling-bookregular';
+            letter-spacing: 1px;
+            font-weight: bold;
+            font-size: 26px;
+            margin-bottom: 20px;
+          }
+        }
+        .followers {
+          margin-right: -9px;
+          margin-top: -11px;
+          p {
+            float: right;
+            color: $silver;
+            .like-icon {
+              float: left;
+              width: 24px;
+              height: 21px;
+              background: $item_like_small_vip;
+              margin: 1px 5px;
+            }
+          }
+        }
+        .published-date {
+          display: block;
+          margin: 20px 0px 16px;
+          font-family: 'foundrysterling-lightregular';
+          @include text(18px, null, null, $bombay-gray);
+          &:first-letter {
+            text-transform: uppercase;
+          }
+        }
+        .category-section,
+        .groups-section {
+          float: left;
+          width: 100%;
+          margin: 15px 0px 22px;
+          .item-category {
+            background-color: $hummingBird;
+            padding: 9px 21px;
+            border-radius: 20px;
+            font-family: 'foundrysterling-lightregular';
+            @include text(18px, null, null, $doveGray);
+          }
+          span.groups-image {
+            background: $icon_groups;
+            width: 42px;
+            height: 35px;
+            float: left;
+            margin: 0 8px;
+          }
+          .groups-labels {
+            display: -webkit-box;
+            display: -webkit-flex;
+            display: flex;
+            -webkit-box-flex-wrap: wrap;
+            -webkit-flex-wrap: wrap;
+            flex-wrap: wrap;
+            a.item-group {
+              font-family: 'foundrysterling-bookregular';
+              background-color: $dustyGray;
+              padding: 1px 12px;
+              border-radius: 20px;
+              float: left;
+              text-align: center;
+              margin: 2px 3px 5px;
+              @include text(16px, 1.8, null, $white);
+              &:hover {
+                text-decoration: initial;
+              }
+              &:focus {
+                text-decoration: none;
+              }
+            }
+          }
+        }
+        .groups-section {
+          margin-top: 14px;
+          margin-bottom: 20px;
+        }
+      }
+    }
+    .card.no-pad.map-group {
+      width: 100%;
+      float: left;
+      padding-bottom: 30px;
+      .item-location {
+        padding: 0px 30px;
+        width: 100%;
+        p {
+          float: left;
+          font-family: 'foundrysterling-bookregular';
+          @include text(21px, null, normal, $doveGray);
+          width: 100%;
+          padding: 4px 5px;
+          margin-bottom: 7px;
+          .map-marker-item {
+            background: $map-marker-item;
+            height: 32px;
+            width: 31px;
+            margin: -1px 10px 0 1px;
+            float: left;
+          }
+        }
+        .angular-leaflet-map {
+          border-radius: 10px;
+        }
+        .map.leaflet-container.leaflet-fade-anim img {
+          width: 100% !important;
+        }
+        .leaflet-top {
+          z-index: 10 !important;
+        }
+      }
+    }
+  }
+  .listed-items {
+    width: 100%;
+    float: left;
+    padding: 0;
+    border-radius: 5px;
+    .ad-container {
+      height: auto;
+      background: $ad-container-back;
+      padding-bottom: 5px;
+      width: 100vw;
+      margin-left: calc((100% - 100vw)/2);
+      .item-info-container {
+        float: none;
+        padding: 0px;
+        .user-personal-info {
+          padding: 44px 0 0;
+          .user-image {
+            padding: 0px;
+            margin-left: 11px;
+            min-width: 200px;
+          }
+          .center-cropped {
+            @include profile-picture-circle(166px);
+          }
+          .avatar,
+          .avatar-mask {
+            margin-left: -7px;
+            margin-top: -7px;
+            width: 180px;
+            height: 180px;
+            cursor: pointer;
+          }
+          .avatar-mask {
+            background: $avatar_mask;
+            position: absolute;
+          }
+          .avatar {
+            background: $avatar;
+          }
+          .user-name {
+            margin-left: -2px;
+            padding: 18px 0 37px;
+            font-family: 'foundrysterling-bookregular';
+            a {
+              margin-top: 10px;
+              &.title {
+                @include text(32px, 1, normal, $coral);
+                margin-left: 0px;
+                float: left;
+                &:hover {
+                  text-decoration: none;
+                }
+              }
+            }
+            p {
+              float: left;
+              @include text(15px, 1.2, normal, $dustyGray);
+              width: 100%;
+              &.user-location {
+                margin-top: 10px;
+                margin-left: 4px;
+                @include text(21px, 1, normal, $gray);
+                .map-marker {
+                  background: $icon_pin_2_gray;
+                  height: 24px;
+                  width: 24px;
+                  margin: -3px 4px 0 -2px;
+                  float: left;
+                }
+              }
+              &.user-published {
+                margin-top: 5px;
+                margin-left: 4px;
+                @include text(14px, 1.0, normal, $silver);
+              }
+              &.date {
+                margin-top: 2px;
+                margin-left: 4px;
+                @include text(14px, 1.0, normal, $ligthSilver);
+              }
+            }
+          }
+        }
+        .user-follow-button {
+          margin: -61px 0px 20px;
+          padding-right: 0;
+          .btn-unfollow,
+          .btn-follow {
+            margin-left: 30px;
+          }
+          .user-share {
+            display: block;
+            float: left;
+            width: 30px;
+            height: 30px;
+            background: $icon_share_red;
+            cursor: pointer;
+            margin: 11px 0;
+          }
+        }
+        .user-social-info {
+          border-top: 1px solid $gallery;
+          padding: 22px 0 5px;
+          font-family: 'foundrysterling-bookregular';
+          float: left;
+          .no-padding {
+            padding: 0;
+          }
+          .social-follow-rates {
+            min-width: 600px;
+          }
+          .promo-btns {
+            float: right;
+          }
+          .social-icons {
+            padding: 9px 18px;
+            span {
+              float: left;
+              width: 50px;
+              height: 38px;
+              &.facebook-icon {
+                margin-right: 5px;
+                background: $facebook-icon-disabled;
+                &.checked {
+                  background: $facebook-icon-checked;
+                }
+              }
+              &.twitter-icon {
+                background: $twitter-icon-disabled;
+                &.checked {
+                  background: $twitter-icon-checked;
+                }
+              }
+              &.email-icon {
+                background: $email-icon-disabled;
+                &.checked {
+                  background: $email-icon-checked;
+                }
+              }
+            }
+          }
+          .following-numbers {
+            text-align: center;
+            padding-left: 9px;
+            // cursor: pointer;
+            .following {
+              margin-left: -14px;
+              margin-right: 13px;
+              cursor: pointer;
+            }
+            .followers {
+              padding-right: 0;
+              padding-left: 16px;
+              cursor: pointer;
+              &.p {
+                margin-left: -1px;
+              }
+            }
+            p {
+              margin-bottom: -1px;
+              text-align: left;
+              @include text(16px, 1, normal, $doveGray);
+              &.number {
+                @include text(32px, 1, normal, $mineShaft);
+                text-align: left;
+                margin-top: 6px;
+              }
+            }
+          }
+          .ratings {
+            margin-left: 5px;
+            padding-right: 0;
+            width: 32%;
+            text-align: center;
+            p {
+              margin-top: 4px;
+              margin-bottom: 5px;
+              @include text(16px, 1.0, normal, $doveGray);
+              float: left;
+              width: 100%;
+              text-align: left;
+              &.numbers {
+                margin-top: 5px;
+                margin-bottom: 4px;
+                // cursor: pointer;
+                span {
+                  letter-spacing: 1px;
+                  color: $white;
+                  float: left;
+                  padding: 5px 7px 3px;
+                  border-radius: 12px;
+                  margin-right: 7px;
+                  &.positive {
+                    background-color: $green;
+                  }
+                  &.neutral {
+                    background-color: $yellow;
+                  }
+                  &.negative {
+                    background-color: $coral;
+                    margin-right: 0px;
+                  }
+                }
+              }
+            }
+          }
+          .promo {
+            float: right;
+            margin-top: -9px;
+            p {
+              @include text(14px, 1.0, normal, $dustyGray);
+              font-family: 'foundrysterling-lightregular';
+              margin-bottom: 10px;
+              text-align: left;
+              margin-left: 3px;
+            }
+            a {
+              display: block;
+              float: right;
+              width: 122px;
+              height: 45px;
+            }
+            .app-store {
+              background: $apple_store_logo;
+            }
+            .play-store {
+              margin-right: 5px;
+              background: $google_playstore_logo;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+.other-items-user {
+  h2 {
+    font-family: 'foundrysterling-demiregular';
+    @include text(24px, 1.0, normal, $doveGray);
+    margin: 25px 10px 29px;
+  }
+}
+.load-more {
+  margin-bottom: 30px;
+}
+.icon-plus {
+  background: $icon_plus_turquoise;
+  float: left;
+  width: 21px;
+  height: 21px;
+  margin-left: 5px;
+}

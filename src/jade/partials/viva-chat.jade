@@ -1,0 +1,10 @@
+div(class="viva-chat-main-container")
+  div#id-viva-chats-container(class="viva-chats-container")
+  viva-spinner(loading="false", service-id="Negotiation")
+
+  div(class="viva-chat-message-container")
+    form
+      div(class="viva-chat-type-container")
+        textarea#textarea-message(class="viva-chat-input" placeholder="Escribe un mensaje" ng-model="chatInput" ng-disabled="myConversation.status.isRejected" maxlength="250")
+        button(class="viva-chat-send-message" ng-click="sendChat()" ng-class="{active: chatInput.length > 0, inactive: chatInput.length === 0}" ng-disabled="myConversation.status.isRejected")
+          span(class="viva-chat-input-arrow")

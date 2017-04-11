@@ -1,0 +1,97 @@
+// @media (min-width: 993px) {
+//   .links-apps-footer {
+//     text-align: center;
+//     padding-top: 46px;
+//     padding-bottom: 47px;
+//   }
+// }
+
+@media (min-width: 769px) and (max-width: 1200px) {
+  .links-apps-footer {
+    text-align: center;
+    padding-top: 46px;
+    padding-bottom: 47px;
+    .app-store,.play-store{
+      float: none;
+      display: inline-block;
+    }
+  }
+  .footer {
+    .copy-right-legals {
+      width: 716px;
+      margin: 20px auto 0;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .city-link {
+    font-size: 4.8vw;
+    margin-bottom: 5.8vw;
+  }
+
+  .subfooter{
+    min-height: 10vw;
+    padding-top: 6vw;
+    .row{
+      padding-bottom: 6vw;
+      div{
+        font-size: 4vw;
+      }
+    }
+  }
+  .footer {
+    min-height: 10vw;
+    padding-bottom: 6vw;
+    .footer-legal{
+      font-size: 4.2vw;
+      padding-top: 5.8vw;
+      padding-bottom: 5vw;
+      .static-page-link {
+        padding-bottom: 4vw;
+      }
+    }
+    .footer-links{
+      padding-top: 7.2vw;
+      padding-bottom: 7.4vw;
+      width: 100%;
+      a{
+        width: 20vw;
+        height: 7.6vw;
+      }
+    }
+    .links-apps-footer {
+      text-align: center;
+      padding-top: 7.4vw;
+      padding-bottom: 7.4vw;
+      width: 100%;
+      .app-store,.play-store{
+        float: none;
+        display: inline-block;
+        width: 26.8vw;
+        height: 9vw;
+        margin-right: 0;
+      }
+    }
+    .copy-right-legals {
+      margin: 4vw 0 0;
+      padding: 0;
+      font-size: 4.2vw;
+      span {
+        margin-left: 11vw;
+      }
+      .links {
+        margin-top: 3vw;
+        a {
+          height: 6vw;
+          margin: 0 0 0 2.6vw;
+          padding: 0 0 0 3.2vw;
+          &:nth-child(1) {
+            border-left: none;
+          }
+        }
+      }
+    }
+  }
+
+}

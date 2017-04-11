@@ -1,0 +1,72 @@
+//Ad container -> title and image container
+@media (max-width: 991px) {
+	.item-detail-view {
+		.primary-group {
+			ul.navigation-images {
+		    padding: 0% 32%;
+			}
+			.user-data-top {
+			  .item-title-top{
+			    .user-name {
+			    	padding: 0px 10px;
+			  	}
+			  }
+			}
+		}
+		.item-details {
+			width: 100%;
+			.details {
+				width: 100%;
+			}
+		} 
+	  .listed-items{
+	    .ad-container{
+	    	.user-name{
+	    		a{
+		    		margin-left: 10px;
+	    		}
+	    	}
+	    	.item-image-layout2{
+		      .col-md-6{
+		        width: 100%;
+		        height: auto;
+		      }
+		      img{
+		        width: 100%;
+		        height: auto;
+		      }
+		    }
+		    .item-title-bottom{
+		      .col-sm-6{
+		        width: 50%;
+		        float: left;
+		      }
+		    }
+	    } 
+	  }   
+	}
+}
+@media (min-width: 991px) {
+	.container.item-detail-view {
+		width: $max-container-width;
+		margin: 0 auto;
+	}
+}
+@media (min-width: 340px) and (max-width: 991px) { 
+	.item-detail-view {
+		.item-title-top {
+			.user-image {
+				width: 48px;
+			}
+		}
+	}
+}
+@media (max-width: 340px) {
+	.item-detail-view {
+		.item-title-top {
+			.user-image {
+				width: 45px;
+			}
+		}
+	}
+}

@@ -1,0 +1,9 @@
+
+<div ng-class="{sender:isMyMessage, 'rejected-offer': isRejected, 'accepted-offer': isAccepted}" class="viva-chat-message-container">
+  <div ng-show="!isMyMessage &amp;&amp; !isAccepted &amp;&amp; !isRejected" ng-style="userStyle" class="user-box"></div>
+  <div ng-class="{reciever:!isMyMessage &amp;&amp; !isAccepted &amp;&amp; !isRejected, sender:isMyMessage &amp;&amp; !isAccepted &amp;&amp; !isRejected, 'message-disabled': myConversation.status.isRejected , 'accepted-offer': isAccepted, 'rejected-offer': isRejected}" class="chat-box">
+    <div ng-if="isRejected" class="icon-alert"><span class="icon"></span></div>
+    <div class="message-text"><span ng-bind-html="comment" class="chat-message"></span></div>
+    <div class="message-meta"><span ng-hide="isAccepted || isRejected" class="chat-data">{{postTime}}</span></div>
+  </div>
+</div>

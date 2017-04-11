@@ -1,0 +1,48 @@
+<h1 class="h1_metatag_title">{{ metadata.h1 }}</h1>
+<div class="container">
+  <div class="search-loading">
+    <spinner loading='loading'></spinner>
+  </div>
+  <div>
+    <div ng-if="itemList.length === 0 && !loading">
+      <div ng-controller="NoResultsController">
+        <div ng-include="" src="'views/partials/no-results-keyword.html'"></div>
+      </div>
+    </div>
+    <div ng-if="!loading && itemList.length > 0">
+      <!--Title and image container-->
+      <div class="items-list search-results-item-list">
+        <div ng-repeat="item in itemList" class="item-list-container">
+          <div class="list-product-image-container">
+            <div class="list-flag-container">
+              <div ng-class="item.status" class="list-flag"></div>
+            </div>
+            <div ng-click="likeToggle(item)" class="list-fav-me-container">
+              <div ng-class="{liked: item.followedByUser}" class="list-fav-me"></div>
+            </div>
+            <a style="background-image: url('{{ item.pictureUrl}}')" target="_blank" ng-href="{{item.vivaUrl}}" class="list-product-image"></a>
+          </div>
+          <div class="list-product-info-container">
+            <div class="list-price-section">
+              <div class="list-product-price">{{ item.price | vivaCurrency }}</div>
+              <div class="list-favs-share">
+                <div ng-if="item.totalOfFollowers > 0" class="list-product-favs">
+                  <div class="list-fav-icon"></div> {{item.totalOfFollowers}}
+                </div>
+                <a ng-click="openShareModal('modal-share-item.html','item', item)" class="list-product-share"></a>
+              </div>
+            </div>
+            <div class="list-name-section">
+              <div class="list-item-name">{{item.name}} </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div ng-if="hasMore" ng-click="loadItems()" class="has-more">
+        <div class="col-md-12 col-xs-12 text-center">
+          <button class="btn btn-load-more"><i class="glyphicon glyphicon-plus"></i> Cargar más items</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

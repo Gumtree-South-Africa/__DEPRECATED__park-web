@@ -1,0 +1,88 @@
+{
+	"categories": [
+	  {
+	    "id": 11,
+	    "name": "Cercanos",
+	    "color": "647681",
+	    "selectable": false,
+	    "canonical": "cercanos"
+	  },
+	  {
+	    "id": 19,
+	    "name": "Moda y Accesorios",
+	    "color": "e74587",
+	    "selectable": true,
+	    "canonical": "ropa-moda-accesorios"
+	  },
+	  {
+	    "id": 5,
+	    "name": "Electrónica",
+	    "color": "006eac",
+	    "selectable": true,
+	    "canonical": "electronica-venta"
+	  },
+	  {
+	    "id": 8,
+	    "name": "Autos y Motos",
+	    "color": "d82a22",
+	    "selectable": true,
+	    "canonical": "autos-usados-venta"
+	  },
+	  {
+	    "id": 13,
+	    "name": "Niños y Bebés",
+	    "color": "bc9ee7",
+	    "selectable": true,
+	    "canonical": "ninos-bebes"
+	  },
+	  {
+	    "id": 6,
+	    "name": "Deportes y Ocio",
+	    "color": "8ebb36",
+	    "selectable": true,
+	    "canonical": "deportes-hobbies"
+	  },
+	  {
+	    "id": 15,
+	    "name": "Muebles y Hogar",
+	    "color": "c9ac7a",
+	    "selectable": true,
+	    "canonical": "muebles-usados"
+	  },
+	  {
+	    "id": 9,
+	    "name": "Electrodomésticos",
+	    "color": "23c5cf",
+	    "selectable": true,
+	    "canonical": "electrodomesticos"
+	  },
+	  {
+	    "id": 20,
+	    "name": "Juegos y Películas",
+	    "color": "ec521b",
+	    "selectable": true,
+	    "canonical": "juegos-peliculas"
+	  },
+	  {
+	    "id": 1,
+	    "name": "Quinceañera y Eventos",
+	    "color": "873c8a",
+	    "selectable": true,
+	    "canonical": "quinceaneras-fiestas"
+	  },
+	  {
+	    "id": 21,
+	    "name": "Herramientas",
+	    "color": null,
+	    "selectable": true,
+	    "canonical": "herramientas"
+	  },
+	  {
+	    "id": 10,
+	    "name": "Otros",
+	    "color": "ffcc00",
+	    "selectable": true,
+	    "canonical": "otros"
+	  }
+	]
+}

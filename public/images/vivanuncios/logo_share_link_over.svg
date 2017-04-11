@@ -1,0 +1,33 @@
+<svg id="logo_share_link_over.svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="91" height="91" viewBox="0 0 91 91">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: red;
+        fill-opacity: 0;
+      }
+
+      .cls-2 {
+        fill: #00d9dc;
+        filter: url(#filter);
+      }
+
+      .cls-2, .cls-3 {
+        fill-rule: evenodd;
+      }
+
+      .cls-3 {
+        fill: #fff;
+      }
+    </style>
+    <filter id="filter" x="635" y="546" width="91" height="91" filterUnits="userSpaceOnUse">
+      <feOffset result="offset" in="SourceAlpha"/>
+      <feGaussianBlur result="blur" stdDeviation="2.449"/>
+      <feFlood result="flood" flood-opacity="0.3"/>
+      <feComposite result="composite" operator="in" in2="blur"/>
+      <feBlend result="blend" in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <rect id="AREA" class="cls-1" width="90" height="90"/>
+  <path id="bn_bg" data-name="bn bg" class="cls-2" d="M650,551h60a10,10,0,0,1,10,10v60a10,10,0,0,1-10,10H650a10,10,0,0,1-10-10V561A10,10,0,0,1,650,551Zm19.25,40.5a1,1,0,1,1-1,1A1,1,0,0,1,669.25,591.5Z" transform="translate(-635 -546)"/>
+  <path id="link_icon" data-name="link icon" class="cls-3" d="M700.46,586.627l-10.954,10.954a11.044,11.044,0,0,1-15.605.069l-1.584-1.584,4.849-4.85,1.585,1.585a4.19,4.19,0,0,0,5.9-.069l10.955-10.955a4.164,4.164,0,1,0-5.889-5.888l-4.637,4.637a12.955,12.955,0,0,0-8.706-.992l8.494-8.494a11.029,11.029,0,0,1,15.593.006l0.007,0.007A11.006,11.006,0,0,1,700.46,586.627ZM687.1,584.349l1.585,1.585-4.849,4.849-1.585-1.584a4.189,4.189,0,0,0-5.906.069l-10.954,10.954a4.164,4.164,0,0,0,5.889,5.888l4.637-4.637a13.263,13.263,0,0,0,8.706.993l-8.494,8.494a11.03,11.03,0,0,1-15.594-.007l-0.006-.006a11.006,11.006,0,0,1,.013-15.574l10.954-10.954A11.042,11.042,0,0,1,687.1,584.349Z" transform="translate(-635 -546)"/>
+</svg>

@@ -1,0 +1,25 @@
+.category-home {
+  background: $body-background-directory;
+  // width: 100%;
+ 	// padding: 0px 181.5px 70px;
+}	
+.category-keywords{
+	padding-top: 70px;
+	p.title-category a{
+		font-family: $stack-verlag-bold;
+		@include text(24px,0.7,null,$tangaroa-blue);
+	}
+	.keyword{
+		// padding: 0px 20px 0px 0px;
+		a{
+			font-family: $stack-verlag;
+			@include text(18px, null,null,$tangaroa-blue);
+		}
+	}
+}
+
+@media (max-width: 767px) {
+  .category-keywords{
+  	text-align: center;
+   } 
+}

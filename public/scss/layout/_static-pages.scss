@@ -1,0 +1,156 @@
+//--------------------Community and Guidelines page------------------------------
+.masthead {
+  padding: 50px 0 60px;
+  background-color: $close5-red;
+  text-align: center;
+  box-shadow: 0px 1px 1px 1px rgba(0, 0, 0, 0.05);
+  h1 {
+  	margin: 0;
+    color: $white;
+  }
+  h2 {
+    margin: 10px 0 0;
+    color: $azalea;
+	}
+}
+.container-community {
+	padding-top: 30px;
+	background-color: $white;
+	h1{
+		text-align: center;
+  	margin: 40px 0px;
+  	color: $tarawera-blue;
+    font-weight: 300;
+	}
+ 	h3{
+    margin: 30px 0px;
+    text-align: center;
+    @include text(21px,null,300,$tarawera-blue);
+  }
+  p {
+		@include text(18px,1.4,300,$smaltBlue);
+		text-align: center;	
+  }
+	.container.two-columns {
+		margin-top: 40px;
+		text-align: center;
+		h1 { 
+			margin-top: 0px;
+		}
+		h3 {
+			color: $persianGreen;
+		}
+		.buying {
+    	border-right: 1px solid $mercury;
+	    padding: 0px 36px;
+		}
+		.seeling {
+			padding: 0px 36px;
+		}
+	}
+}
+.item-removed {
+	padding-top: 30px;
+	background-color: $white;
+	.container{
+    padding: 20px;
+    background-color: $dawnPink;
+    border-top: 2px solid $givry;
+    text-align: center;
+    @include text(18px,null,300,$smaltBlue);
+    a {
+    	color: $close5-red;
+    	text-decoration: underline;
+    }
+	}
+}
+//--------------------Terms and conditions page------------------------------
+  
+.container-terms {
+  background-color: $white;
+  padding: 30px 0px;
+  a {
+    text-decoration: underline;
+    color: $close5-red;
+  }:hover {
+    text-decoration: none;
+  }
+  .container {
+    padding: 0px;
+  }
+  .legal-nav {
+    margin-bottom: 30px;
+    a {
+      margin-right: 10px;
+      font-size: 18px;
+    }
+  }
+  .terms-section {
+    color: $tarawera-blue;
+    h1,h2 {
+      margin: 24px 0px;
+    }
+    p,li {
+      @include text(18px,1.2,300,$smaltBlue);
+    }
+  }
+}
+
+//--------------------Apps page--------------------------------------------
+
+.container-apps {
+  background-color: $body-background;
+  padding-bottom: 30px;
+  .masthead {
+    margin-bottom: 30px;
+    background-color: $body-background;
+    box-shadow: none;
+    .send-link {
+      margin-bottom: 60px;
+      h1 {
+        @include text(24px,null,bold,$close5-red);
+        margin-bottom: 60px;
+      }
+      .search-group {
+        border: none;
+        border-radius: none;
+        input {
+          border-bottom: 1px solid $bombay-gray;
+          float: left;
+          margin-right: 15px;
+          background-color: $body-background;
+          width: 50%;
+          font-size: 20px;
+          color: $search-color;
+        }
+        button {
+          width: 40%;
+          background-color: $white;
+          @include text(18px,null,bold,$close5-red);
+        }
+      }
+    }
+    .download-link {
+      h1 {
+        @include text(18px,null,300,$tangaroa-blue);
+        margin-bottom: 30px;
+      }
+      p {
+        margin: 10px 0 0;
+        @include text(14px,null,null,$tangaroa-blue);
+      }
+    }
+  }
+  .text-section {
+    .review {
+      text-align: center;
+      p,footer {
+        @include text(18px,null,300,$smaltBlue);
+        i.glyphicon.glyphicon-star {
+          font-size: 20px;
+          margin-right: 5px;
+        }
+      }
+    }
+  } 
+}

@@ -1,0 +1,12 @@
+div.viva-negotiation-list.container
+
+  h1 Ofertas
+
+  div.container-offers
+    div.tab-content
+      div#seller.tab-pane.active(ng-class="{'no-items':offersBuyer.length === 0}")
+        div(ng-if="offersBuyer.length > 0" ng-repeat="offer in offersBuyer track by offer.conversationId")
+          viva-negotiation-item(offer="offer")
+        div.message-no-items(ng-if="offersBuyer.length === 0")
+          p Aún no has recibido ofertas de venta
+          p Publica nuevos anuncios para comenzar a vender y ganar dinero

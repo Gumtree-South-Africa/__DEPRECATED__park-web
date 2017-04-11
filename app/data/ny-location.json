@@ -1,0 +1,28 @@
+{
+	"id_mapbox": "place.10917348940964500",
+	"latitude": 40.7648,
+	"longitude": -73.9808,
+	"name": "New York",
+	"place_name": "New York, New York, United States",
+	"context": [
+		{
+			"id": "postcode.7649331520967420",
+			"text": "10019"
+		},
+		{
+			"id": "region.10680295328053660",
+			"text": "New York",
+			"short_code": "US-NY",
+			"wikidata": "Q1384"
+		},
+		{
+			"id": "country.12862386939497690",
+			"text": "United States",
+			"short_code": "us",
+			"wikidata": "Q30"
+		}
+	],
+	"state": "New York",
+	"id": "new_york-ny",
+	"canonical_name": "New York, NY"
+}

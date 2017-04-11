@@ -1,0 +1,51 @@
+extends layout
+
+block bodyContent
+
+  div(itemscope itemtype="http://schema.org/AggregateOffer")
+    div(itemscope itemprop="itemOffered" itemtype="http://schema.org/Product")
+
+      h1(itemprop="name")=data.name
+
+      h2(itemprop="description")=data.description
+
+      p Categoría: #[a(href=data.category.href, itemprop="category")=data.category.name ]
+
+      ul
+        each picture in data.pictures
+          li: img(itemprop="image", src=picture, alt=description)
+
+    p Ubicación: #[span(itemprop="areaServed")=data.locationName ]
+    p Fecha de publicación: #[span(itemprop="validFrom")=data.published ]
+    p
+      | Precio:
+      span(itemprop="priceCurrency" content="USD") $
+      span(itemprop="price" content=data.price)=data.price
+
+    link(itemprop="availability" href="http://schema.org/InStock")
+
+    div(itemscope itemprop="seller" itemtype="http://schema.org/Person")
+      h3
+        | A la venta por
+        a(href=data.user.href, itemprop="url")  #[strong(itemprop="name")=data.user.username ]
+
+      p Ubicación:
+      div(itemprop="homeLocation" itemscope itemtype="http://schema.org/PostalAddress")
+        span(itemprop="addressLocality")=data.user.locality+", "
+        span(itemprop="addressRegion")=data.user.region+" "
+        span(itemprop="postalCode")=data.user.zipCode
+
+      img(itemprop='image', src=data.user.profilePicture, alt=data.user.username)
+
+      p Otros anuncios de este usuario
+
+      ul
+        each item in data.user.items
+          li
+            div(itemprop="offers" itemscope="" itemtype="http://schema.org/Offer")
+              a(itemprop="url" href=item.url)
+                img(itemprop="image", src=item.pictureUrl, alt=item.name)
+              p
+                span(itemprop="priceCurrency" content="USD") $
+                span(itemprop="price" content=item.price)=" "+item.price
+              p #[span(itemprop="name")=item.name]

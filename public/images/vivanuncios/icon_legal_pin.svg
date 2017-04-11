@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="25.844" height="34.25" viewBox="0 0 25.844 34.25">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #c1c1c1;
+        fill-rule: evenodd;
+      }
+    </style>
+  </defs>
+  <path id="icon_legal_pin.svg" class="cls-1" d="M329.418,225.246c-1.442,0-12.918-14.2-12.918-21.329a12.918,12.918,0,1,1,25.835,0C342.335,211.051,330.86,225.246,329.418,225.246Zm-0.184-30.4a9,9,0,1,0,9.016,9A9.007,9.007,0,0,0,329.234,194.844Z" transform="translate(-316.5 -191)"/>
+</svg>

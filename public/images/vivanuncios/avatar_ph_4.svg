@@ -1,0 +1,35 @@
+<svg id="avatar_ph_4.svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="75" height="75" viewBox="0 0 75 75">
+  <defs>
+    <style>
+      .cls-1, .cls-2 {
+        fill: #ff5531;
+      }
+
+      .cls-1 {
+        fill-opacity: 0;
+      }
+
+      .cls-2, .cls-3 {
+        fill-rule: evenodd;
+      }
+
+      .cls-2 {
+        filter: url(#filter);
+      }
+
+      .cls-3 {
+        fill: #fff;
+      }
+    </style>
+    <filter id="filter" x="0" y="0" width="75" height="75" filterUnits="userSpaceOnUse">
+      <feOffset result="offset" dx="0.5" dy="0.866" in="SourceAlpha"/>
+      <feGaussianBlur result="blur" stdDeviation="2.828"/>
+      <feFlood result="flood" flood-opacity="0.3"/>
+      <feComposite result="composite" operator="in" in2="blur"/>
+      <feBlend result="blend" in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <rect id="area_copy" data-name="area copy" class="cls-1" width="74" height="74"/>
+  <path id="avatar_area_copy" data-name="avatar area copy" class="cls-2" d="M36,6.929A29.071,29.071,0,1,1,6.929,36,29.071,29.071,0,0,1,36,6.929Zm3.929,17.786a0.929,0.929,0,1,1-.929.929A0.929,0.929,0,0,1,39.929,24.714Z"/>
+  <path id="tag_:_copy" data-name="tag :) copy" class="cls-3" d="M36,66A30,30,0,1,1,66,36,30,30,0,0,1,36,66ZM33.506,44.541C28.744,49.3,23.344,50.753,22.247,51.85A1.513,1.513,0,0,0,22.379,54c0.768,0.768,1.361.79,5.641-.944a26.018,26.018,0,0,0,8.56-5.443,26.014,26.014,0,0,0,5.443-8.56c1.734-4.28,1.712-4.872.944-5.64a1.512,1.512,0,0,0-2.151-.132C39.717,34.38,38.269,39.779,33.506,44.541Zm-0.527-11.72a2.545,2.545,0,1,0,0,3.6A2.556,2.556,0,0,0,32.979,32.821Zm-8.033,8.033a2.545,2.545,0,1,0,0,3.6A2.556,2.556,0,0,0,24.946,40.854ZM36,9.071A26.938,26.938,0,0,0,9.609,41.365l25.41-25.41a5.988,5.988,0,0,1,8.468,0L57.206,29.673a5.988,5.988,0,0,1,0,8.468L32.648,62.7A26.919,26.919,0,1,0,36,9.071Z"/>
+</svg>

@@ -1,0 +1,54 @@
+
+<div id="modal-group-subscribers" class="modal rate-info-group full-screen-modal">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <div type="button" data-dismiss="modal" aria-hidden="true" class="back visible-xs-inline-block"></div>
+      </div>
+      <div class="modal-body">
+        <div class="panel panel-default">
+          <div class="title-header">
+            <div class="title">
+              <div>
+                Suscriptores de&nbsp;<b>{{groupName}}</b>
+              </div>
+            </div>
+          </div>
+          <div class="panel-body">
+            <div class="tab-content">
+              <div id="suscribers-scroll-content" class="tab-pane active">
+                <div infinite-scroll="getMore()" infinite-scroll-disabled="scrollBusy" infinite-scroll-container="'#suscribers-scroll-content'">
+                  <div ng-repeat="subscriber in groupSubscribers" class="col-subscriber">
+                    <div class="rating" >
+                      <!-- <div class="user-image">
+                        <img ng-if="subscriber.profilePicture" src="{{subscriber.profilePicture}}" class="img-circle" />
+                        <img ng-if="!subscriber.profilePicture" src="../../../images/vivanuncios/avatar_ph_image_4.svg" class="img-circle" />
+                      </div> -->
+                      <div class="user-image" ng-style="setBackground(subscriber.profilePicture)" ng-click="visitProfile(subscriber.username)">
+                        <img src="../../../images/vivanuncios/avatar_mask_4.png"/>
+                      </div>
+                      <div class="user-data" ng-click="visitProfile(subscriber.username)">
+                        <span class="username" title="{{subscriber.username}}">{{subscriber.username}}</span>
+                        <span class="date">{{subscriber.locationName}}</span>
+                      </div>
+                      <div class="item-data" ng-if="subscriber.username !== usernameLogged">
+                        <button class="btn" ng-class="{ 'btn-follow-group':!subscriber.isFollowed, 'btn-unfollow-group':subscriber.isFollowed }" ng-click="toggleFollowUser(subscriber)" >{{subscriber.isFollowed ? 'SIGUIENDO' : 'SEGUIR' }}</button>
+                        <!-- <button ng-if="!isAuthenticated() || isAuthenticated() && !subscriber.followedByUser" ng-click="toggleFollowUser(subscriber.username, subscriber.followedByUser, cbFollowings)" class="btn btn-follow-group ">SEGUIR</button>
+                        <button ng-if="isAuthenticated() && subscriber.followedByUser" ng-click="toggleFollowUser(subscriber.username, subscriber.followedByUser, cbFollowings)" class="btn btn-unfollow-group">SIGUIENDO</button> -->
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div ng-if="hasMoreSubscribers" ng-click="getMore()" class="row">
+                  <div class="col-md-12 col-xs-12 text-center">
+                    <button class="btn btn-load-more"><i class="glyphicon glyphicon-plus"></i> Cargar más usuarios</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

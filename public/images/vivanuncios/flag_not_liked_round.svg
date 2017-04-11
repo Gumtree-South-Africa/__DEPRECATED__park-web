@@ -1,0 +1,26 @@
+<svg id="flag_not_liked_round.svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="56.313" height="56.313" viewBox="0 0 56.313 56.313">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #00d9dc;
+        opacity: 0.9;
+        filter: url(#filter);
+      }
+
+      .cls-1, .cls-2 {
+        fill-rule: evenodd;
+      }
+
+      .cls-2 {
+        fill: #fff;
+      }
+    </style>
+    <filter id="filter" x="0" y="70" width="56.313" height="56.313" filterUnits="userSpaceOnUse">
+      <feFlood result="flood" flood-color="#cbcbcb"/>
+      <feComposite result="composite" operator="in" in2="SourceGraphic"/>
+      <feBlend result="blend" in2="SourceGraphic"/>
+    </filter>
+  </defs>
+  <path id="flag_triangle_gray" class="cls-1" d="M0,126.327V80A10,10,0,0,1,10,70H56.327Z" transform="translate(0 -70)"/>
+  <path id="icon_like_stroke" class="cls-2" d="M17.9,81.033c-4.687-6.5-12.25-.852-9.908,5.22,1.546,4.007,4.368,6.5,9.908,10.006,5.54-3.508,8.362-6,9.908-10.006C30.15,80.181,22.587,74.534,17.9,81.033Zm8.041,4.5c-1.179,3.057-3.188,5.174-8.041,8.349-4.854-3.175-6.863-5.292-8.042-8.349a4.077,4.077,0,0,1,.39-3.829A3.41,3.41,0,0,1,13,80.141,4.2,4.2,0,0,1,16.278,82.2L17.9,84.452,19.522,82.2A4.2,4.2,0,0,1,22.8,80.141,3.409,3.409,0,0,1,25.552,81.7,4.076,4.076,0,0,1,25.941,85.533Z" transform="translate(0 -70)"/>
+</svg>

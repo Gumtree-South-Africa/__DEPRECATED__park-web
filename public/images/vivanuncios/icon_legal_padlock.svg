@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="22" height="34" viewBox="0 0 22 34">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #c1c1c1;
+        fill-rule: evenodd;
+      }
+    </style>
+  </defs>
+  <path id="icon_legal_padlock.svg" class="cls-1" d="M339,723H319a1,1,0,0,1-1-1V705a1,1,0,0,1,1-1h1v-6a9,9,0,1,1,18,0v6h1a1,1,0,0,1,1,1v17A1,1,0,0,1,339,723Zm-11.129-9.224L327,719h4l-0.871-5.223A3,3,0,1,0,327.871,713.776ZM335,698a6,6,0,0,0-12,0v6h12v-6Z" transform="translate(-318 -689)"/>
+</svg>

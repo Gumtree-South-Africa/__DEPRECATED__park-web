@@ -1,0 +1,9 @@
+
+<div class="modal-body">
+  <p>¿Estás seguro que deseas cancelar esta negociación?</p>
+  <input placeholder="Razón para cancelar" type="text" ng-model="reason" maxlength="160"/>
+</div>
+<div class="modal-footer top-border">
+  <button ng-click="confirm(false)" class="btn btn-confirm no">No</button>
+  <button ng-click="confirm(true)" class="btn btn-confirm yes">Si</button>
+</div>
